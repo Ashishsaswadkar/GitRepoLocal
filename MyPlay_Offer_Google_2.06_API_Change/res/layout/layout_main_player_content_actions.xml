@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.hungama.myplay.activity"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_player_content_actions"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/main_player_content_actions_bar_height"
+    android:background="@color/main_player_content_buttons_background"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/main_player_content_line_separator_horizontal" />
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:scrollbars="none" 
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/main_player_content_actions_bar_button_download"
+                android:layout_width="@dimen/main_player_content_actions_button_width"
+                android:layout_height="match_parent"
+                android:background="@drawable/background_main_player_content_action_button_odd_selector"
+                android:drawableTop="@drawable/icon_general_download_grey"
+                android:paddingBottom="@dimen/main_player_content_actions_button_padding"
+                android:paddingTop="@dimen/main_player_content_actions_button_padding"
+                android:text="@string/main_player_content_action_button_download"
+                android:textColor="@color/main_player_content_button_text"
+                android:textSize="@dimen/main_player_content_buttons_bar_button_text_size" />
+
+            <Button
+                android:id="@+id/main_player_content_actions_bar_button_share"
+                android:layout_width="@dimen/main_player_content_actions_button_width"
+                android:layout_height="match_parent"
+                android:background="@drawable/background_main_player_content_action_button_even_selector"
+                android:drawableTop="@drawable/icon_general_share_grey"
+                android:paddingBottom="@dimen/main_player_content_actions_button_padding"
+                android:paddingTop="@dimen/main_player_content_actions_button_padding"
+                android:text="@string/main_player_content_action_button_share"
+                android:textColor="@color/main_player_content_button_text"
+                android:textSize="@dimen/main_player_content_buttons_bar_button_text_size" />
+
+            <Button
+                android:id="@+id/main_player_content_actions_bar_button_playlist"
+                android:layout_width="@dimen/main_player_content_actions_button_width"
+                android:layout_height="match_parent"
+                android:background="@drawable/background_main_player_content_action_button_odd_selector"
+                android:drawableTop="@drawable/icon_general_playlist_grey"
+                android:paddingBottom="@dimen/main_player_content_actions_button_padding"
+                android:paddingTop="@dimen/main_player_content_actions_button_padding"
+                android:text="@string/main_player_content_action_button_playlist"
+                android:textColor="@color/main_player_content_button_text"
+                android:textSize="@dimen/main_player_content_buttons_bar_button_text_size" />
+
+            <com.hungama.myplay.activity.ui.widgets.TwoStatesButton
+                android:id="@+id/main_player_content_actions_bar_button_info"
+                android:layout_width="@dimen/main_player_content_actions_button_width"
+                android:layout_height="match_parent"
+                android:drawableTop="@drawable/icon_general_info_grey"
+                android:paddingBottom="@dimen/main_player_content_actions_button_padding"
+                android:paddingTop="@dimen/main_player_content_actions_button_padding"
+                android:text="@string/main_player_content_action_button_info"
+                android:textColor="@color/main_player_content_button_text"
+                android:textSize="@dimen/main_player_content_buttons_bar_button_text_size"
+                app:selectedBackground="@color/application_background_grey"
+                app:unselectedBackground="@drawable/background_main_player_content_action_button_even_selector" 
+                />
+
+            <com.hungama.myplay.activity.ui.widgets.TwoStatesButton
+                android:id="@+id/main_player_content_actions_bar_button_similar"
+                android:layout_width="@dimen/main_player_content_actions_button_width"
+                android:layout_height="match_parent"
+                android:drawableTop="@drawable/icon_general_similar_grey"
+                android:paddingBottom="@dimen/main_player_content_actions_button_padding"
+                android:paddingTop="@dimen/main_player_content_actions_button_padding"
+                android:text="@string/main_player_content_action_button_similar"
+                android:textColor="@color/main_player_content_button_text"
+                android:textSize="@dimen/main_player_content_buttons_bar_button_text_size"
+                app:selectedBackground="@color/application_background_grey"
+                app:unselectedBackground="@drawable/background_main_player_content_action_button_odd_selector" 
+                />
+
+            <com.hungama.myplay.activity.ui.widgets.TwoStatesButton
+                android:id="@+id/main_player_content_actions_bar_button_video"
+                android:layout_width="@dimen/main_player_content_actions_button_width"
+                android:layout_height="match_parent"
+                android:drawableTop="@drawable/icon_general_video_grey"
+                android:paddingBottom="@dimen/main_player_content_actions_button_padding"
+                android:paddingTop="@dimen/main_player_content_actions_button_padding"
+                android:text="@string/main_player_content_action_button_video"
+                android:textColor="@color/main_player_content_button_text"
+                android:textSize="@dimen/main_player_content_buttons_bar_button_text_size"
+                app:selectedBackground="@color/application_background_grey"
+                app:unselectedBackground="@drawable/background_main_player_content_action_button_even_selector" 
+                />
+
+            <com.hungama.myplay.activity.ui.widgets.TwoStatesButton
+                android:id="@+id/main_player_content_actions_bar_button_lyrics"
+                android:layout_width="@dimen/main_player_content_actions_button_width"
+                android:layout_height="match_parent"
+                android:drawableTop="@drawable/icon_general_lyrics_grey"
+                android:paddingBottom="@dimen/main_player_content_actions_button_padding"
+                android:paddingTop="@dimen/main_player_content_actions_button_padding"
+                android:text="@string/main_player_content_action_button_lyrics"
+                android:textColor="@color/main_player_content_button_text"
+                android:textSize="@dimen/main_player_content_buttons_bar_button_text_size"
+                app:selectedBackground="@color/application_background_grey"
+                app:unselectedBackground="@drawable/background_main_player_content_action_button_odd_selector" />
+                
+
+            <com.hungama.myplay.activity.ui.widgets.TwoStatesButton
+                android:id="@+id/main_player_content_actions_bar_button_trivia"
+                android:layout_width="@dimen/main_player_content_actions_button_width"
+                android:layout_height="match_parent"
+                android:drawableTop="@drawable/icon_general_trivia_grey"
+                android:paddingBottom="@dimen/main_player_content_actions_button_padding"
+                android:paddingTop="@dimen/main_player_content_actions_button_padding"
+                android:text="@string/main_player_content_action_button_trivia"
+                android:textColor="@color/main_player_content_button_text"
+                android:textSize="@dimen/main_player_content_buttons_bar_button_text_size"
+                app:selectedBackground="@color/application_background_grey"
+                app:unselectedBackground="@drawable/background_main_player_content_action_button_even_selector"/>
+             
+        </LinearLayout>
+        
+    </HorizontalScrollView>
+
+</LinearLayout>

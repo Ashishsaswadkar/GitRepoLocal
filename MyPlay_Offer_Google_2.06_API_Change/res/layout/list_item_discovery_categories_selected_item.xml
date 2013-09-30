@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/discovery_categories_selected_item"
+    android:layout_width="@dimen/discovery_categories_selected_item_width"
+    android:layout_height="@dimen/discovery_categories_item_height"
+    android:background="@color/transparent"
+    android:clickable="true"
+    android:focusable="true">
+    
+    <RelativeLayout
+        android:id="@+id/discovery_categories_selected_item_margin_wrapper"
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:background="@drawable/background_discovery_categories_selected_item"
+    	android:clickable="false"
+    	android:focusable="false">
+
+	    <TextView
+	        android:id="@+id/discovery_categories_selected_item_name"
+	        style="@style/TextSmallMedium"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_marginLeft="@dimen/discovery_categories_item_side_margin"
+	        android:clickable="false"
+	        android:focusable="false" />
+	
+	    <ImageView
+	        android:id="@+id/discovery_categories_selected_item_remove"
+	        android:layout_width="@dimen/discovery_categories_item_option_icon_size"
+	        android:layout_height="@dimen/discovery_categories_item_option_icon_size"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        android:layout_marginRight="@dimen/discovery_categories_item_side_margin"
+	        android:background="@drawable/icon_close_white" 
+	        android:clickable="false"
+	        android:focusable="false"/>
+    
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/badges_gridview_badges"
+    android:gravity="top">
+
+    <ImageView
+        android:id="@+id/badges_list_item_badge_icon"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="@dimen/badges_list_item_badge_icon_bottom_margin"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/badges_list_item_badge_name"
+        style="@style/TextSmallPlus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/badges_list_item_badge_text_name"
+        android:textSize="13dp" 
+        android:layout_below="@id/badges_list_item_badge_icon"
+        android:layout_centerHorizontal="true"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

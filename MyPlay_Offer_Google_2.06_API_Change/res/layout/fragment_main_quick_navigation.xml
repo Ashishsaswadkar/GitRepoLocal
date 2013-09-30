@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    		 android:id="@+id/main_navigation"
+    		 android:layout_width="match_parent"
+		     android:layout_height="match_parent"
+		     android:background="@null" >
+		     
+    <ImageView 
+        android:id="@+id/navigation_bg"
+        android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+        android:background="@drawable/background_navigation"/>
+
+    <LinearLayout
+        android:id="@+id/main_navigation_item_videos"
+        android:layout_width="@dimen/main_actionbar_navigation_item_size"
+        android:layout_height="@dimen/main_actionbar_navigation_item_size"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background_main_navigation_item_regular"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="@dimen/main_actionbar_navigation_item_icon_size"
+            android:layout_height="@dimen/main_actionbar_navigation_item_icon_size"
+            android:src="@drawable/icon_main_navigation_videos"
+            android:clickable="false"
+            android:focusable="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_actionbar_navigation_videos"
+            android:textColor="@color/white"
+            android:textSize="@dimen/main_actionbar_navigation_item_text_size"
+            android:clickable="false"
+            android:focusable="false" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/main_navigation_item_music"
+        android:layout_width="@dimen/main_actionbar_navigation_item_size"
+        android:layout_height="@dimen/main_actionbar_navigation_item_size"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background_main_navigation_item_regular"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="@dimen/main_actionbar_navigation_item_icon_size"
+            android:layout_height="@dimen/main_actionbar_navigation_item_icon_size"
+            android:src="@drawable/icon_main_navigation_music"
+            android:clickable="false"
+            android:focusable="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_actionbar_navigation_music"
+            android:textColor="@color/white"
+            android:textSize="@dimen/main_actionbar_navigation_item_text_size"
+            android:clickable="false"
+            android:focusable="false" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main_navigation_item_discover"
+        android:layout_width="@dimen/main_actionbar_navigation_item_size"
+        android:layout_height="@dimen/main_actionbar_navigation_item_size"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/main_navigation_item_music"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/background_main_navigation_item_regular"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="@dimen/main_actionbar_navigation_item_icon_size"
+            android:layout_height="@dimen/main_actionbar_navigation_item_icon_size"
+            android:src="@drawable/icon_main_navigation_discover"
+            android:clickable="false"
+            android:focusable="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_actionbar_navigation_discover"
+            android:textColor="@color/white"
+            android:textSize="@dimen/main_actionbar_navigation_item_text_size"
+            android:clickable="false"
+            android:focusable="false" />
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main_navigation_item_radio"
+        android:layout_width="@dimen/main_actionbar_navigation_item_size"
+        android:layout_height="@dimen/main_actionbar_navigation_item_size"
+        android:layout_alignTop="@+id/main_navigation_item_discover"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:background="@drawable/background_main_navigation_item_regular"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="@dimen/main_actionbar_navigation_item_icon_size"
+            android:layout_height="@dimen/main_actionbar_navigation_item_icon_size"
+            android:src="@drawable/icon_main_navigation_radio"
+            android:clickable="false"
+            android:focusable="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_actionbar_navigation_radio"
+            android:textColor="@color/white"
+            android:textSize="@dimen/main_actionbar_navigation_item_text_size"
+            android:clickable="false"
+            android:focusable="false" />
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main_navigation_item_specials"
+        android:layout_width="@dimen/main_actionbar_navigation_item_size"
+        android:layout_height="@dimen/main_actionbar_navigation_item_size"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/main_navigation_item_discover"
+        android:layout_marginLeft="18dp"
+        android:background="@drawable/background_main_navigation_item_regular"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="@dimen/main_actionbar_navigation_item_icon_size"
+            android:layout_height="@dimen/main_actionbar_navigation_item_icon_size"
+            android:src="@drawable/icon_main_navigation_specials"
+            android:clickable="false"
+            android:focusable="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_actionbar_navigation_specials"
+            android:textColor="@color/white"
+            android:textSize="@dimen/main_actionbar_navigation_item_text_size"
+            android:clickable="false"
+            android:focusable="false" />
+        
+    </LinearLayout>
+
+</RelativeLayout>

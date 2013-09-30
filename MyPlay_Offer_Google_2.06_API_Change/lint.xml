@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="NewApi">
+        <ignore path="src/com/hungama/myplay/data/EventManager.java" />
+        <ignore path="src/com/hungama/myplay/ui/adapters/HomeMediaTilesAdapter.java" />
+        <ignore path="src/com/hungama/myplay/ui/adapters/HomeMusicTilesAdapter.java" />
+        <ignore path="src/com/hungama/myplay/ui/adapters/MediaTilesAdapter.java" />
+        <ignore path="src/com/hungama/myplay/ui/fragments/DiscoveryCategoriesFragment.java" />
+        <ignore path="src/com/hungama/myplay/ui/fragments/DiscoveryCategoriesFragment.java" />
+        <ignore path="src/com/hungama/myplay/ui/fragments/DiscoveryGalleryFragment.java" />
+        <ignore path="src/com/hungama/myplay/ui/fragments/DiscoveryGalleryFragment.java" />
+        <ignore path="src/com/hungama/myplay/ui/fragments/DiscoveryMoodFragment.java" />
+        <ignore path="src/com/hungama/myplay/ui/fragments/DiscoveryMoodFragment.java" />
+        <ignore path="src/com/hungama/myplay/ui/fragments/HomeFragment.java" />
+        <ignore path="src/com/hungama/myplay/ui/fragments/HomeFragment.java" />
+        <ignore path="src/com/hungama/myplay/ui/fragments/MediaTileGridFragment.java" />
+        <ignore path="src/com/hungama/myplay/ui/fragments/MediaTileGridFragment.java" />
+        <ignore path="src/com/hungama/myplay/ui/fragments/PlayerBarFragment.java" />
+        <ignore path="src/com/hungama/myplay/ui/fragments/PlayerBarFragment.java" />
+        <ignore path="src/com/hungama/myplay/ui/fragments/PlayerSimilarFragment.java" />
+        <ignore path="src/com/hungama/myplay/ui/fragments/PlayerVideoFragment.java" />
+        <ignore path="src/com/hungama/myplay/ui/widgets/SlidingDrawer.java" />
+        <ignore path="src\com\hungama\myplay\ui\VideoActivity.java" />
+        <ignore path="src\com\hungama\myplay\ui\fragments\DiscoveryGalleryFragment.java" />
+        <ignore path="src\com\hungama\myplay\util\TimeoutVideoPlayerTask.java" />
+    </issue>
+    <issue id="ResourceAsColor">
+        <ignore path="src/com/hungama/myplay/ui/fragments/MainSearchFragment.java" />
+    </issue>
+</lint>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/leaderboard_user_item_height"
+    android:gravity="center_vertical"
+    android:background="@color/social_profile_background" >
+
+    <TextView
+        android:id="@+id/leaderboard_user_item_rank"
+        android:layout_width="@dimen/leaderboard_user_item_rank_width"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/leaderboard_user_item_rank_margin"
+        android:gravity="center"
+        style="@style/TextSmallMedium"
+        android:textColor="@color/leaderboard_user_item_rank" />
+
+    <ImageView
+        android:id="@+id/leaderboard_user_item_thumbnail"
+        android:layout_width="@dimen/leaderboard_user_item_thumbnail_size"
+        android:layout_height="@dimen/leaderboard_user_item_thumbnail_size"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/leaderboard_user_item_rank"/>
+
+    <ImageView
+        android:id="@+id/leaderboard_user_item_total_coins_icon"
+        android:layout_width="@dimen/leaderboard_user_item_total_coins_icon_size"
+        android:layout_height="@dimen/leaderboard_user_item_total_coins_icon_size"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/leaderboard_user_item_total_coins_icon_margin"
+        android:src="@drawable/icon_profile_coins" />
+
+    <TextView
+        android:id="@+id/leaderboard_user_item_total_score"
+        android:layout_width="@dimen/leaderboard_user_item_total_score_width"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/leaderboard_user_item_rank"
+        android:layout_alignBottom="@+id/leaderboard_user_item_rank"
+        android:layout_toLeftOf="@+id/leaderboard_user_item_total_coins_icon"
+        style="@style/TextSmallMedium"
+        android:textColor="@color/leaderboard_user_item_total_score" />
+
+    <TextView
+        android:id="@+id/leaderboard_user_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/leaderboard_user_item_rank"
+        android:layout_alignBottom="@+id/leaderboard_user_item_rank"
+        android:layout_toLeftOf="@+id/leaderboard_user_item_total_score"
+        android:layout_toRightOf="@+id/leaderboard_user_item_thumbnail"
+        android:layout_margin="@dimen/leaderboard_user_item_name_margin"
+        style="@style/TextSmallMedium"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textColor="@color/leaderboard_user_item_name" />
+
+</RelativeLayout>

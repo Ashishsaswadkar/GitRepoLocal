@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent" >
+
+    <LinearLayout
+        android:layout_width="@dimen/main_actionbar_settings"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@color/application_background_menu"
+        android:orientation="vertical" >
+        
+        <Button 
+            android:id="@+id/sleep_mode"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:textColor="@color/white"
+            android:paddingLeft="10dp"
+            android:gravity="left|center_vertical"
+            android:text="@string/player_settings_sleep_mode" />
+        
+        <View 
+            android:layout_height="1px"
+            android:layout_width="match_parent"
+            android:background="@color/search_fragment_categories_seperator_background"/>
+        
+        <Button 
+            android:id="@+id/gym_mode"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:textColor="@color/white"
+            android:paddingLeft="10dp"
+            android:gravity="left|center_vertical"
+            android:text="@string/player_settings_gym_mode" />       
+        
+    </LinearLayout>
+
+</RelativeLayout>

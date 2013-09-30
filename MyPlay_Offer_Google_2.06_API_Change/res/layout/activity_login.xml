@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    		  android:layout_width="match_parent"
+			  android:layout_height="match_parent"
+			  android:id="@+id/lmain"
+			  android:orientation="vertical">
+			  
+    <RelativeLayout android:layout_width="match_parent"
+        		 	android:layout_height="@dimen/login_actionbar_height"
+        		 	android:background="@drawable/background_login_actionbar">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/icon_hungama_logo_new" />
+        
+    </RelativeLayout>
+			  
+    <FrameLayout android:id="@+id/login_fragmant_container"
+        		 android:layout_width="match_parent"
+        		 android:layout_height="match_parent"
+        		 android:background="@drawable/background_login"/>
+
+</LinearLayout>

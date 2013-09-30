@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>	
+	
+    <!-- CM Servers -->
+
+	<string name="web_service_url_version">v46</string>
+	<string name="lc_id">en-us</string>
+	<string name="partner_id">3041</string> 
+	<string name="ws_ver">4.6</string>
+	<string name="api">0.46</string>
+	<!-- <string name="app_ver">0.0.0.55</string> -->
+	<string name="app_ver">2.06</string>
+	<string name="app_code">MYPLAY-ANDROID</string>
+	<string name="format">3.1</string>
+	<string name="referal_id">1</string> <!-- 1 is playstore -->
+	
+	<!-- Hungama Servers -->
+	
+	<!-- For h-fe -->
+<!--  	<string name="hungama_server_url">http://apistaging.hungama.com/myplay2/</string>
+	<string name="hungama_social_server_url">http://apistaging.hungama.com/myplaysocial/</string>
+	<string name="gigya_api_key">2_40t_esg1DScX0shHKgLPcolT2LMy4DHVoKxpis9yYhYDQvagpfsj2-gy4sk0IRKg</string>  
+	<string name="gigya_facebook_application_id">469850926362469</string>
+	<string name="web_service_url">h-fe.catchmedia.com</string>    -->
+	<!-- END h-fe -->
+	
+	<!-- For s-pa -->
+    <string name="hungama_server_url">http://api.hungama.com/myplay2/</string>
+	<string name="hungama_social_server_url">http://api.hungama.com/myplaysocial/</string>
+	<string name="gigya_api_key">2_aBV-CQ78LUtBJbUFqsbX40Hni6xfNuASSCrue4Pa2z8lYFXy7zOziRMT_ibqxv10</string>
+	<string name="gigya_facebook_application_id">103931556876</string> 
+	<string name="web_service_url">s-pa.catchmedia.com</string> 
+	<!-- END s-pa -->
+	
+	<!--<string name="hungama_version_check_server_url">http://ws-stag.hungama.com/applications/update</string>-->
+	<string name="hungama_version_check_server_url">http://ws.hungama.com/applications/update</string>
+	<!-- <string name="hungama_subscription_server_url">https://secure.hungama.com/hungamasignup/myplayupgrade/v2/</string> -->
+	<string name="hungama_subscription_server_url">https://secure.hungama.com/hungamasignup/myplayupgrade/v3/</string>
+	<string name="hungama_mobile_verification_server_url">https://secure.hungama.com/hungamasignup/mobileverify/</string>
+	<string name="hungama_download_server_url">https://secure.hungama.com/hungamasignup/myplaydownload/</string>
+	<!-- <string name="hungama_download_server_url_v2">https://secure.hungama.com/hungamasignup/myplaydownload/v2/</string> -->
+	<string name="hungama_download_server_url_v3">https://secure.hungama.com/hungamasignup/myplaydownload/v3/</string>
+	
+	<string name="hungama_server_url_term_of_use">http://202.87.41.147/hungamaone/t01.php</string>
+	<string name="hungama_server_url_faq">http://202.87.41.147/hungamaone/fo2.php?id=12&amp;nm=Hungama_Mobile_App</string>
+	<string name="hungama_server_url_privacy_policy">http://202.87.41.147/hungamaone/app_privacy_policy.php</string>
+	<string name="hungama_server_url_follow_facebook">https://www.facebook.com/Hungamacom?ref=ts</string>
+	<string name="hungama_server_url_follow_twitter">https://twitter.com/Hungama_com</string>
+	<string name="hungama_server_url_follow_google">https://plus.google.com/108320407093218123566/posts</string>
+	
+	<!-- key for all the requests api. -->
+	<string name="hungama_auth_key">HUN$12MP#0712</string>
+	
+	<!-- key that is used onlyn for the forgot password request. -->
+	<string name="hungama_forgot_password_server_url">https://secure.hungama.com/hungama/index.php/user/forgot</string>
+	<string name="hungama_forgot_password_key">c04ffdae250d1751c2d36a83ede0f120</string>	
+
+		
+	<string name="gigya_facebook_secret_key">6b4eb9a86606820c1b0fde42d7b4e4d7</string>
+	<string name="gigya_twitter_consumer_key">QegQdh8kFangG9kzUsa3w</string>
+	<string name="gigya_twitter_secret_key">RFHama8ajXG9T0qtmnALfApgUMRBSS6qr61jSGp4</string>
+	
+	<!-- Appirater on/off -->
+	<string name="rate_app_on_off">true</string>
+	
+	<!-- AdX properties -->
+	<string name="adx_app_name">com.hungama.myplay.activity</string>
+	<string name="adx_client_id">Hungind45789jo</string>
+	
+	<!-- In App Billing -->
+	<string name="base_64_key">MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApfPPciZRDbMMQs4I3HUflV+ntCBrvlKKrrbXkzH4G5m+lRugOPO/S38ABaLsKrDdosKrlL+/TFpNOXsWdgPzarQX84p58jXod48I0iSJtjHH+gTgvUnM5lBiZJrdzfwc+xCDMNVe1YIqSfTQ1SXgDcLdd1tNNGpRN7tLP5RFiwFrpfDevT29NNArH+vtXkC4cNcttSx7DwVfIdE0fSmZN1CtH+T2MKVTRzZgty3ZecGBoaUzbJejCPWwFUrOZCvo5FmL4gxYxjgrs4jhZ2wyn2cJLE2YImfMNrrnKSP6RMZQwyWnsOZd1hvEOgIQP9YXdHVGYxDQpSbbxTBpROM61QIDAQAB</string>
+	<string name="hungama_valuepack">hungama_valuepack</string>
+	<string name="hungama_alacarte">hungama_alacarte</string>
+	<string name="hungama_premium_subscription">hungama_premium_subscription</string>
+	
+</resources>

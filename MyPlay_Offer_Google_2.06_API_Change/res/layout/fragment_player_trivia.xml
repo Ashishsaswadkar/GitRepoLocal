@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/application_background_grey" >
+    
+    <RelativeLayout
+        android:id="@+id/player_trivia_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/player_content_title_height"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/player_trivia_title_bar_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/player_content_margin_side"
+            style="@style/TextMedium"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="@string/general_trivia" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/player_trivia_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:dividerHeight="0dp" />
+
+</LinearLayout>

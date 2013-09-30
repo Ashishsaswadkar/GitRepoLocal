@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical" >
+
+    <!-- Begin Coins Redeem -->
+
+    <LinearLayout
+        android:id="@+id/download_plans_redeem_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <RelativeLayout
+            android:id="@+id/title_text"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/login_forgot_password_test_message"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:gravity="left|center_vertical"
+                android:paddingBottom="5dp"
+                android:paddingLeft="@dimen/upgrade_mobile_required_margin_sides"
+                android:paddingTop="5dp"
+                android:text="@string/download_plans_google_wallet"
+                android:textColor="@color/upgrade_verification_resend_button_text_color"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/login_forgot_password_test_message1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignBaseline="@+id/login_forgot_password_test_message"
+                android:layout_toRightOf="@+id/login_forgot_password_test_message"
+                android:background="@color/white"
+                android:gravity="left|center_vertical"
+                android:paddingBottom="5dp"
+                android:paddingLeft="@dimen/upgrade_mobile_required_margin_sides"
+                android:paddingTop="5dp"
+                android:text="@string/download_plans_google_wallet_subscription"
+                android:textColor="@color/upgrade_verification_resend_button_text_color"
+                android:textSize="14dp" />
+
+            <ImageButton
+                android:id="@+id/tool_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@+id/login_forgot_password_test_message1"
+                android:background="@null"
+                android:src="@drawable/icon_help_plans" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@color/login_line_separator" />
+
+        <RelativeLayout
+            android:id="@+id/upgrade_plans_row"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/upgrade_period1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/upgrade_price1"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="@dimen/upgrade_mobile_required_margin_sides"
+                android:layout_marginTop="8dp"
+                android:text="@string/upgrade_plan_weekly"
+                android:textColor="@color/upgrade_plans_list_item_plan_period_text_color"
+                android:textSize="@dimen/login_button_text_size" />
+
+            <TextView
+                android:id="@+id/upgrade_price1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center|center_vertical"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:text="@string/upgrade_plan_price_only"
+                android:textColor="@color/upgrade_plans_list_item_plan_period_text_color"
+                android:textSize="@dimen/login_button_text_size"
+                android:visibility="gone" />
+
+            <ProgressBar
+                android:id="@+id/progressBar1"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/upgrade_button_subscribe1"
+                android:layout_width="@dimen/download_plans_buy_button_width_redeem"
+                android:layout_height="@dimen/login_button_height"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="@dimen/upgrade_mobile_required_margin_sides"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/background_button_blue"
+                android:clickable="false"
+                android:text="@string/membership_subscribe_button"
+                android:textColor="@color/white"
+                android:textSize="@dimen/login_button_text_size"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!-- End Coins Redeem -->
+
+</LinearLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/long_click_custom_dialog"
+    android:layout_width="@dimen/dialog_width"
+    android:layout_height="match_parent" >
+    
+     <LinearLayout
+        android:id="@+id/long_click_custom_dialog_title_row" 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/media_details_long_click_custom_dialog_row_height">
+        
+        <TextView 
+            android:id="@+id/long_click_custom_dialog_title_text"
+            android:layout_width="@dimen/media_details_long_click_custom_dialog_text_view_title_row_width"
+            android:layout_height="wrap_content"            
+            android:layout_gravity="left|center_vertical"
+            android:textColor="@color/white"
+            android:paddingLeft="@dimen/media_details_long_click_custom_dialog_text_view_title_row_padding_left"/>
+        
+        <ImageButton
+	        android:id="@+id/long_click_custom_dialog_title_image"
+	        android:layout_width="@dimen/media_details_long_click_custom_dialog_close_button_size"
+	        android:layout_height="@dimen/media_details_long_click_custom_dialog_close_button_size"
+	        android:background="@color/transparent"
+	        android:src="@drawable/icon_close_white"
+	        android:layout_gravity="right|center_vertical"/>
+        
+    </LinearLayout>
+    
+    <View 
+        android:id="@+id/long_click_custom_dialog_seperator1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/media_details_seperetor_height"
+        android:background="@color/media_details_seperator_background"
+        android:layout_below="@id/long_click_custom_dialog_title_row"/>
+    
+    <LinearLayout
+        android:id="@+id/long_click_custom_dialog_play_now_row" 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/media_details_long_click_custom_dialog_row_height"
+        android:background="@drawable/background_media_details_long_press_menu_item_selector"
+        android:layout_below="@+id/long_click_custom_dialog_seperator1">
+        
+        <TextView 
+            android:id="@+id/long_click_custom_dialog_play_now_text"
+            android:layout_width="@dimen/media_details_long_click_custom_dialog_text_view_row_width"
+            android:layout_height="wrap_content"
+            android:text="@string/social_network_facebook"
+            android:layout_gravity="left|center_vertical"
+            android:textColor="@color/black"
+            android:paddingLeft="@dimen/media_details_long_click_custom_dialog_text_view_row_padding_left"/>
+        
+        <ImageView
+	        android:id="@+id/long_click_custom_dialog_play_now_image"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/icon_invite_facebook"
+	        android:layout_gravity="right|center_vertical"/>
+        
+    </LinearLayout>
+    
+    <View 
+        android:id="@+id/long_click_custom_dialog_seperator2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/media_details_seperetor_height"
+        android:background="@color/media_details_seperator_background"
+        android:layout_below="@id/long_click_custom_dialog_play_now_row"/>
+    
+     <LinearLayout
+        android:id="@+id/long_click_custom_dialog_add_to_queue_row" 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/media_details_long_click_custom_dialog_row_height"
+        android:layout_below="@+id/long_click_custom_dialog_seperator2"
+        android:background="@drawable/background_media_details_long_press_menu_item_selector">
+        
+        <TextView 
+            android:id="@+id/long_click_custom_dialog_add_to_queue_text"
+            android:layout_width="@dimen/media_details_long_click_custom_dialog_text_view_row_width"
+            android:layout_height="wrap_content"
+            android:text="@string/social_network_twitter"
+            android:layout_gravity="left|center_vertical"
+            android:paddingLeft="@dimen/media_details_long_click_custom_dialog_text_view_row_padding_left"
+            android:textColor="@color/black"/>
+        
+        <ImageView
+	        android:id="@+id/long_click_custom_dialog_add_to_queue_image"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginRight="@dimen/media_details_long_click_custom_dialog_image_view_margin_right"
+	        android:src="@drawable/icon_invite_twitter"
+	        android:layout_gravity="right|center_vertical"/>
+        
+    </LinearLayout>
+    
+    <View 
+        android:id="@+id/long_click_custom_dialog_seperator4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/media_details_seperetor_height"
+        android:background="@color/media_details_seperator_background"
+        android:layout_below="@+id/long_click_custom_dialog_add_to_queue_row"/> 
+    
+ 
+</RelativeLayout>

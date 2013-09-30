@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- Discovery -->
+    
+    <dimen name="discovery_categories_selected_categories_height">200dp</dimen>
+    <dimen name="discovery_categories_selected_categories_margin_top">30dp</dimen>
+    
+    
+</resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="5dp" >
+
+    <CheckedTextView
+        android:id="@+id/campaigns_for_you_perview_album_list_item_play"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/checkbox_campaign_music_selection_selector"
+        android:button="@color/transparent"
+        android:clickable="true" />
+
+    <Button
+        android:id="@+id/campaigns_for_you_perview_album_list_item_price"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/fubutton_up"
+        android:text="GET"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/campaigns_for_you_perview_album_list_item_song_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_toLeftOf="@id/campaigns_for_you_perview_album_list_item_price"
+        android:layout_toRightOf="@id/campaigns_for_you_perview_album_list_item_play"
+        android:text="Name"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

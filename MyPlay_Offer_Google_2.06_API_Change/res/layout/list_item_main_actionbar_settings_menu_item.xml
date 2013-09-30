@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		      android:layout_width="match_parent"
+		      android:layout_height="@dimen/main_actionbar_settings_menu_item_height"
+		      android:orientation="horizontal"
+		      android:background="@drawable/background_main_actionbar_settings_menu_item_selector">
+
+    <ImageView
+        android:id="@+id/main_setting_menu_item_icon"
+        android:layout_width="@dimen/main_actionbar_settings_menu_item_icon_size"
+        android:layout_height="@dimen/main_actionbar_settings_menu_item_icon_size"
+        android:layout_marginLeft="@dimen/main_actionbar_settings_item_edge_margin"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@null" />
+
+    <TextView
+        android:id="@+id/main_setting_menu_item_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/main_setting_menu_item_icon"
+        android:layout_marginLeft="@dimen/main_actionbar_settings_menu_item_text_margin_left"
+        android:textColor="@color/main_actionbar_settings_menu_item_text"
+        android:textSize="@dimen/main_actionbar_settings_menu_item_text" />
+    
+    <View android:id="@+id/main_setting_menu_item_separator"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="@dimen/main_setting_line_separator"
+        android:background="@color/field_list_line_separator"/>
+
+</RelativeLayout>

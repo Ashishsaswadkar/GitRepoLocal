@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@color/transparent">
+
+    <TextView
+        android:id="@+id/discovery_mood_title"
+        style="@style/TextMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:text="@string/discovery_mood_title" />
+    
+    <View android:id="@+id/discovery_mood_next_skip_button_anchor"
+          android:layout_width="wrap_content"
+          android:layout_height="10dp"
+          android:layout_alignParentBottom="true"
+          android:layout_alignParentRight="true"/>
+    
+    <ImageButton
+        android:id="@+id/discovery_mood_next_skip_button"
+        android:layout_width="@dimen/discovery_mood_button_next_skip_width"
+        android:layout_height="@dimen/discovery_mood_button_next_skip_height"
+        android:layout_above="@+id/discovery_mood_next_skip_button_anchor"
+        android:background="@drawable/background_discovery_button_skip"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/discovery_mood_second_raw_item_margin_side"
+        android:src="@null" />
+    
+    <com.hungama.myplay.activity.ui.view.moods.DragLayer
+		    android:id="@+id/discovery_mood_draglayer"
+		    android:layout_below="@+id/discovery_mood_title"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent">
+	    
+	    <RelativeLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1" >
+	        
+		    <LinearLayout 
+				android:id="@+id/discovery_mood_selected_item"
+		        android:layout_width="@dimen/discovery_mood_selected_item"
+		        android:layout_height="@dimen/discovery_mood_selected_item"
+		        android:layout_below="@+id/discovery_mood_title"
+		        android:layout_centerHorizontal="true"
+		        android:layout_marginTop="@dimen/discovery_mood_selected_item_margin_top"
+		        android:background="@drawable/background_discovery_selected_mood"
+		        android:orientation="vertical" 
+		        android:gravity="center">
+	        
+			    <ImageView
+		            android:id="@+id/discovery_mood_selected_item_icon"
+		            android:layout_width="@dimen/discovery_mood_selected_item_size"
+		            android:layout_height="@dimen/discovery_mood_selected_item_size"
+		            android:visibility="gone"/>
+		
+		        <TextView
+		            android:id="@+id/discovery_mood_selected_item_title"
+		            android:layout_width="@dimen/discovery_mood_selected_item_text_width"
+		            android:layout_height="wrap_content"
+		            android:layout_marginTop="7dp"
+		            android:gravity="center_horizontal"
+		            android:text="@string/discovery_mood_selected_item_default_text"
+		            android:textColor="@color/discovery_mood_selected_item_text"
+		            android:textSize="@dimen/discovery_mood_selected_item_text_size" />
+	        
+	        </LinearLayout>
+	        
+		    <com.hungama.myplay.activity.ui.view.moods.DropSpot
+		        android:id="@+id/discovery_mood_dropspot"
+		        android:layout_width="@dimen/discovery_mood_selected_item"
+	        	android:layout_height="@dimen/discovery_mood_selected_item"
+	        	android:layout_below="@+id/discovery_mood_title"
+	        	android:layout_centerHorizontal="true"
+	        	android:layout_marginTop="@dimen/discovery_mood_selected_item_margin_top"
+	        	android:background="@color/transparent"/>
+        
+	        <ImageView
+	            android:id="@+id/discovery_mood_item1"
+	            android:layout_width="@dimen/discovery_mood_item_size"
+	            android:layout_height="@dimen/discovery_mood_item_size"
+	            android:layout_alignParentLeft="true"
+	            android:layout_alignParentTop="true"
+	            android:layout_marginLeft="@dimen/discovery_mood_first_raw_item_margin_side"
+	            android:layout_marginTop="@dimen/discovery_mood_first_raw_item_margin_top"
+	            android:src="@drawable/background_discovery_mood_dumb_mood"
+	            android:visibility="invisible" />
+	        
+	        <ImageView
+	            android:id="@+id/discovery_mood_item2"
+	            android:layout_width="@dimen/discovery_mood_item_size"
+	            android:layout_height="@dimen/discovery_mood_item_size"
+	            android:layout_alignParentRight="true"
+	            android:layout_alignParentTop="true"
+	            android:layout_marginRight="@dimen/discovery_mood_first_raw_item_margin_side"
+	            android:layout_marginTop="@dimen/discovery_mood_first_raw_item_margin_top"
+	            android:src="@drawable/background_discovery_mood_dumb_mood"
+	            android:visibility="invisible" />
+	
+	        <ImageView
+	            android:id="@+id/discovery_mood_item3"
+	            android:layout_width="@dimen/discovery_mood_item_size"
+	            android:layout_height="@dimen/discovery_mood_item_size"
+	            android:layout_alignParentLeft="true"
+	            android:layout_below="@+id/discovery_mood_item1"
+	            android:layout_marginLeft="@dimen/discovery_mood_second_raw_item_margin_side"
+	            android:layout_marginTop="@dimen/discovery_mood_second_raw_item_margin_top"
+	            android:src="@drawable/background_discovery_mood_dumb_mood"
+	            android:visibility="invisible" />
+	
+	        <ImageView
+	            android:id="@+id/discovery_mood_item4"
+	            android:layout_width="@dimen/discovery_mood_item_size"
+	            android:layout_height="@dimen/discovery_mood_item_size"
+	            android:layout_alignBottom="@+id/discovery_mood_item3"
+	            android:layout_alignParentRight="true"
+	            android:layout_marginRight="@dimen/discovery_mood_second_raw_item_margin_side"
+	            android:src="@drawable/background_discovery_mood_dumb_mood"
+	            android:visibility="invisible" />
+	
+	        <ImageView
+	            android:id="@+id/discovery_mood_item5"
+	            android:layout_width="@dimen/discovery_mood_item_size"
+	            android:layout_height="@dimen/discovery_mood_item_size"
+	            android:layout_alignLeft="@+id/discovery_mood_item1"
+	            android:layout_below="@+id/discovery_mood_item3"
+	            android:layout_marginTop="@dimen/discovery_mood_third_raw_item_margin_top"
+	            android:src="@drawable/background_discovery_mood_dumb_mood"
+	            android:visibility="invisible" />
+	
+	        <ImageView
+	            android:id="@+id/discovery_mood_item6"
+	            android:layout_width="@dimen/discovery_mood_item_size"
+	            android:layout_height="@dimen/discovery_mood_item_size"
+	            android:layout_alignRight="@+id/discovery_mood_item2"
+	            android:layout_alignTop="@+id/discovery_mood_item5"
+	            android:src="@drawable/background_discovery_mood_dumb_mood"
+	            android:visibility="invisible" />
+	
+            <ImageView
+                android:id="@+id/discovery_mood_item7"
+                android:layout_width="@dimen/discovery_mood_item_size"
+                android:layout_height="@dimen/discovery_mood_item_size"
+                android:layout_below="@+id/discovery_mood_item3"
+                android:layout_toRightOf="@+id/discovery_mood_item5"
+                android:layout_marginTop="@dimen/discovery_mood_forth_raw_item_margin_top"
+                android:layout_marginLeft="@dimen/discovery_mood_third_raw_item_margin"
+                android:src="@drawable/background_discovery_mood_dumb_mood"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/discovery_mood_item8"
+                android:layout_width="@dimen/discovery_mood_item_size"
+                android:layout_height="@dimen/discovery_mood_item_size"
+				android:layout_below="@+id/discovery_mood_item4"
+                android:layout_toLeftOf="@+id/discovery_mood_item6"
+                android:layout_marginTop="@dimen/discovery_mood_forth_raw_item_margin_top"
+                android:layout_marginRight="@dimen/discovery_mood_third_raw_item_margin"                
+                android:src="@drawable/background_discovery_mood_dumb_mood"
+                android:visibility="invisible" />
+
+	    </RelativeLayout>
+    
+    </com.hungama.myplay.activity.ui.view.moods.DragLayer>
+    
+
+</RelativeLayout>

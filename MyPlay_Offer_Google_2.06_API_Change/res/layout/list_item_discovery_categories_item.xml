@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/discovery_categories_category"
+    android:layout_width="@dimen/discovery_categories_item_width"
+    android:layout_height="@dimen/discovery_categories_item_height"
+    android:background="@drawable/background_discovery_categories_item" >
+
+    <TextView
+        android:id="@+id/discovery_categories_category_collapse_indicator"
+        style="@style/TextSmallMedium"
+        android:layout_width="@dimen/discovery_categories_item_indication_size"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/discovery_categories_item_side_margin"
+        android:text="@string/application_collapse_sign"
+        android:textSize="@dimen/discovery_categories_collapse_sign_size"
+        android:gravity="center"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/discovery_categories_category_name"
+        style="@style/TextSmallMedium"
+        android:textSize="@dimen/discovery_categories_collapse_sign_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/discovery_categories_item_side_margin"
+        android:layout_toRightOf="@+id/discovery_categories_category_collapse_indicator"/>
+
+</RelativeLayout>

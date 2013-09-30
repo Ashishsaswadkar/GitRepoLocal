@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    			android:layout_width="match_parent"
+    			android:layout_height="match_parent"
+    			android:background="@color/white">
+    			
+    <RelativeLayout android:id="@+id/main_title_bar"
+        			android:layout_width="match_parent"
+            		android:layout_height="@dimen/main_title_bar_height" 
+            		android:layout_alignParentTop="true"
+            		android:background="@drawable/background_home_tabwidget_tab_unselected"
+            		android:visibility="gone">
+
+        <TextView
+            android:id="@+id/main_title_bar_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            style="@style/TextMedium"/>
+        
+        <ImageButton
+            android:id="@+id/main_title_bar_button_options"
+            android:layout_width="@dimen/main_title_bar_options_button_width"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:src="@drawable/background_main_title_bar_button_options_selector"
+            android:onClick="onOptionsClicked"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+    			
+    <FrameLayout android:id="@+id/main_fragmant_container"
+        		 android:layout_width="match_parent"
+        		 android:layout_height="match_parent"
+        		 android:background="@null"
+        		 android:layout_below="@+id/main_title_bar"
+        		 android:layout_marginBottom="@dimen/main_player_bar_height"/>
+    
+    <FrameLayout android:id="@+id/main_navigation_fragmant_container"
+        		 android:layout_width="match_parent"
+        		 android:layout_height="match_parent"
+        		 android:layout_marginBottom="@dimen/main_player_bar_height"
+        		 android:background="@null"/>
+
+    <!-- <fragment android:id="@+id/main_fragmant_player_bar"
+        	  android:name="com.hungama.myplay.activity.ui.fragments.PlayerBarFragment"
+        	  android:layout_width="match_parent"
+		      android:layout_height="match_parent"
+		      android:layout_alignParentBottom="true"
+		      /> -->
+    
+
+</RelativeLayout>

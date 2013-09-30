@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- Discovery -->
+    
+    <dimen name="discovery_categories_selected_categories_height">145dp</dimen>
+    <dimen name="discovery_categories_selected_categories_margin_top">30dp</dimen>
+    
+    <dimen name="discovery_categories_selected_item_width">140dp</dimen>
+    
+    <dimen name="background_discovery_categories_imdone_size">80dp</dimen>
+    <dimen name="background_discovery_categories_selected_mood_margin_right">75dp</dimen>
+    <dimen name="background_discovery_categories_selected_mood_bubble_size">60dp</dimen>
+    
+</resources>

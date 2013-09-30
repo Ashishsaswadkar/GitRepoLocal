@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- Discovery - Categories -->
+    
+    <dimen name="discovery_categories_categories">170dp</dimen>
+    <dimen name="discovery_categories_item_height">40dp</dimen>
+    <dimen name="discovery_categories_item_width">165dp</dimen>
+    <dimen name="discovery_categories_item_option_icon_size">21dp</dimen>
+    <dimen name="discovery_categories_item_margin_right">35dp</dimen>
+    <dimen name="discovery_categories_item_side_margin">5dp</dimen>
+    <dimen name="discovery_categories_item_indication_size">30dp</dimen>
+    <dimen name="discovery_categories_sub_item_padding_left">10dp</dimen>
+    
+    <dimen name="discovery_categories_selected_item_width">165dp</dimen>
+    
+    <dimen name="discovery_categories_selected_categories_height">190dp</dimen>
+    <dimen name="discovery_categories_selected_categories_margin_top">30dp</dimen>
+    <dimen name="background_discovery_categories_imdone_size">100dp</dimen>
+    <dimen name="background_discovery_categories_selected_mood_margin_right">90dp</dimen>
+    <dimen name="background_discovery_categories_selected_mood_bubble_size">60dp</dimen>  
+    
+</resources>

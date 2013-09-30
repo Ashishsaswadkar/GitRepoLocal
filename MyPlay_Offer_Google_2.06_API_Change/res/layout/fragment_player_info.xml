@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@+id/main_player_content_actions_full"
+    android:layout_below="@+id/main_player_content_info_bar"
+    android:background="@color/application_background_grey"
+    android:paddingBottom="@dimen/player_content_margin_side"
+    android:paddingLeft="@dimen/player_content_margin_side"
+    android:paddingRight="@dimen/player_content_margin_side">
+
+    <LinearLayout
+        android:id="@+id/relativelayout_top_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/video_player_info_page_padding"
+        android:paddingTop="@dimen/video_player_info_page_padding" >
+
+        <TextView
+            android:id="@+id/textview_top_row_upper_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/video_player_info_page_top_row_upper_text"
+            android:textColor="@color/black"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textview_top_row_bottom_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/video_player_info_page_top_row_bottom_text"
+            android:textColor="@color/video_player_info_page_top_row_bottom_text_color"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollview_info_page"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativelayout_top_row" >
+
+        <TableLayout
+            android:id="@+id/tablelayout_info_page"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TableRow
+                android:id="@+id/seperator_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/media_details_seperetor_height"
+                    android:layout_weight="1"
+                    android:background="@color/media_details_seperator_background" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tablerow_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/video_player_info_page_padding"
+                android:paddingTop="@dimen/video_player_info_page_padding" >
+
+                <TextView
+                    android:id="@+id/textview_row_1_left"
+                    style="@style/videoPlayeInfoRowText"
+                    android:layout_width="@dimen/video_player_info_page_row_width"
+                    android:text="@string/video_player_info_page_album_year" />
+                
+                <LinearLayout 
+   	                android:layout_weight="0.5"
+    	            android:id="@+id/textview_row_1_right"
+    	            style="@style/videoPlayeInfoRowText"
+    	            android:paddingRight="2dp"
+    	            android:orientation="vertical">
+		    	            
+		    	</LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/seperator_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/media_details_seperetor_height"
+                    android:layout_weight="1"
+                    android:background="@color/media_details_seperator_background" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tablerow_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/video_player_info_page_padding"
+                android:paddingTop="@dimen/video_player_info_page_padding" >
+
+                <TextView
+                    android:id="@+id/textview_row_2_left"
+                    style="@style/videoPlayeInfoRowText"
+                    android:layout_width="@dimen/video_player_info_page_row_width"
+                    android:text="@string/video_player_info_page_language_category" />
+
+               	<LinearLayout 
+   	                android:layout_weight="0.5"
+    	            android:id="@+id/textview_row_2_right"
+    	            style="@style/videoPlayeInfoRowText"
+    	            android:paddingRight="2dp"
+    	            android:orientation="vertical">
+				</LinearLayout>
+				
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/seperator_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/media_details_seperetor_height"
+                    android:layout_weight="1"
+                    android:background="@color/media_details_seperator_background" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tablerow_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/video_player_info_page_padding"
+                android:paddingTop="@dimen/video_player_info_page_padding" >
+
+                <TextView
+                    android:id="@+id/textview_row_3_left"
+                    style="@style/videoPlayeInfoRowText"
+                    android:layout_width="@dimen/video_player_info_page_row_width"
+                    android:text="@string/video_player_info_page_mood" />
+
+                <LinearLayout 
+   	                android:layout_weight="0.5"
+    	            android:id="@+id/textview_row_3_right"
+    	            style="@style/videoPlayeInfoRowText"
+    	            android:paddingRight="2dp"
+    	            android:orientation="vertical">
+		    	            
+				</LinearLayout>
+		    	        
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/seperator_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/media_details_seperetor_height"
+                    android:layout_weight="1"
+                    android:background="@color/media_details_seperator_background" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tablerow_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/video_player_info_page_padding"
+                android:paddingTop="@dimen/video_player_info_page_padding" >
+
+                <TextView
+                    android:id="@+id/textview_row_4_left"
+                    style="@style/videoPlayeInfoRowText"
+                    android:layout_width="@dimen/video_player_info_page_row_width"
+                    android:text="@string/video_player_info_page_genre_sub_genre" />
+
+                <LinearLayout
+   	                android:layout_weight="0.5" 
+    	            android:id="@+id/textview_row_4_right"
+    	            style="@style/videoPlayeInfoRowText"
+    	            android:paddingRight="2dp"
+    	            android:orientation="vertical">
+    	            
+    	        </LinearLayout>
+		    	        
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/seperator_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/media_details_seperetor_height"
+                    android:layout_weight="1"
+                    android:background="@color/media_details_seperator_background" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tablerow_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/video_player_info_page_padding"
+                android:paddingTop="@dimen/video_player_info_page_padding" >
+
+                <TextView
+                    android:id="@+id/textview_row_5_left"
+                    style="@style/videoPlayeInfoRowText"
+                    android:layout_width="@dimen/video_player_info_page_row_width"
+                    android:text="@string/video_player_info_page_music" />
+
+                <LinearLayout 
+   	                android:layout_weight="0.5"
+    	            android:id="@+id/textview_row_5_right"
+    	            style="@style/videoPlayeInfoRowText"
+    	            android:paddingRight="2dp"
+    	            android:orientation="vertical">
+    	            
+    	        </LinearLayout>
+		    	        
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/seperator_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/media_details_seperetor_height"
+                    android:layout_weight="1"
+                    android:background="@color/media_details_seperator_background" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tablerow_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/video_player_info_page_padding"
+                android:paddingTop="@dimen/video_player_info_page_padding" >
+
+                <TextView
+                    android:id="@+id/textview_row_6_left"
+                    style="@style/videoPlayeInfoRowText"
+                    android:layout_width="@dimen/video_player_info_page_row_width"
+                    android:text="@string/video_player_info_page_singers" />
+
+   	            <LinearLayout
+   	                android:layout_weight="0.5" 
+    	            android:id="@+id/textview_row_6_right"
+    	            style="@style/videoPlayeInfoRowText"
+    	            android:paddingRight="2dp"
+    	            android:orientation="vertical">
+    	            
+    	        </LinearLayout>	 
+    	           
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/seperator_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/media_details_seperetor_height"
+                    android:layout_weight="1"
+                    android:background="@color/media_details_seperator_background" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tablerow_7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/video_player_info_page_padding"
+                android:paddingTop="@dimen/video_player_info_page_padding" >
+
+                <TextView
+                    android:id="@+id/textview_row_7_left"
+                    style="@style/videoPlayeInfoRowText"
+                    android:layout_width="@dimen/video_player_info_page_row_width"
+                    android:text="@string/video_player_info_page_cast" />
+
+                <LinearLayout 
+   	                android:layout_weight="0.5"
+    	            android:id="@+id/textview_row_7_right"
+    	            style="@style/videoPlayeInfoRowText"
+    	            android:paddingRight="2dp"
+    	            android:orientation="vertical">
+    	            
+    	        </LinearLayout>
+		    	        
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/seperator_7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/media_details_seperetor_height"
+                    android:layout_weight="1"
+                    android:background="@color/media_details_seperator_background" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tablerow_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/video_player_info_page_padding"
+                android:paddingTop="@dimen/video_player_info_page_padding" >
+
+                <TextView
+                    android:id="@+id/textview_row_8_left"
+                    style="@style/videoPlayeInfoRowText"
+                    android:layout_width="@dimen/video_player_info_page_row_width"
+                    android:text="@string/video_player_info_page_lyrics" />
+
+                <LinearLayout 
+   	                android:layout_weight="0.5"
+    	            android:id="@+id/textview_row_8_right"
+    	            style="@style/videoPlayeInfoRowText"
+    	            android:paddingRight="2dp"
+    	            android:orientation="vertical">
+    	            
+    	        </LinearLayout>
+		    	        
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/seperator_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/media_details_seperetor_height"
+                    android:layout_weight="1"
+                    android:background="@color/media_details_seperator_background" />
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/white"
+    android:paddingBottom="15dp">
+
+    <RelativeLayout
+        android:id="@+id/custom_dialog_title_row"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/media_details_long_click_custom_dialog_row_height"
+        android:background="@color/video_upgrade_dialog_title_backgournd_color"
+        android:paddingLeft="@dimen/media_details_long_click_custom_dialog_text_view_title_row_padding_left"
+        android:paddingRight="@dimen/media_details_long_click_custom_dialog_text_view_title_row_padding_left" >
+
+        <TextView
+            android:id="@+id/download_custom_dialog_title_text"
+            android:layout_width="@dimen/media_details_long_click_custom_dialog_text_view_row_width"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/sleep_mode_dialog_title"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/close_button"
+            android:layout_width="@dimen/media_details_long_click_custom_dialog_close_button_size"
+            android:layout_height="@dimen/media_details_long_click_custom_dialog_close_button_size"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="right|center_vertical"
+            android:background="@color/transparent"
+            android:src="@drawable/icon_close_white" />
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/times_radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/custom_dialog_title_row"
+        android:visibility="visible" >
+
+        <RadioButton
+            android:id="@+id/radio15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/sleep_mode_15_mins"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider_listview_color" />
+
+        <RadioButton
+            android:id="@+id/radio30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sleep_mode_30_mins"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider_listview_color" />
+
+        <RadioButton
+            android:id="@+id/radio45"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sleep_mode_45_mins"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider_listview_color" />
+
+        <RadioButton
+            android:id="@+id/radio60"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sleep_mode_60_mins"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider_listview_color" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/times_radio_group"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:id="@+id/remaining_time_text"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp" 
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="15dp"
+        android:text="@string/mins_to_sleep"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/start_timer_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/remaining_time_text"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/start_timer_button_text"
+        android:textSize="16dp"
+        android:background="@drawable/background_button_blue"
+        android:textColor="@color/white" 
+        android:layout_marginBottom="15dp"/>
+
+</RelativeLayout>

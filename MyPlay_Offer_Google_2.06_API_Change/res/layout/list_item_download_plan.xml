@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/upgrade_plans_row"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/white"
+    android:orientation="horizontal" >   
+        
+        <TextView
+	        android:id="@+id/upgrade_period"
+	        android:layout_width="160dp"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="left|center_vertical"
+	        android:layout_marginTop="12dp"
+	        android:layout_marginBottom="12dp"
+	        android:layout_marginRight="@dimen/upgrade_mobile_required_margin_sides"
+	        android:layout_marginLeft="20dp"
+	        android:textColor="@color/upgrade_plans_list_item_plan_period_text_color"
+	        android:textSize="@dimen/login_button_text_size"
+	        android:text="@string/upgrade_plan_weekly"
+	        android:layout_alignParentLeft="true"/>
+    
+		<TextView
+	        android:id="@+id/upgrade_price"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center|center_vertical"
+	        android:layout_marginTop="12dp"
+	        android:layout_marginBottom="12dp"
+	        android:textColor="@color/upgrade_plans_list_item_plan_period_text_color"
+	        android:textSize="@dimen/login_button_text_size"
+	        android:text="@string/upgrade_plan_price_only"
+	        android:layout_centerInParent="true"/>    
+
+	    <Button
+	        android:id="@+id/upgrade_button_subscribe"
+	        android:layout_width="@dimen/download_plans_buy_button_width"
+	        android:layout_height="@dimen/login_button_height"
+	        android:layout_marginLeft="@dimen/upgrade_mobile_required_margin_sides"
+	        android:layout_marginTop="12dp"
+	        android:layout_marginBottom="12dp"
+	        android:layout_marginRight="20dp"
+	        android:background="@drawable/background_button_blue"
+	        android:text="@string/upgrade_plan_button_subscribe"
+	        android:textColor="@color/white"
+	        android:textSize="@dimen/login_button_text_size"
+	        android:layout_gravity="right|center_vertical"
+	        android:textStyle="bold" 
+	        android:layout_alignParentRight="true"/>
+ 
+</RelativeLayout>

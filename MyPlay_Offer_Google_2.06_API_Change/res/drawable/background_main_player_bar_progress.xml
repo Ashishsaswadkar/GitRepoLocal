@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<item android:id="@android:id/background">
+	    <color android:color="@color/main_player_bar_progress_bar_background"/>
+	</item>
+
+	<item android:id="@android:id/secondaryProgress">
+	    <clip android:drawable="@color/main_player_bar_progress_bar_secondary_progress"/>
+	</item>
+
+	<item android:id="@android:id/progress">
+	    <clip android:drawable="@color/main_player_bar_progress_bar_progress"/>
+	</item>
+
+</layer-list>

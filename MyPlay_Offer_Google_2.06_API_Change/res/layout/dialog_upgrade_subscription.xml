@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/long_click_custom_dialog"
+    android:layout_width="@dimen/dialog_width"
+    android:layout_height="match_parent"    
+    android:orientation="vertical">
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/media_details_long_click_custom_dialog_row_height"
+        android:background="@color/video_upgrade_dialog_title_backgournd_color">   
+	    <TextView 
+	        android:id="@+id/video_upgrade_custom_dialog_title_text"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:textColor="@color/white"
+	        android:textSize="18dp"	        
+	        android:layout_gravity="center_vertical"
+	        android:gravity="center_vertical"
+	   		android:paddingLeft="@dimen/media_details_long_click_custom_dialog_text_view_title_row_padding_left"/>
+	    
+	    <ImageButton
+	            android:id="@+id/close_button"
+	            android:layout_width="wrap_content"
+	            android:layout_height="match_parent"
+	            android:layout_alignParentRight="true"
+	            android:layout_centerVertical="true"
+	            android:layout_gravity="right|center_vertical"
+	            android:background="@color/transparent"
+	            android:src="@drawable/icon_close_white"
+	            android:padding="5dp" />
+	
+	</RelativeLayout> 
+    
+    <View 
+        android:id="@+id/long_click_custom_dialog_seperator1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/media_details_seperetor_height"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/media_details_long_click_custom_dialog_text_view_title_row_padding_left">
+        
+	    <TextView 
+	        android:id="@+id/video_upgrade_custom_dialog_text"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="left|center_vertical"
+	        android:textColor="@color/black"
+	        android:paddingTop="12dp"
+	        android:paddingBottom="12dp"
+	        android:paddingLeft="@dimen/media_details_long_click_custom_dialog_text_view_row_padding_left"/>
+	    
+	    <Button 
+	        android:id="@+id/button_upgrade"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/background_button_blue"
+	        android:textColor="@color/white"
+	        android:layout_marginTop="@dimen/media_details_long_click_custom_dialog_text_view_title_row_padding_left"
+	        android:layout_marginBottom="@dimen/media_details_long_click_custom_dialog_text_view_title_row_padding_left"
+	        android:text="@string/video_player_upgrade_button_text"
+	        android:paddingRight="10dp"
+	        android:paddingLeft="10dp"/>
+	    
+	 </LinearLayout>
+	    
+</LinearLayout> 
+

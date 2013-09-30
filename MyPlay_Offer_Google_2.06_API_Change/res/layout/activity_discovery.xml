@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    			android:layout_width="match_parent"
+    			android:layout_height="match_parent">
+    			
+    <RelativeLayout android:id="@+id/main_title_bar"
+        			android:layout_width="match_parent"
+            		android:layout_height="@dimen/main_title_bar_height" 
+            		android:layout_alignParentTop="true"
+            		android:background="@drawable/background_home_tabwidget_tab_unselected">
+
+        <TextView
+            android:id="@+id/main_title_bar_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/main_title_bar_button_options"
+            android:layout_marginLeft="@dimen/main_title_bar_options_button_width"
+            android:gravity="center"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            style="@style/TextMedium"/>
+        
+        <ImageButton
+            android:id="@+id/main_title_bar_button_options"
+            android:layout_width="@dimen/main_title_bar_options_button_width"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:src="@drawable/background_main_title_bar_button_options_selector"
+            android:onClick="onOptionsClicked" />
+
+    </RelativeLayout>
+    			
+	<FrameLayout android:id="@+id/main_fragmant_container"
+        		 android:layout_width="match_parent"
+        		 android:layout_height="match_parent"
+        		 android:layout_below="@+id/main_title_bar"
+        		 android:layout_marginBottom="@dimen/main_player_bar_margin_from_it"
+        		 android:background="@drawable/background_discovery"/>
+
+    
+    <RelativeLayout android:layout_width="match_parent"
+        		    android:layout_height="match_parent"
+        		    android:layout_below="@+id/main_title_bar"
+        		 	android:layout_marginBottom="@dimen/main_player_bar_margin_from_it"
+        		 	android:background="@null">
+        
+        <ImageButton
+            android:id="@+id/discovery_button_close_moods"
+            android:layout_width="@dimen/curved_button_size"
+        	android:layout_height="@dimen/curved_button_size"
+            style="@style/LeftTopCurvedBlueButton"
+            android:src="@drawable/icon_discover_white"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:visibility="gone"/>
+
+    	<ImageButton
+        	android:id="@+id/discovery_button_close_categories"
+            android:layout_width="@dimen/curved_button_size"
+        	android:layout_height="@dimen/curved_button_size"
+            style="@style/RightTopCurvedBlueButton"
+            android:src="@drawable/icon_discover_white"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"/>
+    	
+    	<ImageButton
+            android:id="@+id/discovery_button_close_tempo"
+            android:layout_width="@dimen/curved_button_size"
+        	android:layout_height="@dimen/curved_button_size"
+            style="@style/RightBottomCurvedBlueButton"
+            android:src="@drawable/icon_discover_white"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"/>
+
+    	<ImageButton
+        	android:id="@+id/discovery_button_close_era"
+            android:layout_width="@dimen/curved_button_size"
+        	android:layout_height="@dimen/curved_button_size"
+            style="@style/LeftBottomCurvedBlueButton"
+            android:src="@drawable/icon_discover_white"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:visibility="gone"/>
+
+    	<LinearLayout
+    	    android:id="@+id/discovery_options"
+    	    android:layout_width="@dimen/main_title_bar_options_panel_width"
+    	    android:layout_height="wrap_content"
+    	    android:layout_alignParentRight="true"
+    	    android:layout_alignParentTop="true"
+    	    android:orientation="vertical" 
+    	    android:background="@color/black"
+    	    android:visibility="gone">
+    	    
+    	    
+    	    <Button android:id="@+id/discovery_options_add_all_to_queue"
+    	    		android:layout_width="match_parent"
+    	    		android:layout_height="@dimen/main_title_bar_options_panel_item_height"
+    	    		style="@style/TitleBarOptionsItem"
+    	    		android:text="@string/discovery_options_add_all_to_queue"
+    	    		android:onClick="onOptionsItemAddAllToQueueClicked"/>
+    	    
+    	    <View android:layout_width="match_parent"
+        	  	  android:layout_height="1px"
+        	      android:background="@color/application_options_line_separator"/>
+    	    
+    	    <Button android:id="@+id/discovery_options_save_discovery"
+    	    		android:layout_width="match_parent"
+    	    		android:layout_height="@dimen/main_title_bar_options_panel_item_height"
+    	    		style="@style/TitleBarOptionsItem"
+    	    		android:text="@string/discovery_options_save_discovery"
+    	    		android:onClick="onOptionsItemSaveDiscoveryClicked"/>
+    	        	    
+    	    <View android:layout_width="match_parent"
+        	  	  android:layout_height="1px"
+        	      android:background="@color/application_options_line_separator"/>
+    	        	        	    
+    	    <Button android:id="@+id/discovery_options_start_new_discovery"
+    	    		android:layout_width="match_parent"
+    	    		android:layout_height="@dimen/main_title_bar_options_panel_item_height"
+    	    		style="@style/TitleBarOptionsItem"
+    	    		android:text="@string/discovery_options_start_new_discovery"
+    	    		android:onClick="onOptionsItemStartNewDiscovery"/>
+    	    
+    	    <View android:layout_width="match_parent"
+        	  	  android:layout_height="1px"
+        	      android:background="@color/application_options_line_separator"/>
+    	    
+    	    <Button android:id="@+id/discovery_options_load_my_discoveries"
+    	    		android:layout_width="match_parent"
+    	    		android:layout_height="@dimen/main_title_bar_options_panel_item_height"
+    	    		style="@style/TitleBarOptionsItem"
+    	    		android:text="@string/discovery_options_load_my_discoveries"
+    	    		android:onClick="onOptionsItemLoadMyDiscoveriesClicked"/>
+    	        	        	        	    
+    	</LinearLayout>
+        
+    </RelativeLayout>
+    
+    <FrameLayout
+        android:id="@+id/main_navigation_fragmant_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/main_player_bar_margin_from_it"
+        android:background="@null"
+        android:visibility="visible" />
+
+    <fragment android:id="@+id/main_fragmant_player_bar"
+        	  android:name="com.hungama.myplay.activity.ui.fragments.PlayerBarFragment"
+        	  android:layout_width="match_parent"
+		      android:layout_height="match_parent"
+		      android:layout_alignParentBottom="true"/>
+    
+</RelativeLayout>

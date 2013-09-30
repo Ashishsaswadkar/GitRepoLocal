@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+
+    <RelativeLayout
+        android:id="@+id/discovery_tempo_container"
+        android:layout_width="@dimen/discovery_tempo_size"
+        android:layout_height="@dimen/discovery_tempo_size"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/background_discovery_tempo" >
+
+        <RelativeLayout
+            android:id="@+id/discovery_tempo_selection"
+            android:layout_width="@dimen/discovery_tempo_selection_width"
+            android:layout_height="@dimen/discovery_tempo_selection_heigh"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/curved_button_size"
+            android:layout_marginRight="@dimen/discovery_tempo_selection_margin_right"
+            android:background="@drawable/background_discovery_tempo_selection" >
+
+            <Button
+                android:id="@+id/discovery_tempo_button_high"
+                android:layout_width="@dimen/discovery_tempo_item_size"
+                android:layout_height="@dimen/discovery_tempo_item_size"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/background_discovery_tempo_item_unselected"
+                android:text="@string/discovery_tempo_high"
+                android:textColor="@color/white"
+                android:textSize="@dimen/discovery_tempo_item_text_size"/>
+            
+            <Button
+                android:id="@+id/discovery_tempo_button_medium"
+                android:layout_width="@dimen/discovery_tempo_item_size"
+                android:layout_height="@dimen/discovery_tempo_item_size"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="@dimen/discovery_tempo_item_size"
+                android:background="@drawable/background_discovery_tempo_item_unselected"
+                android:text="@string/discovery_tempo_medium"
+                android:textColor="@color/white" 
+                android:textSize="@dimen/discovery_tempo_item_text_size"/>
+            
+            <Button
+                android:id="@+id/discovery_tempo_button_low"
+                android:layout_width="@dimen/discovery_tempo_item_size"
+                android:layout_height="@dimen/discovery_tempo_item_size"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/discovery_tempo_item_size"
+                android:background="@drawable/background_discovery_tempo_item_unselected"
+                android:text="@string/discovery_tempo_low"
+                android:textColor="@color/white" 
+                android:textSize="@dimen/discovery_tempo_item_text_size"/>
+            
+            <Button
+                android:id="@+id/discovery_tempo_button_auto"
+                android:layout_width="@dimen/discovery_tempo_item_size"
+                android:layout_height="@dimen/discovery_tempo_item_size"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/background_discovery_tempo_item_unselected"
+                android:text="@string/discovery_tempo_auto"
+                android:textColor="@color/white" 
+                android:textSize="@dimen/discovery_tempo_item_text_size"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/discovery_tempo_selection"
+            android:layout_alignParentBottom="true"
+            android:textSize="@dimen/discovery_tempo_title_size"
+            android:textColor="@color/white"
+            android:text="@string/discovery_tempo" />
+    </RelativeLayout>
+
+</RelativeLayout>

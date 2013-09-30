@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/search_auto_suggest_name"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:textSize="16dp"
+    android:textColor="@color/search_fragment_categories_text_color"
+    android:gravity="left|center_vertical"
+	android:background="@color/white"
+  	android:paddingLeft="5dp"	/>

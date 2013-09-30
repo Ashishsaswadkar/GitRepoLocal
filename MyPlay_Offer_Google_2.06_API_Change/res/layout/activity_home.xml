@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    			android:layout_width="match_parent"
+    			android:layout_height="match_parent"
+    			android:background="@color/application_background_grey">
+    			
+    <com.hungama.myplay.activity.ui.widgets.HomeTabBar
+        android:id="@+id/home_tab_bar"
+    	android:layout_width="match_parent"
+        android:layout_height="@dimen/home_tabwidget_height"
+        android:background="@drawable/background_home_tabwidget"
+        android:layout_alignParentTop="true"/>
+    			
+    <FrameLayout android:id="@+id/main_fragmant_container"
+        		 android:layout_width="match_parent"
+        		 android:layout_height="match_parent"
+        		 android:layout_below="@+id/home_tab_bar"
+        		 android:layout_marginBottom="@dimen/main_player_bar_margin_from_it"
+        		 android:background="@null"/>
+    
+    <ImageButton
+        android:id="@+id/home_button_video_categories"
+        android:layout_width="@dimen/curved_button_size"
+        android:layout_height="@dimen/curved_button_size"
+        android:layout_below="@+id/home_tab_bar"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/background_button_right_top_curve"
+        android:src="@drawable/icon_main_settings_my_preferences"
+        style="@style/RightTopCurvedImageButton"
+        android:visibility="gone"/>
+    
+    <ImageButton
+        android:id="@+id/home_button_music_categories"
+        android:layout_width="@dimen/curved_button_size"
+        android:layout_height="@dimen/curved_button_size"
+        android:layout_below="@+id/home_tab_bar"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/background_button_right_top_curve"
+        android:src="@drawable/icon_main_settings_my_preferences"
+        style="@style/RightTopCurvedImageButton"
+        android:visibility="gone"/>
+    
+    <Button
+        android:id="@+id/home_button_music_top_categories"
+        android:layout_width="@dimen/curved_button_size"
+        android:layout_height="@dimen/curved_button_size"
+        android:layout_below="@+id/home_tab_bar"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/background_button_right_top_curve"
+        android:drawableTop="@drawable/icon_home_music_tile_play_top_right"
+        style="@style/RightTopCurvedImageButton"
+        android:text="@string/home_music_top_upper_right_button_text"
+        android:textColor="@color/white" 
+        android:textSize="12dp"       
+        android:drawablePadding="-3dp"
+        android:visibility="gone"/>
+    
+    <FrameLayout android:id="@+id/main_navigation_fragmant_container"
+        		 android:layout_width="match_parent"
+        		 android:layout_height="match_parent"
+        		 android:layout_marginBottom="@dimen/main_player_bar_margin_from_it"
+        		 android:background="@null"/>
+
+    <fragment android:id="@+id/main_fragmant_player_bar"
+        	  android:name="com.hungama.myplay.activity.ui.fragments.PlayerBarFragment"
+        	  android:layout_width="match_parent"
+		      android:layout_height="match_parent"
+		      android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

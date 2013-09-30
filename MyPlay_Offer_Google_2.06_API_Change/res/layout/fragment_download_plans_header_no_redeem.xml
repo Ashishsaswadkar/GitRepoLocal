@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical" >        
+
+    <TextView
+        android:id="@+id/login_forgot_password_test_message2"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="@string/download_plans_pick_plan"
+        android:gravity="left|center_vertical"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/upgrade_mobile_required_margin_sides"
+        android:textColor="@color/upgrade_verification_resend_button_text_color"
+        android:textSize="16dp"
+        android:textStyle="bold"/>
+    
+    <View android:layout_width="match_parent"
+        	  android:layout_height="1dp"
+        	  android:layout_centerVertical="true"
+              android:layout_centerHorizontal="true"
+        	  android:background="@color/login_line_separator"/>
+
+		
+</LinearLayout>

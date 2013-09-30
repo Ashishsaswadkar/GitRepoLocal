@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/radio_tab_button_height"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/radio_tab_button_live"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/background_home_tabwidget_tab_regular_selector"
+            android:textSize="@dimen/radio_tab_button_text_size"
+            android:textColor="@color/white"
+            android:text="@string/radio_live_radio"/>
+        
+        <Button
+            android:id="@+id/radio_tab_button_top_artist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/background_home_tabwidget_tab_regular_selector"
+            android:textSize="@dimen/radio_tab_button_text_size"
+            android:textColor="@color/white"
+            android:text="@string/radio_top_artist_radio" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/radio_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dialog_width"
+    android:layout_height="wrap_content"
+    android:background="@color/application_background_grey"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:id="@+id/dialog_discovery_save_title_bar" 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/media_details_long_click_custom_dialog_row_height"
+        android:gravity="center_vertical"
+        android:background="@color/application_background_dark_grey">
+        
+        <TextView
+            android:id="@+id/dialog_discovery_save_title_text"
+            style="@style/TextSmallMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/dialog_discovery_save_title_button_close"
+            android:layout_marginLeft="@dimen/dialog_content_margin"
+            android:layout_marginRight="@dimen/dialog_content_margin"
+            android:textStyle="bold"
+            android:text="@string/discovery_options_save_discovery" />
+        
+        <ImageButton
+	        android:id="@+id/dialog_discovery_save_title_button_close"
+	        android:layout_width="@dimen/dialog_title_bar_button_close_size"
+	        android:layout_height="@dimen/dialog_title_bar_button_close_size"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="@dimen/dialog_content_margin"
+	        android:background="@color/transparent"
+	        android:src="@drawable/icon_close_white"/>
+        
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/dialog_discovery_save_text_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dialog_content_margin"
+        android:layout_marginRight="@dimen/dialog_content_margin"
+        android:layout_marginTop="@dimen/dialog_content_margin"
+        android:background="@drawable/background_text_field"
+        android:paddingLeft="@dimen/dialog_content_margin"
+        android:paddingRight="@dimen/dialog_content_margin"
+        android:paddingTop="@dimen/content_text_field_vertical_padding"
+        android:paddingBottom="@dimen/content_text_field_vertical_padding"
+        android:textCursorDrawable="@null"
+        android:textColor="@color/application_background_dark_grey"
+        android:textSize="@dimen/dialog_content_text_size"
+        android:singleLine="true">
+
+        <requestFocus />
+        
+    </EditText>
+
+    <Button
+        android:id="@+id/dialog_discovery_save_button_save"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginBottom="@dimen/dialog_content_margin"
+        android:layout_marginLeft="@dimen/dialog_content_margin"
+        android:layout_marginTop="@dimen/dialog_content_margin"
+        android:background="@drawable/background_button_grey"
+        android:text="@string/application_save"
+        android:textColor="@color/application_background_blue" />
+
+</LinearLayout>

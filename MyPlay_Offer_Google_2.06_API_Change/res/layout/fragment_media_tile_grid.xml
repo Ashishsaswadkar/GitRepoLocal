@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/media_tile_gridview"
+	style="@style/MediaTilesGrid"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:layout_below="@+id/home_tab_bar"
+	android:layout_margin="@dimen/home_tiles_spacing_vertical"
+	android:horizontalSpacing="@dimen/home_tiles_spacing_horizontal"
+	android:verticalSpacing="@dimen/home_tiles_spacing_vertical"
+	android:numColumns="auto_fit"
+	android:stretchMode="columnWidth"
+	android:gravity="center_horizontal"
+	android:overScrollMode="never"
+	android:background="@null"/>

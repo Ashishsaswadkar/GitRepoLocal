@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- Discovery -->
+    
+    <dimen name="discovery_mood_selected_item">350dp</dimen>
+    <dimen name="discovery_mood_selected_item_margin_top">130dp</dimen>
+    
+    <dimen name="discovery_mood_item_size">130dp</dimen>
+    
+    <dimen name="discovery_mood_first_raw_item_margin_top">50dp</dimen>
+    <dimen name="discovery_mood_first_raw_item_margin_side">50dp</dimen>
+    
+    <dimen name="discovery_mood_second_raw_item_margin_top">60dp</dimen>
+    <dimen name="discovery_mood_second_raw_item_margin_side">15dp</dimen>
+    
+    <dimen name="discovery_mood_third_raw_item_margin_top">60dp</dimen>
+    
+    <dimen name="discovery_mood_forth_raw_item_margin_top">180dp</dimen>
+    <dimen name="discovery_mood_third_raw_item_margin">50dp</dimen>
+    
+	<dimen name="discovery_categories_selected_categories_height">350dp</dimen>
+    <dimen name="discovery_categories_selected_categories_margin_top">30dp</dimen>  
+    
+    <dimen name="discovery_categories_collapse_sign_size">18dp</dimen>
+    <dimen name="discovery_categories_done_bottom_text_size">12dp</dimen>
+    <dimen name="discovery_categories_done_text_size">20dp</dimen>
+    
+    <dimen name="discovery_mood_selected_item_text_size">20dp</dimen>
+    
+    <dimen name="discovery_mood_selected_item_text_width">100dp</dimen>
+    
+    <dimen name="discovery_mood_selected_item_size">130dp</dimen>
+    
+    <dimen name="discovery_mood_button_next_skip_height">70dp</dimen>
+    <dimen name="discovery_mood_button_next_skip_width">120dp</dimen>
+    
+    
+    <!-- Media Details  -->
+    
+    <dimen name="action_button_width">120dp</dimen>
+    <dimen name="action_button_height">120dp</dimen>
+    
+    <dimen name="media_details_seperetor_height">1px</dimen>
+    <dimen name="media_details_left_panel_width">242dp</dimen>
+    <dimen name="media_details_left_panel_image_width">240dp</dimen>
+    <dimen name="media_details_left_panel_image_height">240dp</dimen>
+    <dimen name="media_details_padding">10dp</dimen>
+    <dimen name="media_details_icon_music_width">40dp</dimen>
+    <dimen name="media_details_icon_music_height">40dp</dimen>
+    <dimen name="media_details_album_or_playlist_sub_header_height">104dp</dimen>
+    <dimen name="media_details_right_panel_num_plays_height">166dp</dimen>
+    <dimen name="media_details_list_item_track_name">140dp</dimen>
+    <dimen name="media_details_list_item_track_button_play">50dp</dimen>
+    
+    <dimen name="dialog_width">450dp</dimen>
+ 	<dimen name="media_details_long_click_custom_dialog_row_height">80dp</dimen>
+    <dimen name="media_details_long_click_custom_dialog_text_view_title_row_width">240dp</dimen>
+    <dimen name="media_details_long_click_custom_dialog_text_view_row_width">220dp</dimen>
+    <dimen name="media_details_long_click_custom_dialog_text_view_row_padding_left">5dp</dimen>
+    <dimen name="media_details_long_click_custom_dialog_text_view_title_row_padding_left">10dp</dimen>
+    <dimen name="media_details_long_click_custom_dialog_close_button_size">20dp</dimen>
+    <dimen name="media_details_long_click_custom_dialog_image_view_margin_right">5dp</dimen>
+    <dimen name="media_details_action_buttons_text_size">13dp</dimen>
+    
+    <!-- SEARCH -->
+    <dimen name="search_popular_keyword_text_size">30dp</dimen>
+    <dimen name="search_popular_keyword_raw_padding">25dp</dimen>
+    <dimen name="search_popular_keyword_raw_padding_minus">-25dp</dimen>
+    <dimen name="search_popular_keyword_raw_padding_minus_sublayout">-15dp</dimen>
+    <dimen name="search_popular_keyword_margin">25dp</dimen>
+    <dimen name="preferences_top_text_size">30dp</dimen>
+    <dimen name="home_tiles_button_remove_text_size">30dp</dimen>
+    <dimen name="search_popular_searches_title_text_size">30dp</dimen>
+    
+    <!-- Login Activity -->
+
+    <dimen name="login_actionbar_height">60dp</dimen>
+    <dimen name="login_content_side_margin">30dp</dimen>
+    <dimen name="login_content_top_margin">10dp</dimen>
+    <dimen name="login_content_padding_left">10dp</dimen>
+    <dimen name="login_header_text_size">40dp</dimen>
+    <dimen name="login_title_text_size">40dp</dimen>
+    <dimen name="login_field_text">14dp</dimen>
+    <dimen name="login_small_text_size">30dp</dimen>
+    <dimen name="login_button_text_size">12dp</dimen>
+    <dimen name="login_button_text_size_login_page">30dp</dimen>
+    <dimen name="login_skip_button_text_size">30dp</dimen>
+    <dimen name="login_button_height">27dp</dimen>
+    <dimen name="login_button_width">65dp</dimen>
+    <dimen name="login_other_social_network_button_height">60dp</dimen>
+    <dimen name="login_other_social_network_button_text_size">30dp</dimen>
+    <dimen name="login_facebook_height">105dp</dimen>
+    
+    <dimen name="login_facebook_logo_width">90dp</dimen> 
+    <dimen name="login_facbook_connect_text_size">40dp</dimen>
+    
+    <dimen name="login_button_width_size">130dp</dimen>
+    <dimen name="login_button_height_size">54dp</dimen>
+    
+    <!-- Home -->
+
+    <dimen name="home_tabwidget_height">40dp</dimen>
+    <dimen name="home_tabwidget_tab_label_text_size">14dp</dimen>
+    <dimen name="home_music_tile_song_or_playlist_title_text_size">22dp</dimen>
+    <dimen name="home_music_tile_title_text_size">40sp</dimen>
+    <dimen name="home_tiles_button_play_size">60dp</dimen>
+    <dimen name="home_tiles_button_remove_size">45dp</dimen>
+    
+        <!-- Main: Action Bar: Navigation -->
+
+    <dimen name="main_actionbar_navigation_item_size">240dp</dimen>
+    <dimen name="main_actionbar_navigation_item_icon_size">120dp</dimen>
+    <dimen name="main_actionbar_navigation_item_text_size">26dp</dimen>
+    
+    <!-- Player bar -->
+   <!-- <dimen name="main_player_bar_progress_bar_scale_width">71dp</dimen>
+   <dimen name="main_player_bar_progress_bar_scale_text_current_width">36dp</dimen>
+    <dimen name="main_player_bar_progress_bar_scale_text_length_width">30dp</dimen>
+	<dimen name="main_player_progress_bar_scale_text">12dp</dimen>  -->
+	
+	<dimen name="player_load_menu_row_height">60dp</dimen>
+	<dimen name="main_player_content_info_bar_height">60dp</dimen>
+	
+	 <!-- Player content -->
+    
+    <dimen name="main_player_content_media_art_padding">5dp</dimen>
+    
+    <dimen name="main_player_content_bottom_padding">70dp</dimen>
+    <dimen name="main_player_content_image_no_content_size">120dp</dimen>
+    <dimen name="main_player_content_info_bar_height">50dp</dimen>
+    <dimen name="main_player_content_info_bar_button_width">50dp</dimen>
+    <dimen name="main_player_content_info_bar_score_text_size">13dp</dimen>
+    <dimen name="main_player_content_actions_bar_height">120dp</dimen>
+    <dimen name="main_player_content_actions_button_width">120dp</dimen>
+    <dimen name="main_player_content_actions_button_padding">15dp</dimen>
+    <dimen name="main_player_content_buttons_bar_button_text_size">16dp</dimen>    
+    <dimen name="main_player_content_info_bar_title_text_size">18dp</dimen>
+	
+	 <!-- Main: Action Bar: Settings -->
+
+    <dimen name="main_actionbar_settings">340dp</dimen>
+    <dimen name="main_actionbar_settings_category_height">60dp</dimen>
+    <dimen name="main_actionbar_settings_menu_item_height">60dp</dimen>
+    <dimen name="main_actionbar_settings_menu_item_icon_size">37dp</dimen>
+    <dimen name="main_actionbar_settings_category_text">18dp</dimen>
+    <dimen name="main_actionbar_settings_menu_item_text">14dp</dimen>
+    <dimen name="main_actionbar_settings_menu_item_text_margin_left">5dp</dimen>
+    <dimen name="main_actionbar_settings_item_edge_margin">5dp</dimen>
+    
+    <!-- SPLASH -->    
+    <dimen name="splash_text_margin_left">28dp</dimen>
+    <dimen name="splash_plus_margin_left">94dp</dimen>
+    
+    <!-- App Tour -->
+    
+    <dimen name="app_tour_button_skip_margin">15dp</dimen>
+    <dimen name="app_tour_text_margin">40dp</dimen> 
+    <dimen name="app_tour_title_text_size">30dp</dimen>  
+    <dimen name="app_tour_text_size">26dp</dimen>
+    
+       <!-- Radio -->
+    
+    <dimen name="radio_tab_button_height">50dp</dimen>
+    <dimen name="radio_tab_button_text_size">18dp</dimen>
+    
+    <dimen name="radio_details_layout_padding">15dp</dimen>
+    <dimen name="radio_details_layout_bottom_padding">5dp</dimen>
+    <dimen name="radio_details_layout_content_margin">5dp</dimen>
+    <dimen name="radio_details_thumbnail_size">140dp</dimen>
+    
+    <dimen name="radio_details_coming_up_label_height">20dp</dimen>
+    <dimen name="radio_details_coming_up_label_text_size">12dp</dimen>
+    
+    <dimen name="radio_details_coming_up_container_content_padding">5dp</dimen>
+    <dimen name="radio_details_coming_up_content_margin">5dp</dimen>
+    <dimen name="radio_details_coming_up_thumbnail_size">35dp</dimen>
+    <dimen name="radio_details_coming_up_song_icon_size">20dp</dimen>
+    
+    <dimen name="home_tiles_bottom_text_margin_bottom">20dp</dimen>
+    <dimen name="home_tiles_button_text_margin_right">5dp</dimen>
+    
+    <dimen name="radio_top_artist_top_text_size">20dp</dimen>
+    <dimen name="radio_live_top_text_size">18dp</dimen>
+    
+    <dimen name="splash_campaigns_buttons_layout_margin_bottom">30dp</dimen>
+    <dimen name="splash_campaigns_buttons_layout_padding_right">10dp</dimen>
+    <dimen name="splash_campaigns_buttons_layout_width">80dp</dimen>
+    <dimen name="splash_campaigns_buttons_layout_heigh">60dp</dimen>
+    <dimen name="splash_campaigns_buttons_layout_text">14dp</dimen>
+    
+     <!-- Player bar - trivia -->
+    
+    <dimen name="trivia_bubble_share_button_width">90dp</dimen> 
+    
+     <!-- Video Player -->
+    
+    <dimen name="video_seek_bar_scale_text_height">16dp</dimen>
+    <dimen name="video_seek_bar_scale_text_width">16dp</dimen>
+    
+    <dimen name="video_info_page_table_sub_title_text_size">18dp</dimen>
+    <dimen name="video_info_page_table_row_text_size">28dp</dimen>
+    <dimen name="video_player_info_page_padding">15dp</dimen>
+    <dimen name="video_player_info_page_row_width">150dp</dimen>
+    <dimen name="video_player_info_page_row_width_text_right">200dp</dimen>
+    
+    <dimen name="video_info_bar_text_title_size">20dp</dimen>
+    <dimen name="video_info_bar_text_additional_size">16dp</dimen>
+    <dimen name="upgrade_text_size">20dp</dimen>
+    
+    <!-- Redeem / Rewards -->
+    <dimen name="redeem_big_text_size">20dp</dimen>
+    <dimen name="redeem_small_text_size">15dp</dimen>
+    <dimen name="redeem_top_text_size">46dp</dimen>
+    <dimen name="redeem_item_title_text_size">28dp</dimen>
+    <dimen name="redeem_item_customer_support_title_text_size">26dp</dimen>
+    
+</resources>

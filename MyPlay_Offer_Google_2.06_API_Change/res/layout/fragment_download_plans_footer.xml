@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical" >
+    
+    <View android:layout_width="match_parent"
+        	  android:layout_height="1dp"
+        	  android:layout_centerVertical="true"
+              android:layout_centerHorizontal="true"
+        	  android:background="@color/login_line_separator"/>
+    
+
+    <LinearLayout 
+        android:id="@+id/download_plans_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+     
+	    <LinearLayout 
+	       	android:id="@+id/download_plans_bottom_top"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_vertical|center_horizontal">
+	        
+		    <TextView
+		        android:id="@+id/download_plans_bottom_earn"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+				android:layout_marginLeft="@dimen/upgrade_mobile_required_margin_sides"
+		        android:textColor="@color/login_text_color"
+		        android:textSize="@dimen/login_small_text_size"
+		        android:text="@string/download_plans_pick_plan_bottom_earn"
+		        android:gravity="center_vertical|center_horizontal"
+		        android:paddingTop="5dp"
+		        android:drawableRight="@drawable/icon_coins"/>
+		    
+		    <TextView
+		        android:id="@+id/download_plans_bottom_for_every"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginRight="@dimen/upgrade_mobile_required_margin_sides"
+		        android:textColor="@color/login_text_color"
+		        android:textSize="@dimen/login_small_text_size"
+		        android:text="@string/download_plans_pick_plan_bottom_for_every"
+		        android:gravity="center_vertical|center_horizontal"
+		        android:paddingTop="5dp"/>
+	    
+	    </LinearLayout>
+	    
+	    <TextView
+	        android:id="@+id/download_plans_bottom_download"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginRight="@dimen/upgrade_mobile_required_margin_sides"
+	        android:textColor="@color/login_text_color"
+	        android:textSize="@dimen/login_small_text_size"
+	        android:text="@string/download_plans_pick_plan_bottom_download"
+	        android:layout_gravity="center_vertical|center_horizontal"
+	        android:paddingBottom="5dp"/>
+        
+    </LinearLayout>
+		
+</LinearLayout>

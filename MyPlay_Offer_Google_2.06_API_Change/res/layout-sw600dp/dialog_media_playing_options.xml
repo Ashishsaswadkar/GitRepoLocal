@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/long_click_custom_dialog"
+    android:layout_width="@dimen/dialog_width"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/long_click_custom_dialog_title_row"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/media_details_long_click_custom_dialog_row_height"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/long_click_custom_dialog_title_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="3"
+            android:maxLines="1"
+            android:ellipsize="marquee"
+            android:text="@string/media_details_custom_dialog_long_click_play_now"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/long_click_custom_dialog_title_image"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.5"
+            android:background="@color/transparent"
+            android:src="@drawable/icon_close_white" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/long_click_custom_dialog_seperator1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/media_details_seperetor_height"
+        android:layout_below="@id/long_click_custom_dialog_title_row"
+        android:background="@color/media_details_seperator_background" />
+
+    <LinearLayout
+        android:id="@+id/long_click_custom_dialog_play_now_row"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/media_details_long_click_custom_dialog_row_height"
+        android:layout_below="@+id/long_click_custom_dialog_seperator1"
+        android:background="@drawable/background_media_details_long_press_menu_item_selector"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/long_click_custom_dialog_play_now_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="3"
+            android:text="@string/media_details_custom_dialog_long_click_play_now"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:id="@+id/long_click_custom_dialog_play_now_image"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.5"
+            android:src="@drawable/icon_media_details_play_grey" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/long_click_custom_dialog_seperator2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/media_details_seperetor_height"
+        android:layout_below="@id/long_click_custom_dialog_play_now_row"
+        android:background="@color/media_details_seperator_background" />
+
+    <LinearLayout
+        android:id="@+id/long_click_custom_dialog_add_to_queue_row"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/media_details_long_click_custom_dialog_row_height"
+        android:layout_below="@+id/long_click_custom_dialog_seperator2"
+        android:background="@drawable/background_media_details_long_press_menu_item_selector"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/long_click_custom_dialog_add_to_queue_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="3"
+            android:text="@string/media_details_custom_dialog_long_click_add_to_queue"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:id="@+id/long_click_custom_dialog_add_to_queue_image"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.5"
+            android:src="@drawable/icon_media_details_add_to_queue_grey" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/long_click_custom_dialog_seperator4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/media_details_seperetor_height"
+        android:layout_below="@+id/long_click_custom_dialog_add_to_queue_row"
+        android:background="@color/media_details_seperator_background" />
+
+    <LinearLayout
+        android:id="@+id/long_click_custom_dialog_details_row"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/media_details_long_click_custom_dialog_row_height"
+        android:layout_below="@+id/long_click_custom_dialog_seperator4"
+        android:background="@drawable/background_media_details_long_press_menu_item_selector"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/long_click_custom_dialog_details_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="3"
+            android:text="@string/media_details_custom_dialog_long_click_details"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:id="@+id/long_click_custom_dialog_details_image"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.5"
+            android:src="@drawable/icon_main_settings_about" />
+    </LinearLayout>
+
+</RelativeLayout>

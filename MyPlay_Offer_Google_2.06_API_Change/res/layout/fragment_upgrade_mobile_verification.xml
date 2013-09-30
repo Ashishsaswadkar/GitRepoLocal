@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/login_forgot_password_test_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/upgrade_mobile_required_margin_sides"
+        android:layout_marginRight="@dimen/upgrade_mobile_required_margin_sides"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/login_text_color"
+        android:textSize="@dimen/upgrade_medium_text_size"
+        android:text="@string/upgrade_mobile_verification_sms_text1"
+        android:textStyle="bold"/>    
+
+    <Button
+        android:id="@+id/upgrade_resend_sms_button_submit"
+        android:layout_width="@dimen/upgrade_button_resend_sms_width"
+        android:layout_height="@dimen/login_button_height"
+        android:layout_marginLeft="@dimen/upgrade_mobile_required_margin_sides"
+        android:layout_marginTop="@dimen/login_content_top_margin"
+        android:background="@drawable/background_button_grey"
+        android:text="@string/upgrade_mobile_verification_sms_resend_sms"
+        android:textColor="@color/upgrade_verification_resend_button_text_color"
+        android:textSize="@dimen/login_button_text_size"
+        android:textStyle="bold" />
+    
+    <TextView
+        android:id="@+id/login_forgot_password_test_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/upgrade_mobile_required_margin_sides"
+        android:layout_marginRight="@dimen/upgrade_mobile_required_margin_sides"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/login_text_color"
+        android:textSize="@dimen/upgrade_medium_text_size"
+        android:text="@string/upgrade_mobile_verification_sms_text2"
+        android:textStyle="bold"/>
+    
+    <View android:layout_width="match_parent"
+        	  android:layout_height="1dp"
+        	  android:layout_centerVertical="true"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="20dp"
+              android:layout_marginBottom="20dp"
+        	  android:background="@color/login_line_separator"/>
+    
+
+    <TextView
+        android:id="@+id/login_forgot_password_test_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:layout_marginLeft="@dimen/upgrade_mobile_required_margin_sides"
+        android:layout_marginRight="@dimen/upgrade_mobile_required_margin_sides"
+        android:textColor="@color/login_text_color"
+        android:textSize="@dimen/login_small_text_size"
+        android:text="@string/upgrade_mobile_verification_sms_enter_password_text"/>
+
+    <EditText
+        android:id="@+id/upgrade_password_verification_field"
+        android:layout_width="@dimen/upgrade_password_edittext_width"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/upgrade_mobile_required_margin_sides"
+        android:layout_marginRight="@dimen/upgrade_mobile_required_margin_sides"
+        android:layout_marginTop="@dimen/login_content_top_margin"
+        android:textColor="@color/login_text_color"
+        android:textSize="@dimen/login_field_text"
+        android:textColorHint="@color/login_hint"
+        android:hint="@string/login_hungama_password_hint"
+        android:maxLines="1"
+        android:minLines="1"
+        android:singleLine="true"
+        android:background="@drawable/background_text_field"
+        android:paddingLeft="@dimen/login_content_padding_left"
+        android:ems="50"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/upgrade_verify_password_button_submit"
+        android:layout_width="@dimen/login_button_width"
+        android:layout_height="@dimen/login_button_height"
+        android:layout_marginLeft="@dimen/upgrade_mobile_required_margin_sides"
+        android:layout_marginRight="@dimen/upgrade_mobile_required_margin_sides"
+        android:layout_marginTop="@dimen/login_content_top_margin"
+        android:background="@drawable/background_button_blue"
+        android:text="@string/login_forgot_password_submit"
+        android:textColor="@color/white"
+        android:textSize="@dimen/login_button_text_size"
+        android:textStyle="bold" />        
+    
+</LinearLayout>

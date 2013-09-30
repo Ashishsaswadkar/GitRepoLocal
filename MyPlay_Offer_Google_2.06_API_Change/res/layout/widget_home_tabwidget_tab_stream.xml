@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="@drawable/background_home_tabwidget_tab_regular_selector"
+	    android:textColor="@drawable/text_color_home_tabwidget_tab_regular_selector"
+		android:textSize="@dimen/home_tabwidget_tab_label_text_size"
+	    android:shadowColor="@color/home_tabwidget_tab_label_shadow"
+	    android:shadowDx="2"
+	    android:shadowDy="2"
+	    android:shadowRadius="2"/>

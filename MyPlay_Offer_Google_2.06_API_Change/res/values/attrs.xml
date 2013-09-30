@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <declare-styleable name="RightIconOptionsItem">
+        <attr name="itemIcon" format="reference"/>
+       	<attr name="itemIconSize" format="dimension"/>
+   </declare-styleable>
+   
+    <declare-styleable name="ActiveButton">
+        <!-- Sets a drawable when the button is active. -->
+        <attr name="activeSrc" format="reference" />
+        <!-- Sets a drawable when the button is inactive. -->
+        <attr name="inactiveSrc" format="reference" />
+    </declare-styleable>
+    
+    <declare-styleable name="TwoStatesButton">
+        <attr name="selectedBackground" format="reference" />
+        <attr name="unselectedBackground" format="reference" />
+    </declare-styleable>
+    
+    <declare-styleable name="TwoStatesActiveButton">
+        <attr name="activeStateSource" format="reference" />
+        <attr name="inactiveStateSource" format="reference" />
+        <attr name="secondStateSource" format="reference" />
+    </declare-styleable>
+    
+    <declare-styleable name="ThreeStatesActiveButton">
+        <attr name="activeStateSrc" format="reference" />
+        <attr name="inactiveStateSrc" format="reference" />
+        <attr name="secondStateSrc" format="reference" />
+        <attr name="ThirdStateSrc" format="reference" />
+    </declare-styleable>
+   
+        <!-- SlidingDrawer specific attributes. These attributes are used to configure
+         a SlidingDrawer from XML. -->
+    <declare-styleable name="SlidingDrawer">
+        <!-- Identifier for the child that represents the drawer's handle. -->
+        <attr name="handle" format="reference" />
+        <!-- Identifier for the child that represents the drawer's content. -->
+        <attr name="content" format="reference" />
+        <!-- Orientation of the SlidingDrawer. -->
+        
+        <!-- Extra offset for the handle at the bottom of the SlidingDrawer. -->
+        <attr name="bottomOffset" format="dimension"  />
+        <!-- Extra offset for the handle at the top of the SlidingDrawer. -->
+        <attr name="topOffset" format="dimension"  />
+        <!-- Indicates whether the drawer can be opened/closed by a single tap
+             on the handle.  (If false, the user must drag or fling, or click
+             using the trackball, to open/close the drawer.)  Default is true. -->
+        <attr name="allowSingleTap" format="boolean" />
+        <!-- Indicates whether the drawer should be opened/closed with an animation
+             when the user clicks the handle. Default is true. -->
+        <attr name="animateOnClick" format="boolean" />
+    </declare-styleable>
+    
+</resources>

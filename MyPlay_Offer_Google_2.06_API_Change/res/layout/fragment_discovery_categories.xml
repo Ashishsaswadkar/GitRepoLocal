@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+			  
+    <TextView
+        android:id="@+id/discovery_categories_title"
+        style="@style/TextMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:text="@string/discovery_categories_title" />
+    
+    <RelativeLayout
+        android:id="@+id/discovery_categories_container_categories"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/discovery_categories_title"
+        android:layout_above="@+id/discovery_categories_anchor">
+        
+        <ExpandableListView
+            android:id="@+id/discovery_categories_categories"
+            android:layout_width="@dimen/discovery_categories_categories"
+            android:layout_height="match_parent"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:layout_alignParentLeft="true"
+            android:groupIndicator="@drawable/list_expand_background"
+        	android:listSelector="@drawable/list_expand_seletor"
+            android:background="@drawable/background_discovery_categories_categories"
+            android:divider="@drawable/transparent_background"
+            android:childDivider="@drawable/transparent_background"
+            android:dividerHeight="1dp"
+            android:cacheColorHint="@drawable/transparent_background"
+            android:overScrollFooter="@null"/>
+        
+        <RelativeLayout
+            android:id="@+id/discovery_categories_container_selected_categories"
+        	android:layout_width="match_parent"
+        	android:layout_height="match_parent"
+        	android:layout_alignParentRight="true"
+        	android:layout_toRightOf="@+id/discovery_categories_categories"
+        	android:background="@null">
+        	
+            <ImageView
+	            android:id="@+id/discovery_categories_selected_categories_background"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:layout_alignParentRight="true"
+	            android:layout_toRightOf="@+id/discovery_categories_categories"
+	            android:src="@drawable/background_discovery_categories_selected"
+	            android:background="@null" 
+	            android:scaleType="fitStart"/>
+
+            <ListView
+                android:id="@+id/discovery_categories_selected_categories"
+                android:layout_width="@dimen/discovery_categories_categories"
+                android:layout_height="@dimen/discovery_categories_selected_categories_height"
+                android:layout_alignTop="@+id/discovery_categories_selected_categories_background"
+                android:layout_marginTop="@dimen/discovery_categories_selected_categories_margin_top"
+                android:layout_centerHorizontal="true"
+                android:layout_alignBaseline="@+id/discovery_categories_selected_categories_background"
+                android:background="@drawable/transparent_background"
+                android:divider="@drawable/transparent_background"
+            	android:dividerHeight="1dp"
+            	android:cacheColorHint="@drawable/transparent_background"
+            	android:overScrollFooter="@null"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true">
+                
+                <LinearLayout 
+                    android:id="@+id/discovery_categories_container_imdone"
+                    android:layout_width="@dimen/background_discovery_categories_imdone_size"
+                	android:layout_height="@dimen/background_discovery_categories_imdone_size"
+                	android:orientation="vertical"
+                	android:layout_centerVertical="true"
+                	android:layout_alignParentRight="true"
+                	android:background="@drawable/background_discovery_categories_imdone"
+                	android:gravity="center"
+                	android:clickable="true"
+                	android:focusable="true">
+                	
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/TextSmallMedium"
+                        android:textSize="@dimen/discovery_categories_done_text_size"
+                        android:text="@string/discovery_categories_edit_indication_big"
+                        android:clickable="false"
+                        android:focusable="false"/>
+                    
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/TextSmall"
+                        android:textSize="@dimen/discovery_categories_done_bottom_text_size"
+                        android:text="@string/discovery_categories_edit_indication_small"
+                        android:clickable="false"
+                        android:focusable="false"/>
+                    
+                </LinearLayout>
+                
+                <LinearLayout 
+                    android:id="@+id/discovery_categories_container_selected_mood"
+                    android:layout_width="@dimen/background_discovery_categories_selected_mood_bubble_size"
+                	android:layout_height="@dimen/background_discovery_categories_selected_mood_bubble_size"
+                	android:orientation="horizontal"
+                	android:layout_centerVertical="true"
+                	android:layout_alignParentRight="true"
+                	android:layout_marginRight="@dimen/background_discovery_categories_selected_mood_margin_right"
+                	android:background="@null">
+                	
+                    <ImageView 
+                        android:id="@+id/discovery_categories_selected_mood"
+                        android:layout_width="wrap_content"
+                		android:layout_height="wrap_content"
+                		android:background="@drawable/background_discovery_categories_selected_mood_bubble"
+                		android:padding="10dp"
+                		android:src="@drawable/background_discovery_mood_dumb_mood_blue"
+                		android:layout_weight="1"/>
+                    
+                    <ImageView 
+                        android:layout_width="wrap_content"
+                		android:layout_height="match_parent"
+                		android:background="@drawable/background_discovery_categories_selected_mood_pin"
+                		android:layout_weight="1"/>
+                    
+                </LinearLayout>
+                
+            </RelativeLayout>
+            
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/discovery_categories_anchor"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

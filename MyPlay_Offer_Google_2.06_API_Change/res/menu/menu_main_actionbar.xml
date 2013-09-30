@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <item android:id="@+id/menu_item_main_actionbar_navigation"
+          android:icon="@drawable/background_actionbar_plus"
+          android:title="@string/main_actionbar_navigation"
+          android:checkable="true"
+          android:checked="false"
+          android:showAsAction="always"/>
+    
+    <item android:id="@+id/menu_item_main_actionbar_search"
+          android:icon="@drawable/background_actionbar_search"
+          android:title="@string/main_actionbar_search"
+          android:showAsAction="always"/>
+    
+    <item android:id="@+id/menu_item_main_actionbar_settings"
+          android:icon="@drawable/background_actionbar_settings"
+          android:title="@string/main_actionbar_settings"
+          android:checkable="true"
+          android:checked="false"
+          android:showAsAction="always"/>
+    
+    <item android:id="@+id/menu_item_main_actionbar_settings_menu"
+          android:icon="@drawable/icon_main_player_settings_grey"
+          android:title="@string/main_actionbar_settings_menu_item_settings_and_accounts"/>
+    
+    <item android:id="@+id/menu_item_main_actionbar_my_profile"
+          android:icon="@drawable/icon_main_settings_my_profile"
+          android:title="@string/main_actionbar_settings_menu_item_my_profile"/>
+    
+    <item android:id="@+id/menu_item_main_actionbar_preferences"
+          android:icon="@drawable/icon_main_settings_my_preferences"
+          android:title="@string/main_actionbar_settings_menu_item_my_preferences"/>
+    
+    <item android:id="@+id/menu_item_main_actionbar_help_faq"
+          android:icon="@drawable/icon_main_settings_help_faq"
+          android:title="@string/main_actionbar_settings_menu_item_help_faq"/>
+    
+    <item android:id="@+id/menu_item_main_actionbar_rate_app"
+          android:icon="@drawable/icon_main_settings_rate_this_app"
+          android:title="@string/main_actionbar_settings_menu_item_rate_this_app"/>
+    
+    <item android:id="@+id/menu_item_main_actionbar_invite_friends"
+          android:icon="@drawable/icon_main_settings_invite_friends"
+          android:title="@string/main_actionbar_settings_menu_item_invite_friends"/>
+
+</menu>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/main_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_title_bar_height"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/background_home_tabwidget_tab_unselected" >
+
+        <TextView
+            android:id="@+id/main_title_bar_text"
+            style="@style/TextMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/invite_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/main_title_bar"
+        android:gravity="center_horizontal" >
+
+        <LinearLayout
+            android:id="@+id/invite_title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/left_invite_text_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/icon_coins"
+                android:gravity="center_vertical"
+                android:text="100"
+                android:textColor="@color/upgrade_verification_resend_button_text_color"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/right_invite_text_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="for every friend!"
+                android:textColor="@color/upgrade_verification_resend_button_text_color"
+                android:textSize="30dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/invite_title1" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start inviting now"
+                android:textColor="@color/invite_friends_title2_text_color"
+                android:textSize="22dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/invite_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/background_text_field" >
+
+        <Button
+            android:id="@+id/invite_facebook_friends"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:background="@color/transparent"
+            android:drawableLeft="@drawable/icon_facebook"
+            android:drawableRight="@drawable/circle_arrow_right"
+            android:drawablePadding="5dp"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="@string/invite_facebook_friends"
+            android:textColor="@color/invite_friends_buttons_text_color"
+            android:textStyle="bold"
+            android:layout_marginTop="3dp" 
+            />
+
+        <Button
+            android:id="@+id/invite_twitter_friends"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/invite_facebook_friends"
+            android:layout_below="@id/invite_facebook_friends"
+            android:background="@color/transparent"
+            android:drawableLeft="@drawable/icon_twitter"
+            android:drawableRight="@drawable/circle_arrow_right"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="@string/invite_twitter_friends"
+            android:textColor="@color/invite_friends_buttons_text_color"
+            android:textStyle="bold" 
+            android:drawablePadding="5dp"/>
+
+        <Button
+            android:id="@+id/invite_google_friends"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/invite_twitter_friends"
+            android:background="@color/transparent"
+            android:drawableLeft="@drawable/icon_google_plus"
+            android:drawableRight="@drawable/circle_arrow_right"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="@string/invite_google_plus_friends"
+            android:textColor="@color/invite_friends_buttons_text_color"
+            android:textStyle="bold" 
+            android:drawablePadding="5dp"/>
+
+        <Button
+            android:id="@+id/invite_email_friends"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/invite_twitter_friends"
+            android:layout_below="@id/invite_google_friends"
+            android:background="@color/transparent"
+            android:drawableLeft="@drawable/icon_email_blue"
+            android:drawableRight="@drawable/circle_arrow_right"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="@string/invite_email_friends"
+            android:textColor="@color/invite_friends_buttons_text_color"
+            android:textStyle="bold"
+            android:layout_marginBottom="3dp" 
+            android:drawablePadding="5dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.hungama.myplay.activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/social_profile_background">
+
+    <LinearLayout
+        android:id="@+id/social_leaderboard_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/leaderboard_title_bar_height"
+        android:weightSum="2" >
+
+        <com.hungama.myplay.activity.ui.widgets.TwoStatesButton
+            android:id="@+id/social_leaderboard_tab1"
+            style="@style/TextSmallMedium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/social_leaderboard_friends"
+            app:selectedBackground="@drawable/background_home_tabwidget_tab_selected"
+            app:unselectedBackground="@drawable/background_home_tabwidget_tab_unselected" 
+            android:textSize="14dp"/>
+
+        <com.hungama.myplay.activity.ui.widgets.TwoStatesButton
+            android:id="@+id/social_leaderboard_tab2"
+            style="@style/TextSmallMedium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/background_main_title_bar_button_options_selector"
+			android:text="@string/social_leaderboard_last_seven_days_top"           
+            app:selectedBackground="@drawable/background_home_tabwidget_tab_selected"
+            app:unselectedBackground="@drawable/background_home_tabwidget_tab_unselected"
+            android:textSize="14dp" />
+        
+    </LinearLayout>
+    
+    <ListView
+        android:id="@+id/social_leaderboard_users"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/social_leaderboard_tabs" >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/social_leaderboard_tab2_period"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/social_leaderboard_tabs"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:weightSum="2" >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/social_leaderboard_tab2_period_background"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/social_leaderboard_tab2_period_seven"
+                style="@style/TextSmallMedium"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/leaderboard_title_bar_height"
+                android:background="@null"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="@dimen/social_leaderboard_tab2_period_content_margin"
+                android:text="@string/social_leaderboard_last_seven_days" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/social_leaderboard_tab2_period_separator_height"
+                android:background="@color/social_leaderboard_tab2_period_separator" />
+
+            <Button
+                android:id="@+id/social_leaderboard_tab2_period_all"
+                style="@style/TextSmallMedium"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/leaderboard_title_bar_height"
+                android:background="@null"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="@dimen/social_leaderboard_tab2_period_content_margin"
+                android:text="@string/social_leaderboard_all_time" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

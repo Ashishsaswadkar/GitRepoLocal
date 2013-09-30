@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    			android:layout_width="match_parent"
+    			android:layout_height="match_parent"
+    			android:background="@color/application_background_grey">
+    	<View
+	        android:id="@+id/view_media_details_seperator" 
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/media_details_seperetor_height"
+			android:background="@color/white"/>
+    			
+       <!-- ******************* BEGIN LEFT PANEL ***********************-->
+       
+       <RelativeLayout
+            android:id="@+id/media_details_mid_left"
+            android:layout_width="@dimen/media_details_left_panel_width"
+            android:layout_height="match_parent"
+            android:background="@color/media_details_right_panel_background"             
+            android:layout_below="@+id/view_media_details_seperator">
+			
+            <ImageView
+                android:id="@+id/imageView_media_details"
+                android:layout_width="@dimen/media_details_left_panel_image_width"
+                android:layout_height="@dimen/media_details_left_panel_image_height"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/background_media_details_playlist_inside_thumb"
+                android:layout_marginRight="@dimen/media_details_seperetor_height"/>
+            
+            <View
+		        android:id="@+id/view_media_details_seperator" 
+				android:layout_width="@dimen/media_details_seperetor_height"
+				android:layout_height="match_parent"
+				android:background="@color/white"
+				android:layout_toRightOf="@+id/imageView_media_details"/>
+            
+            <LinearLayout
+                android:id="@+id/media_details_mid_left_internal"
+                android:layout_width="@dimen/media_details_left_panel_image_width"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView_media_details">
+
+                <Button
+                    android:id="@+id/button_media_details_play_all"
+                    style="@style/ActionButtonBackgroundGrey"
+                    android:paddingTop="@dimen/media_details_padding"
+                    android:drawableTop="@drawable/icon_home_music_tile_play"
+                    android:text="@string/media_details_play_all"
+                    android:textColor="@color/media_details_action_button_text_color"
+                    android:textSize="@dimen/media_details_action_buttons_text_size"
+                    android:drawablePadding="2dp"
+                    android:visibility="visible"/>
+
+                <Button
+                    android:id="@+id/button_media_details_playlist"
+                    style="@style/ActionButtonBackgroundWhite"
+                    android:drawableTop="@drawable/icon_media_details_add_to_playlist_grey"
+                    android:paddingTop="@dimen/media_details_padding"
+                    android:text="@string/media_details_add_to_playlist"
+                    android:textColor="@color/media_details_action_button_text_color"
+                    android:textSize="@dimen/media_details_action_buttons_text_size"
+                    android:drawablePadding="2dp"
+                    android:visibility="visible"/>
+                
+            </LinearLayout>
+            
+            
+            <LinearLayout
+                android:id="@+id/media_details_mid_left_internal_3"
+                android:layout_width="@dimen/media_details_left_panel_image_width"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/media_details_mid_left_internal">
+
+                <Button
+                    android:id="@+id/button_media_details_share"
+                    android:drawableTop="@drawable/icon_media_details_share_grey"
+                    style="@style/ActionButtonBackgroundWhite"
+                    android:paddingTop="@dimen/media_details_padding"
+                    android:text="@string/media_details_share"
+                    android:textAppearance="@style/TextSmall"
+                    android:textColor="@color/media_details_action_button_text_color"
+                    android:textSize="@dimen/media_details_action_buttons_text_size"
+                    android:drawablePadding="2dp"
+                    android:visibility="visible"/>
+
+                <Button
+                    android:id="@+id/button_media_details_videos"
+                    style="@style/ActionButtonBackgroundGrey"
+                    android:drawableTop="@drawable/icon_main_settings_videos"
+                    android:paddingTop="@dimen/media_details_padding"
+                    android:text="@string/media_details_video"
+                    android:textColor="@color/media_details_action_button_text_color"
+                    android:textSize="@dimen/media_details_action_buttons_text_size"
+                    android:drawablePadding="2dp"
+                    android:visibility="gone"/>
+            </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/media_details_mid_left_internal_4"
+                android:layout_width="@dimen/media_details_left_panel_image_width"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/media_details_mid_left_internal_3">
+
+                <Button
+                    android:id="@+id/button_media_details_my_discoveries"
+                    style="@style/ActionButtonBackgroundWhite"
+                    android:drawableTop="@drawable/icon_main_settings_my_discoveries"
+                    android:paddingTop="@dimen/media_details_padding"
+                    android:text="@string/media_details_similar"
+                    android:textColor="@color/media_details_action_button_text_color"
+                    android:visibility="gone"/>                
+
+            </LinearLayout>
+
+		</RelativeLayout>
+		
+		<!-- ******************* END LEFT PANEL ***********************-->
+		
+		<!-- ******************* BEGIN RIGHT PANEL ***********************-->
+		
+		<RelativeLayout
+	           android:id="@+id/media_details_mid_right"
+	           android:layout_width="match_parent"
+	           android:layout_height="match_parent"
+	           android:layout_toRightOf="@id/media_details_mid_left"
+	           android:layout_below="@+id/view_media_details_seperator"
+	           android:background="@color/media_details_right_panel_background">
+				
+
+	           <LinearLayout
+	               android:id="@+id/media_details_mid_right_internal_top"
+	               android:layout_width="match_parent"
+	               android:layout_height="wrap_content"
+	               android:layout_below="@+id/imageView_media_details"
+	               android:layout_marginLeft="10dp"
+	               android:layout_marginTop="@dimen/media_details_padding"
+	               android:paddingLeft="@dimen/media_details_padding" >
+	
+	                <Button
+	                    android:id="@+id/button_media_details_heart"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="30dp"
+	                    android:background="@drawable/background_round_rectangle_black"
+	                    style="@style/TextSmallMediumMinus"
+	                    android:layout_marginRight="@dimen/media_details_padding"
+	                    android:drawableLeft="@drawable/icon_media_details_fav_white"
+	                    android:paddingLeft="5dp"
+	                    android:paddingRight="5dp"/>
+	
+	                <ImageView
+	                    android:id="@+id/button_media_details_comment"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="30dp"
+	                    android:background="@drawable/background_round_rectangle_black"
+	                    android:src="@drawable/icon_media_details_comment_blue"
+	                    style="@style/TextSmallMediumMinus"
+	                    android:paddingLeft="5dp"
+	                    android:paddingRight="5dp"/>
+	            </LinearLayout>
+	            
+	           <LinearLayout
+	                android:id="@+id/media_details_mid_right_internal_mid"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_below="@+id/media_details_mid_right_internal_top"
+	                android:layout_marginTop="4dp"	                
+	                android:layout_marginLeft="10dp"
+	                android:paddingTop="3dp"
+	                android:gravity="center_vertical"
+	           		android:paddingLeft="@dimen/media_details_padding">
+	
+	                <ImageView 
+	                    android:layout_width="@dimen/media_details_icon_music_width"
+	                	android:layout_height="@dimen/media_details_icon_music_height"
+	                    android:src="@drawable/icon_main_settings_music"
+	                	android:layout_marginRight="3dp"/>
+	
+	                <TextView 
+	                    android:id="@+id/text_view_media_details_num_plays"
+	                    android:layout_width="wrap_content"
+	                	android:layout_height="wrap_content"
+	                	android:textColor="@color/white"	                	
+	                	android:gravity="center_vertical"
+	                	android:text="0"
+	                	style="@style/TextSmallMediumMinusPlus"
+	                	android:layout_marginRight="3dp"/>
+	                
+	                <TextView 
+	                    android:id="@+id/text_view_media_details_num_plays"
+	                    android:layout_width="wrap_content"
+	                	android:layout_height="wrap_content"
+	                	android:gravity="center_vertical"
+	                	android:textColor="@color/media_details_text_color"
+	                	style="@style/TextSmallMediumMinusPlus"
+	                	android:text="Plays"/>
+	            </LinearLayout>
+	            
+	           <!-- ****************  THIS PART IS ONLY FOR TRACK DETAILS ***********************-->
+
+	           <RelativeLayout
+	               android:id="@+id/media_details_mid_right_song_details"
+	               android:layout_width="match_parent"
+	               android:layout_height="wrap_content"
+	               android:layout_below="@+id/media_details_mid_right_internal_mid"
+	               android:gravity="center_vertical"
+	               android:layout_marginTop="3dp"
+	               android:visibility="gone"
+	               android:layout_marginLeft="10dp"
+	               android:paddingLeft="@dimen/media_details_padding">
+	
+	                <View
+			           android:id="@+id/view_media_details_song_details_seperator" 
+						android:layout_width="match_parent"
+						android:layout_height="@dimen/media_details_seperetor_height"
+						android:background="@color/media_details_seperator_background"
+						android:layout_marginRight="3dp"/>
+	
+	                <TextView 
+	                    android:id="@+id/text_view_media_details_song_details_album_name"
+	                    android:layout_width="wrap_content"
+	                	android:layout_height="wrap_content"
+	                	android:textColor="@color/media_details_text_color_song_details"
+	                	android:text="Song Name"
+	                	style="@style/TextSmallMedium"
+	                	android:layout_marginTop="2dp"
+	                	android:layout_below="@+id/view_media_details_song_details_seperator"/>
+	                
+	                <LinearLayout
+	                    android:id="@+id/linearlayout_media_details_song_details_year_and_genre"
+	                    android:layout_width="match_parent"
+		                android:layout_height="wrap_content"
+	                    android:layout_below="@+id/text_view_media_details_song_details_album_name">
+	                    
+	                     <TextView 
+		                    android:id="@+id/text_view_media_details_song_details_year"
+		                    android:layout_width="wrap_content"
+		                	android:layout_height="wrap_content"
+		                	android:textColor="@color/media_details_text_color_song_details"
+		                	style="@style/TextSmallMediumMinusPlus"
+		                	android:layout_below="@+id/text_view_media_details_song_details_album_name"/>
+		                
+		                <TextView 
+		                    android:id="@+id/text_view_media_details_song_details_year_seperator"
+		                    android:layout_width="wrap_content"
+		                	android:layout_height="wrap_content"
+		                	android:textColor="@color/media_details_text_color_song_details"
+		                	style="@style/TextSmallMediumMinusPlus"
+		                	android:layout_toRightOf="@+id/text_view_media_details_song_details_year"	       
+		                	android:text=" | "/>
+		                
+		                <TextView 
+		                    android:id="@+id/text_view_media_details_song_details_language"
+		                    android:layout_width="wrap_content"
+		                	android:layout_height="wrap_content"
+		                	android:textColor="@color/media_details_text_color_song_details"
+		                	style="@style/TextSmallMediumMinusPlus"
+		                	android:layout_toRightOf="@+id/text_view_media_details_song_details_year_seperator"/>
+	                
+	                </LinearLayout>
+	                
+	                <TextView 
+	                    android:id="@+id/text_view_media_details_song_details_music"
+	                    android:layout_width="wrap_content"
+	                	android:layout_height="wrap_content"
+	                	android:textColor="@color/media_details_text_color_song_details"
+	                	style="@style/TextSmallMediumMinus"
+	                	android:layout_below="@+id/linearlayout_media_details_song_details_year_and_genre"	
+	                	android:layout_marginTop="10dp"       
+	                	android:text="@string/media_details_song_details_music"/>
+	                
+	                <TextView 
+	                    android:id="@+id/text_view_media_details_song_details_music_by"
+	                    android:layout_width="wrap_content"
+	                	android:layout_height="wrap_content"
+	                	android:textColor="@color/media_details_text_color_song_details"
+	                	style="@style/TextSmallMediumMinusPlus"
+	                	android:layout_below="@+id/text_view_media_details_song_details_music" />
+	                
+	                <TextView 
+	                    android:id="@+id/text_view_media_details_song_details_singer"
+	                    android:layout_width="wrap_content"
+	                	android:layout_height="wrap_content"
+	                	android:textColor="@color/media_details_text_color_song_details"
+	                	style="@style/TextSmallMediumMinus"
+	                	android:layout_below="@+id/text_view_media_details_song_details_music_by"	
+	                	android:layout_marginTop="10dp"       
+	                	android:text="@string/media_details_song_details_singer"/>
+	                
+	                 <TextView 
+	                    android:id="@+id/text_view_media_details_song_details_singer_name"
+	                    android:layout_width="wrap_content"
+	                	android:layout_height="wrap_content"
+	                	android:textColor="@color/media_details_text_color_song_details"
+	                	style="@style/TextSmallMediumMinusPlus"
+	                	android:layout_below="@+id/text_view_media_details_song_details_singer"     
+	                	/>
+	                
+	                 <TextView 
+	                    android:id="@+id/text_view_media_details_song_details_lyricist"
+	                    android:layout_width="wrap_content"
+	                	android:layout_height="wrap_content"
+	                	android:textColor="@color/media_details_text_color_song_details"
+	                	style="@style/TextSmallMediumMinus"
+	                	android:layout_below="@+id/text_view_media_details_song_details_singer_name"	
+	                	android:layout_marginTop="10dp"       
+	                	android:text="@string/media_details_song_details_lyricist"/>
+	                
+	                <TextView 
+	                    android:id="@+id/text_view_media_details_song_details_lyricist_name"
+	                    android:layout_width="wrap_content"
+	                	android:layout_height="wrap_content"
+	                	android:textColor="@color/media_details_text_color_song_details"
+	                	style="@style/TextSmallMediumMinusPlus"
+	                	android:layout_below="@+id/text_view_media_details_song_details_lyricist"     
+	                	/>
+	                
+	            </RelativeLayout>
+	           
+	            <!-- ****************  END OF SONG DETAILS PART ***********************-->
+	            
+	            <!-- ****************  THIS PART IS ONLY FOR ALBUM/PLAYLIST ***********************-->
+	            
+	            <RelativeLayout
+	                android:id="@+id/linearlayout_media_details_album_and_playlist"
+	                android:layout_width="match_parent"
+	                android:layout_height="match_parent"
+	                android:layout_below="@+id/media_details_mid_right_internal_mid">
+	                
+	                <RelativeLayout 
+	                    android:id="@+id/Relativelayout_media_details_album"
+	                    android:layout_width="match_parent"
+	                	android:layout_height="wrap_content"
+	                	android:layout_marginTop="@dimen/media_details_padding"
+	           			android:paddingLeft="@dimen/media_details_padding"
+	                	android:visibility="visible">
+		                
+		                <View
+				           	android:id="@+id/view_media_details_album_details_seperator" 
+							android:layout_width="match_parent"
+							android:layout_height="@dimen/media_details_seperetor_height"
+							android:background="@color/media_details_seperator_background"
+							android:layout_marginRight="3dp"/>
+	                    
+	                    <LinearLayout
+		                    android:id="@+id/linearlayout_media_details_album_details_year_and_genre"
+		                    android:layout_width="match_parent"
+			                android:layout_height="wrap_content"
+			                android:layout_marginTop="@dimen/media_details_padding"
+	                		android:layout_marginLeft="10dp"
+			                android:layout_below="@+id/view_media_details_album_details_seperator">
+		                    
+		                     <TextView 
+			                    android:id="@+id/text_view_media_details_album_details_year"
+			                    android:layout_width="wrap_content"
+			                	android:layout_height="wrap_content"
+			                	android:textColor="@color/media_details_text_color_song_details"
+			                	style="@style/TextSmallMediumMinusPlus"/>
+			                
+			                <TextView 
+			                    android:id="@+id/text_view_media_details_album_details_year_seperator"
+			                    android:layout_width="wrap_content"
+			                	android:layout_height="wrap_content"
+			                	android:textColor="@color/media_details_text_color_song_details"
+			                	style="@style/TextSmallMediumMinusPlus"	       
+			                	android:text=" | "/>
+			                
+			                <TextView 
+			                    android:id="@+id/text_view_media_details_album_details_genre"
+			                    android:layout_width="wrap_content"
+			                	android:layout_height="wrap_content"
+			                	android:textColor="@color/media_details_text_color_song_details"
+			                	style="@style/TextSmallMediumMinusPlus"/>
+		                
+		                </LinearLayout>
+		                
+		                <TextView 
+		                    android:id="@+id/text_view_media_details_album_details_music_by"
+		                    android:layout_width="wrap_content"
+		                	android:layout_height="wrap_content"
+	                		android:layout_marginLeft="10dp"
+	                		android:paddingTop="3dp"
+		                	android:textColor="@color/media_details_text_color_song_details"
+		                	style="@style/TextSmallMediumMinusPlus"  
+		                	android:layout_below="@+id/linearlayout_media_details_album_details_year_and_genre"/>
+		                
+	                </RelativeLayout>
+	                
+	                <RelativeLayout
+	                    android:id="@+id/relativelayout_panel_for_album_and_playlist"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_below="@+id/Relativelayout_media_details_album"
+						android:visibility="visible">
+	                    
+			            <TextView
+			                android:id="@+id/text_view_media_details_list_title"
+			                android:layout_width="match_parent"
+			                android:layout_height="wrap_content"
+			                android:background="@color/media_details_album_or_playlist_title_background"
+			                android:text=""
+			                android:textColor="@color/media_details_text_color_song_details"
+			                android:paddingTop="3dp"
+			                android:paddingBottom="3dp"
+		           			android:paddingLeft="15dp"/>
+			            
+			            <ListView
+					        android:id="@+id/text_view_media_details_list"
+					        android:layout_width="match_parent"
+					        android:layout_height="wrap_content"
+					        android:divider="@color/media_details_listview_seperator_color"
+					        android:dividerHeight="@dimen/media_details_seperetor_height"
+		           			android:paddingLeft="15dp"
+					        android:layout_below="@+id/text_view_media_details_list_title"
+					        android:scrollbarAlwaysDrawVerticalTrack="true"
+					        android:fadeScrollbars="false"/>
+			            
+		            </RelativeLayout>    
+		              
+	            </RelativeLayout>
+	            
+	            <!-- ******************* END LEFT PANEL ***********************-->
+	            
+	</RelativeLayout>
+	            
+</RelativeLayout>

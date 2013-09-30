@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearlayout_search_popular_searches"
+   	android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/search_content_margin"
+    android:background="@drawable/background_fragment_search"
+    android:clickable="true">
+ 
+    <RelativeLayout 
+		android:id="@+id/relativelayout_searchbar_search"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:paddingBottom="5dp"
+		android:gravity="center_vertical">
+		        		      
+	    
+       <!-- ############  BEGIN LEFT BUTTON IMAGES ############## -->       
+	   <LinearLayout 
+	       android:id="@+id/search_searchbar_filter"
+	        android:layout_width="wrap_content"
+	        android:layout_height="@dimen/search_searchbar_container_height"
+	        android:orientation="vertical"
+	        android:paddingLeft="@dimen/search_searchbar_filter_side_padding"
+	        android:paddingRight="@dimen/search_searchbar_filter_side_padding"
+	        android:layout_marginLeft="@dimen/search_content_margin"
+	        android:background="@drawable/background_fragment_search_left_buttons">
+	       	
+		   <ImageView
+		        android:id="@+id/search_searchbar_filter_category_icon" 
+		        android:layout_width="@dimen/search_searchbar_filter_category_icon"  
+		        android:layout_height="@dimen/search_searchbar_filter_category_icon"
+		        android:src="@drawable/icon_main_settings_about_small"/>
+		   
+		   <ImageView
+		        android:id="@+id/search_searchbar_filter_click_icon" 
+		        android:layout_width="@dimen/search_searchbar_filter_click_icon"
+		        android:layout_height="@dimen/search_searchbar_filter_click_icon"
+		        android:layout_gravity="center_vertical|center_horizontal"
+		        android:src="@drawable/icon_white_content_collapse_down"/>
+	   
+	   </LinearLayout>
+	   	   
+	   <!-- ########### END LEFT BUTTON IMAGES #################### -->
+	   	    
+	   
+	   <TextView 
+	        android:id="@+id/search_popular_searches_category"
+	       	android:layout_width="wrap_content"
+	        android:layout_height="@dimen/search_searchbar_container_height"
+	        android:text="@string/search_popular_searches_search_category_all"
+	        android:textSize="@dimen/search_searchbar_label_category_text_size"
+	        android:gravity="center_vertical"
+	        android:textColor="@color/black"
+	        android:paddingTop="@dimen/search_searchbar_label_category_text_padding_top"
+	        android:paddingLeft="@dimen/search_searchbar_label_category_text_padding_left"
+	        android:paddingBottom="@dimen/search_searchbar_label_category_text_padding_bottom"
+	        android:background="@drawable/background_searchbox_bg"
+	        android:layout_toRightOf="@+id/search_searchbar_filter"/>
+	    
+	    <com.hungama.myplay.activity.ui.widgets.SearchBar
+ 
+	        android:id="@+id/search_searchbar"
+	        android:layout_width="match_parent"
+	        android:layout_height="@dimen/search_searchbar_container_height"	        
+	        android:layout_marginRight="@dimen/search_content_margin"
+	        android:layout_toRightOf="@id/search_popular_searches_category"
+	        android:background="@drawable/background_searchbox_bg">
+	        
+	    </com.hungama.myplay.activity.ui.widgets.SearchBar>
+	    	        
+
+	    <!-- ########### BEGIN HINTS #################### -->
+	   
+	   <LinearLayout 
+            android:id="@+id/search_hint"
+            android:layout_width="100dp"
+            android:layout_height="@dimen/search_searchbar_container_height"
+            android:background="@color/app_hints_background"
+            android:layout_marginLeft="@dimen/search_content_margin">
+            
+            <LinearLayout 
+		        android:id="@+id/search_searchbar_filter_hint"
+		        android:layout_width="wrap_content"
+		        android:layout_height="@dimen/search_searchbar_container_height"
+		        android:orientation="vertical"
+		        android:paddingLeft="@dimen/search_searchbar_filter_side_padding"
+		        android:paddingRight="@dimen/search_searchbar_filter_side_padding">
+		       	
+			   <View
+			        android:layout_width="@dimen/search_searchbar_filter_category_icon"  
+			        android:layout_height="@dimen/search_searchbar_filter_category_icon"/>
+			   
+			   <ImageView
+			        android:id="@+id/search_searchbar_filter_hint_image" 
+			        android:layout_width="@dimen/search_searchbar_filter_click_icon"
+			        android:layout_height="@dimen/search_searchbar_filter_click_icon"
+			        android:layout_gravity="center_vertical|center_horizontal"
+			        android:src="@drawable/icon_white_content_collapse_down"/>
+		   
+		    </LinearLayout>
+            
+            <TextView 
+                android:id="@+id/search_hint_filter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right|center_vertical"
+                android:text="@string/app_hints_filter"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:paddingRight="10dp"/>
+            
+        </LinearLayout>
+        
+	    <!-- ########### END HINTS #################### -->
+	    
+	     <View
+			        android:layout_width="@dimen/search_content_margin"  
+			        android:layout_height="@dimen/search_searchbar_container_height"
+    				android:background="@color/search_fragment_background_start"/>
+	    
+		<TextView 
+	        android:id="@+id/search_popular_searches_title_top"
+	       	android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/search_popular_searches_title"
+	        android:textSize="@dimen/search_popular_searches_title_text_size"
+	        android:textColor="@color/white"
+	        android:paddingTop="@dimen/search_content_margin"
+	        android:paddingBottom="@dimen/search_popular_searches_title_padding_bottom"
+	        android:layout_marginRight="@dimen/search_content_margin"
+	        android:layout_marginLeft="@dimen/search_content_margin"
+	        android:layout_below="@+id/search_searchbar_filter"/>
+		
+			
+		<ScrollView
+		    android:id="@+id/scrollview_search_keywords"
+		   	android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:layout_marginRight="@dimen/search_content_margin"
+	        android:layout_marginLeft="@dimen/search_content_margin"
+		    android:layout_below="@+id/search_popular_searches_title_top">
+			
+			<LinearLayout
+			    android:id="@+id/linearlayout_search"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="vertical">
+			    		    
+			</LinearLayout>
+		
+		</ScrollView>
+		
+		<ListView
+		    android:id="@+id/search_auto_suggest_keywords" 
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:divider="@color/media_details_listview_seperator_color"
+	        android:dividerHeight="@dimen/media_details_seperetor_height"
+	        android:layout_alignLeft="@+id/search_popular_searches_category"
+	        android:layout_alignRight="@+id/search_searchbar" 
+		    android:layout_below="@+id/search_popular_searches_category"		    
+		    android:headerDividersEnabled="true"
+		    android:visibility="gone">
+		    
+		</ListView>
+		
+		<!-- Container for results. -->
+
+		<FrameLayout
+		    android:id="@+id/main_search_results_container"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:layout_alignParentBottom="true"
+		    android:layout_marginTop="10dp"
+		    android:layout_below="@+id/search_searchbar_filter" />
+		
+		<!-- ################ BEGIN CATEGORIES ################## -->
+		
+	    <LinearLayout
+		    android:id="@+id/search_categories"
+		    android:layout_width="@dimen/search_categories_width"
+		    android:layout_height="wrap_content"
+		    android:layout_alignLeft="@+id/search_searchbar_filter"
+		    android:layout_below="@+id/search_searchbar_filter"
+		    android:orientation="vertical"
+		    android:visibility="gone">
+		    
+		     <LinearLayout
+		        android:id="@+id/linearlayout_categories_all" 
+		        android:layout_width="match_parent"
+		        android:layout_height="@dimen/search_categories_item_height"
+		        android:background="@color/search_fragment_categories_background"
+		    	android:paddingRight="@dimen/search_categories_item_content_right_padding"
+		    	android:paddingLeft="@dimen/search_categories_item_content_left_padding"
+		    	android:gravity="center_vertical">
+		       
+		         <ImageView
+			        android:id="@+id/imagebutton_categories_all"
+			        android:layout_width="@dimen/search_categories_item_icon_width"
+			        android:layout_height="@dimen/search_categories_item_icon_height"
+			        android:background="@color/transparent"
+			        android:src="@drawable/icon_main_settings_about_small"/>
+		        
+		        <TextView 
+		            android:id="@+id/textview__categories_all"
+		            android:text="@string/search_popular_searches_search_category_all_line"
+		           	style="@style/TextViewCategorytext"/>
+		        
+		        <ImageView
+			        android:id="@+id/imagebutton_categories_all_v_image"
+			        android:layout_width="wrap_content"
+			        android:layout_height="match_parent"
+			        android:background="@color/transparent"
+			        android:src="@drawable/icon_green_tick"
+			        android:gravity="right|center_vertical"
+			        android:visibility="visible"/>
+		        
+		    </LinearLayout>
+		    
+		    <View 
+		        android:layout_width="match_parent"
+		        android:layout_height="@dimen/media_details_seperetor_height"
+		        android:background="@color/search_fragment_categories_seperator_background"/>
+		    
+		    <LinearLayout
+		        android:id="@+id/linearlayout_categories_songs" 
+		        android:layout_width="match_parent"
+		        android:layout_height="@dimen/search_categories_item_height"
+		        android:background="@color/search_fragment_categories_background"
+		    	android:paddingRight="@dimen/search_categories_item_content_right_padding"
+		    	android:paddingLeft="@dimen/search_categories_item_content_left_padding"
+		    	android:gravity="center_vertical">
+		        
+		         <ImageView
+			        android:id="@+id/imagebutton_categories_songs"
+			        android:layout_width="@dimen/search_categories_item_icon_width"
+			        android:layout_height="@dimen/search_categories_item_icon_height"
+			        android:background="@color/transparent"
+			        android:src="@drawable/icon_main_settings_music"/>
+		        
+		        <TextView 
+		            android:id="@+id/textview__categories_songs"
+		            android:text="@string/search_popular_searches_search_category_songs_line"
+		           	style="@style/TextViewCategorytext"/>
+		        
+		        <ImageView
+			        android:id="@+id/imagebutton_categories_songs_v_image"
+			        android:layout_width="wrap_content"
+			        android:layout_height="match_parent"
+			        android:background="@color/transparent"
+			        android:src="@drawable/icon_green_tick"
+			        android:gravity="right|center_vertical"
+			        android:visibility="gone"/>
+		        
+		    </LinearLayout>
+		    
+		    <View 
+		        android:layout_width="match_parent"
+		        android:layout_height="@dimen/media_details_seperetor_height"
+		        android:background="@color/search_fragment_categories_seperator_background"/>
+		    
+		    <LinearLayout
+		        android:id="@+id/linearlayout_categories_album" 
+		        android:layout_width="match_parent"
+		        android:layout_height="@dimen/search_categories_item_height"
+		        android:background="@color/search_fragment_categories_background"
+		    	android:paddingRight="@dimen/search_categories_item_content_right_padding"
+		    	android:paddingLeft="@dimen/search_categories_item_content_left_padding"
+		    	android:gravity="center_vertical">
+		        
+		         <ImageView
+			        android:id="@+id/imagebutton_categories_album"
+			        android:layout_width="@dimen/search_categories_item_icon_width"
+			        android:layout_height="@dimen/search_categories_item_icon_height"
+			        android:background="@color/transparent"
+			        android:src="@drawable/icon_main_search_album"/>
+		        
+		        <TextView 
+		            android:id="@+id/textview__categories_album"
+		            android:text="@string/search_popular_searches_search_category_album_line"
+		           	style="@style/TextViewCategorytext"/>
+		        
+		        <ImageView
+			        android:id="@+id/imagebutton_categories_album_v_image"
+			        android:layout_width="wrap_content"
+			        android:layout_height="match_parent"
+			        android:background="@color/transparent"
+			        android:src="@drawable/icon_green_tick"
+			        android:gravity="right|center_vertical"
+			        android:visibility="gone"/>
+		        
+		    </LinearLayout>
+		    
+		    <View 
+		        android:layout_width="match_parent"
+		        android:layout_height="@dimen/media_details_seperetor_height"
+		        android:background="@color/search_fragment_categories_seperator_background"/>
+		    
+		     <LinearLayout
+		        android:id="@+id/linearlayout_categories_playlist" 
+		        android:layout_width="match_parent"
+		        android:layout_height="@dimen/search_categories_item_height"
+		        android:background="@color/search_fragment_categories_background"
+		    	android:paddingRight="@dimen/search_categories_item_content_right_padding"
+		    	android:paddingLeft="@dimen/search_categories_item_content_left_padding"
+		    	android:gravity="center_vertical">
+		        
+		         <ImageView
+			        android:id="@+id/imagebutton_categories_playlist"
+			        android:layout_width="@dimen/search_categories_item_icon_width"
+			        android:layout_height="@dimen/search_categories_item_icon_height"
+			        android:background="@color/transparent"
+			        android:src="@drawable/icon_home_music_tile_playlist"/>
+		        
+		        <TextView 
+		            android:id="@+id/textview__categories_playlist"
+		            android:text="@string/search_popular_searches_search_category_playlist_line"
+		           	style="@style/TextViewCategorytext"/>
+		        
+		        <ImageView
+			        android:id="@+id/imagebutton_categories_playlist_v_image"
+			        android:layout_width="wrap_content"
+			        android:layout_height="match_parent"
+			        android:background="@color/transparent"
+			        android:src="@drawable/icon_green_tick"
+			        android:gravity="right|center_vertical"
+			        android:visibility="gone"/>
+		        
+		    </LinearLayout>
+		    
+		    <View 
+		        android:layout_width="match_parent"
+		        android:layout_height="@dimen/media_details_seperetor_height"
+		        android:background="@color/search_fragment_categories_seperator_background"/>
+		    
+		    <LinearLayout
+		        android:id="@+id/linearlayout_categories_video" 
+		        android:layout_width="match_parent"
+		        android:layout_height="@dimen/search_categories_item_height"
+		        android:background="@color/search_fragment_categories_background"
+		    	android:paddingRight="@dimen/search_categories_item_content_right_padding"
+		    	android:paddingLeft="@dimen/search_categories_item_content_left_padding"
+		    	android:gravity="center_vertical">
+		        
+		         <ImageView
+			        android:id="@+id/imagebutton_categories_video"
+			        android:layout_width="@dimen/search_categories_item_icon_width"
+			        android:layout_height="@dimen/search_categories_item_icon_height"
+			        android:background="@color/transparent"
+			        android:src="@drawable/icon_main_settings_videos"/>
+		        
+		        <TextView 
+		            android:id="@+id/textview__categories_video"
+		            android:text="@string/search_popular_searches_search_category_video_line"
+		           	style="@style/TextViewCategorytext"/>
+		        
+		        <ImageView
+			        android:id="@+id/imagebutton_categories_video_v_image"
+			        android:layout_width="wrap_content"
+			        android:layout_height="match_parent"
+			        android:background="@color/transparent"
+			        android:src="@drawable/icon_green_tick"
+			        android:gravity="right|center_vertical"/>
+		        
+		    </LinearLayout>
+		    		 
+		</LinearLayout>
+		
+		<!-- ############# END CATEGORIES ##################-->
+		
+	</RelativeLayout>	
+	
+</LinearLayout>

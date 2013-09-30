@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" 
+    android:gravity="center_vertical|center_horizontal"
+    android:baselineAligned="true"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:background="@color/search_fragment_result_layout_body_background">
+
+    <ProgressBar
+        android:id="@+id/search_results_loading_more_progress"
+        style="@style/LoadingIndicator"
+        android:indeterminate="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:paddingRight="5dp"/>
+
+    <TextView
+        android:id="@+id/search_results_loading_more_label"
+        android:layout_width="wrap_content"
+		style="@style/TextSmallMediumMinusPlus"
+		android:textColor="@color/black"
+		android:text="@string/search_results_loading_indicator_loading_more"/>
+
+</LinearLayout>

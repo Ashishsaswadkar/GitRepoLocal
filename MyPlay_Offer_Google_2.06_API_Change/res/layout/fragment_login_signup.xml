@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/login_button_facebook"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_facebook_height"
+            android:layout_marginLeft="@dimen/login_content_side_margin"
+            android:layout_marginRight="@dimen/login_content_side_margin"
+            android:layout_marginTop="@dimen/login_content_top_margin"
+            android:background="@drawable/background_login_button_facebook" >
+
+            <ImageView
+                android:id="@+id/login_button_facebook_icon"
+                android:layout_width="@dimen/login_facebook_logo_width"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_login_facebook" />
+
+            <View
+                android:id="@+id/login_button_facebook_divider"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/login_button_facebook_icon"/>
+
+            <TextView
+                android:id="@+id/login_button_facebook_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/login_button_facebook_divider"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+                android:text="Connect with Facebook"
+                android:textSize="@dimen/login_facbook_connect_text_size"
+                android:textColor="@color/white" />
+            
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/social_network_buttons_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/login_content_side_margin"
+            android:layout_marginRight="@dimen/login_content_side_margin"
+            android:layout_marginTop="@dimen/login_content_top_margin" >
+            
+            <RelativeLayout android:id="@+id/login_button_twitter"
+                			android:layout_width="0dp"
+                			android:layout_height="@dimen/login_other_social_network_button_height"
+                			android:layout_weight="1"
+                			android:layout_marginRight="@dimen/login_other_social_network_button_spacing">
+			
+                <ImageView
+                    android:id="@+id/login_button_twitter_icon"
+                    android:layout_width="@dimen/login_other_social_network_button_height"
+                    android:layout_height="@dimen/login_other_social_network_button_height"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/background_login_twitter_icon"
+                    android:src="@drawable/icon_login_twitter_icon" />
+                
+                <TextView
+                    android:id="@+id/login_button_twitter_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/login_button_twitter_icon"
+                    android:background="@drawable/background_login_socialnetwork_title"
+                    android:gravity="center_vertical|left"
+                    android:paddingLeft="@dimen/login_other_social_network_button_title_padding_left"
+                    android:text="@string/login_twitter_title"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/login_other_social_network_button_text_size" />
+                
+            </RelativeLayout>
+            
+            <RelativeLayout android:id="@+id/login_button_google"
+                			android:layout_width="0dp"
+                			android:layout_height="@dimen/login_other_social_network_button_height"
+                			android:layout_weight="1">
+                
+                <ImageView
+                    android:id="@+id/login_button_google_icon"
+                    android:layout_width="@dimen/login_other_social_network_button_height"
+                    android:layout_height="@dimen/login_other_social_network_button_height"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/background_login_google_icon"
+                    android:paddingTop="@dimen/login_button_google_icon_top_padding"
+                    android:src="@drawable/icon_login_google_icon" />
+                
+                <TextView
+                    android:id="@+id/login_button_google_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/login_button_google_icon"
+                    android:background="@drawable/background_login_socialnetwork_title"
+                    android:gravity="center_vertical|left"
+                    android:paddingLeft="@dimen/login_other_social_network_button_title_padding_left"
+                    android:text="@string/login_google_title"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/login_other_social_network_button_text_size" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/divider_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@color/login_line_separator" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="@dimen/login_other_social_network_button_height"
+                android:layout_height="@dimen/login_other_social_network_button_height"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_login_or" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/login_content_side_margin"
+            android:layout_marginRight="@dimen/login_content_side_margin"
+            android:text="@string/login_hungama_sign_up"
+            android:textColor="@color/login_text_color"
+            android:textSize="@dimen/login_title_text_size"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/login_signup_fields_contailner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/login_content_side_margin"
+            android:layout_marginRight="@dimen/login_content_side_margin"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/login_signup_button_signup"
+            android:layout_width="@dimen/login_button_width_size"
+            android:layout_height="@dimen/login_button_height_size"
+            android:layout_marginLeft="@dimen/login_content_side_margin"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/background_button_blue"
+            android:text="@string/login_signup_button_signup"
+            android:textColor="@color/white"
+            android:textSize="@dimen/login_button_text_size_login_page"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:layout_marginRight="@dimen/login_content_side_margin"
+            android:layout_marginTop="@dimen/login_content_top_margin"
+            android:paddingLeft="@dimen/login_content_side_margin" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_centerVertical="true"
+                android:text="@string/login_signup_already_a_member"
+                android:textColor="@color/login_text_color"
+                android:textSize="@dimen/login_small_text_size" />
+
+            <Button
+                android:id="@+id/login_signup_button_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:background="@color/transparent"
+                android:paddingRight="13dp"
+                android:text="@string/login_signup_login"
+                android:textColor="@color/widget_text_color_selection"
+                android:textSize="@dimen/login_small_text_size"
+                android:textStyle="bold"
+                android:gravity="center_vertical" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

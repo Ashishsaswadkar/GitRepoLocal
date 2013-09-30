@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="right"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="@dimen/main_actionbar_settings"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/player_queue_options_save_as_playlist"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/player_queue_options_item_size"
+            android:background="@color/black"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="@dimen/player_queue_options_item_left_padding"
+            style="@style/TitleBarOptionsItem"
+            android:text="@string/player_queue_options_save_as_playlist"
+            android:textColor="@color/white" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/search_fragment_categories_seperator_background" />
+
+        <Button
+            android:id="@+id/player_queue_options_clear_queue"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/player_queue_options_item_size"
+            android:background="@color/black"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="@dimen/player_queue_options_item_left_padding"
+            style="@style/TitleBarOptionsItem"
+            android:text="@string/player_queue_options_clear_queue"
+            android:textColor="@color/white" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/search_fragment_categories_seperator_background" />
+
+        <Button
+            android:id="@+id/player_queue_options_load_playlist"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/player_queue_options_item_size"
+            android:background="@color/black"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="@dimen/player_queue_options_item_left_padding"
+            style="@style/TitleBarOptionsItem"
+            android:text="@string/player_queue_options_load_playlist"
+            android:textColor="@color/white" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/search_fragment_categories_seperator_background" />
+
+        <Button
+            android:id="@+id/player_queue_options_load_favorites"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/player_queue_options_item_size"
+            android:background="@color/black"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="@dimen/player_queue_options_item_left_padding"
+            style="@style/TitleBarOptionsItem"
+            android:text="@string/player_queue_options_load_favorites"
+            android:textColor="@color/white" />
+        
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/search_fragment_categories_seperator_background" />
+        
+        <Button
+            android:id="@+id/player_queue_options_exit_queue"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/player_queue_options_item_size"
+            android:background="@color/black"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="@dimen/player_queue_options_item_left_padding"
+            style="@style/TitleBarOptionsItem"
+            android:text="@string/player_queue_options_exit_queue"
+            android:textColor="@color/white" />
+        
+    </LinearLayout>
+
+</LinearLayout>

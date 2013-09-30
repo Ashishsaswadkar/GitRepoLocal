@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/main_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_title_bar_height"
+        android:background="@drawable/background_home_tabwidget_tab_unselected"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/main_title_bar_text"
+            style="@style/TextMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/prenium_membership_fragment_title" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/memberhip_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/background_text_field"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/premium_membership"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E1E1E1" 
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="@string/membership_detailed_text_new"
+                android:textSize="14dp"
+                android:textColor="@color/membership_detail_text_color" />
+
+            <TextView
+                android:id="@+id/membership_plan_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="@string/membership_date"
+                android:textSize="14dp" 
+                android:textColor="@color/membership_detail_text_color"/>
+            
+            <Button
+		        android:id="@+id/upgrade_button_unsubscribe"
+		        android:layout_width="@dimen/upgrade_plans_unsubscribe_button_width"
+		        android:layout_height="@dimen/login_button_height"
+		        android:layout_marginLeft="@dimen/upgrade_mobile_required_margin_sides"
+		        android:layout_marginTop="12dp"
+		        android:layout_marginBottom="12dp"
+		        android:layout_marginRight="20dp"
+		        android:background="@drawable/background_button_blue"
+		        android:text="@string/membership_unsubscribe_button"
+		        android:textColor="@color/white"
+		        android:textSize="@dimen/login_button_text_size"
+		        android:layout_gravity="left|center_vertical"
+		        android:textStyle="bold" 
+		        android:layout_alignParentRight="true"/>
+            
+        </LinearLayout>
+        
+        
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/unsubscribe_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+	    android:background="@drawable/background_button_grey"
+	    android:layout_marginTop="20dp"
+        android:text="@string/membership_unsubscribe_button"
+	    android:textColor="@color/upgrade_verification_resend_button_text_color"
+	    android:textSize="@dimen/login_button_text_size"
+	    android:paddingLeft="20dp"
+	    android:paddingRight="20dp"
+        android:layout_gravity="center"
+        android:onClick="unsubscribe" 
+        android:visibility="gone"/>
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="facebook_sharing_properties">
+        <item>@string/songs_i_listen_to</item>
+        <item>@string/my_favorite</item>
+        <item>@string/songs_i_downloaded</item>
+        <item>@string/my_comments</item>
+        <item>@string/my_badges</item>
+        <item>@string/videos_watched</item>
+        <item>@string/videos_downloaded</item>
+    </string-array>
+    <string-array name="my_stream_settings_properties">
+        <item>@string/mystream_settings_music_listened_to</item>
+        <item>@string/mystream_settings_likes</item>
+        <item>@string/mystream_settings_downlods</item>
+        <item>@string/mystream_settings_comments</item>
+        <item>@string/mystream_settings_videos_watched</item>
+        <item>@string/mystream_settings_shares</item>
+        <item>@string/mystream_settings_badges_earned</item>
+    </string-array>
+
+</resources>

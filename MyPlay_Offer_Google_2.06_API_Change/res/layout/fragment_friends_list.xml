@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/main_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_title_bar_height"
+        android:background="@drawable/background_home_tabwidget_tab_unselected" >
+
+        <TextView
+            android:id="@+id/main_title_bar_text"
+            style="@style/TextMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/friends_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <View
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/search_fragment_result_layout_body_background"
+             />
+
+        <ListView
+            android:id="@+id/friends_listview"
+            android:layout_width="match_parent"
+            android:layout_height="119dp"
+            android:layout_above="@+id/footer"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/header"
+            android:background="@color/search_fragment_result_layout_body_background"
+            android:divider="@color/media_details_listview_seperator_color"
+            android:dividerHeight="@dimen/media_details_seperetor_height"
+            android:clickable="false"
+            >
+        </ListView>
+
+        <View
+            android:id="@+id/footer"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="@color/search_fragment_result_layout_body_background" 
+            />
+
+        <Button
+            android:id="@+id/invite_friend_button"
+            android:layout_width="60dp"
+            android:layout_height="@dimen/login_button_height"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/footer"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/background_button_grey"
+            android:text="@string/invite_social_network_frien"
+            android:textColor="@color/upgrade_verification_resend_button_text_color"
+            android:textSize="@dimen/login_button_text_size"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/friends_selection_button"
+            android:layout_width="60dp"
+            android:layout_height="@dimen/login_button_height"
+            android:layout_alignBottom="@+id/header"
+            android:layout_alignRight="@+id/invite_friend_button"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/transparent_background"
+            android:text="@string/select_all_social_friends"
+            android:textColor="@color/upgrade_verification_resend_button_text_color"
+            android:textSize="@dimen/login_button_text_size"
+            android:textStyle="bold"
+             />
+
+    </RelativeLayout>
+
+</LinearLayout>

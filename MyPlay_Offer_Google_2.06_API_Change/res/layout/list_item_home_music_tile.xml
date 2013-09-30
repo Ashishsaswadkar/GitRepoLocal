@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null"
+    android:visibility="visible" >
+
+    <ImageView
+        android:id="@+id/home_music_tile_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@null"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <RelativeLayout
+        android:id="@+id/radio_translucent_strip_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/home_video_tile_details_height"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/translucent_background"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/radio_artist"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="5dp"
+            android:textAppearance="@style/HomeMediaTileTextMedium"
+            android:textSize="16dp" />
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/home_music_tile_button_play"
+        android:layout_width="@dimen/home_tiles_button_play_size"
+        android:layout_height="@dimen/home_tiles_button_play_size"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/home_tiles_button_play_margin_bottom"
+        android:layout_marginRight="@dimen/home_tiles_button_play_margin_right"
+        android:background="@drawable/icon_home_music_tile_play"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@null" />
+
+    <Button
+        android:id="@+id/home_music_tile_button_remove"
+        android:layout_width="@dimen/home_tiles_button_remove_size"
+        android:layout_height="@dimen/home_tiles_button_remove_size"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/home_tiles_button_remove_side_margin"
+        android:layout_marginTop="@dimen/home_tiles_button_remove_side_margin"
+        android:background="@drawable/background_home_tile_button_remove"
+        android:src="@null"
+        android:text="@string/application_remove_sign"
+        android:textColor="@color/white"
+        android:textSize="@dimen/home_tiles_button_remove_text_size"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/home_music_tile_title_song_or_playlist"
+        style="@style/HomeMediaTileTextSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/home_music_tile_button_remove"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/home_tiles_button_title_margin"
+        android:layout_marginRight="@dimen/home_tiles_button_title_margin"
+        android:layout_marginTop="@dimen/home_tiles_button_remove_side_margin"
+        android:layout_toLeftOf="@+id/home_music_tile_button_remove" />
+
+    <TextView
+        android:id="@+id/home_music_tile_title"
+        style="@style/HomeMusicTileTextBig"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/home_music_tile_button_remove"
+        android:layout_below="@+id/home_music_tile_title_song_or_playlist"
+        android:layout_marginLeft="@dimen/home_tiles_button_title_margin"
+        android:layout_marginTop="@dimen/home_tiles_button_title_margin_top" />
+
+    <TextView
+        android:id="@+id/home_music_tile_description"
+        style="@style/HomeMediaTileTextSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/home_music_tile_title"
+        android:layout_below="@+id/home_music_tile_title"
+        android:layout_marginTop="@dimen/home_tiles_button_title_description_margin_top"
+        android:layout_toLeftOf="@+id/home_music_tile_button_play" />
+
+    <RelativeLayout
+        android:id="@+id/home_tile_hint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_hints_background"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/home_music_tile_hint_text"
+            style="@style/HomeMusicTileTextBig"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/home_music_tile_title_song_or_playlist"
+            android:layout_marginLeft="@dimen/home_tiles_button_title_margin"
+            android:layout_marginRight="@dimen/home_tiles_button_title_margin"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/app_hints_home_tile"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            tools:ignore="NotSibling" />
+
+        <ImageButton
+            android:id="@+id/home_music_tile_hint_button_play"
+            android:layout_width="@dimen/home_tiles_button_play_size"
+            android:layout_height="@dimen/home_tiles_button_play_size"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/home_tiles_button_play_margin_bottom"
+            android:layout_marginRight="@dimen/home_tiles_button_play_margin_right"
+            android:background="@drawable/icon_general_play_grey"
+            android:clickable="true"
+            android:focusable="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

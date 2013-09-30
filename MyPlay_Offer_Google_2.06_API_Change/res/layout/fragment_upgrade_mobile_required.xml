@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/login_forgot_password_test_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/upgrade_mobile_required_margin_sides"
+        android:layout_marginRight="@dimen/upgrade_mobile_required_margin_sides"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/login_text_color"
+        android:textSize="@dimen/login_small_text_size"
+        android:text="@string/upgrade_mobile_number_required_music"/>
+    
+    <TextView
+        android:id="@+id/login_forgot_password_test_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/upgrade_mobile_required_margin_sides"
+        android:layout_marginRight="@dimen/upgrade_mobile_required_margin_sides"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/login_text_color"
+        android:textSize="@dimen/login_small_text_size"
+        android:text="@string/upgrade_verification_sms"/>
+
+    <LinearLayout 
+        android:id="@+id/linearlayout_mobile_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/upgrade_mobile_required_margin_sides"
+        android:layout_marginRight="@dimen/upgrade_mobile_required_margin_sides"
+        android:orientation="horizontal">
+        
+        <TextView
+	        android:id="@+id/login_forgot_password_test_message"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="12dp"
+	        android:layout_marginRight="@dimen/upgrade_mobile_required_margin_sides"
+	        android:textColor="@color/login_text_color"
+	        android:textSize="@dimen/login_small_text_size"
+	        android:text="@string/upgrade_country_code"/>
+    
+        <EditText
+	        android:id="@+id/mobile_number_field"
+	        android:layout_width="190dp"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="@dimen/login_content_top_margin"
+	        android:textColor="@color/login_text_color"
+	        android:textColorHint="@color/login_hint"
+	        android:hint="@string/upgrade_mobile_hint"
+	        android:maxLines="1"
+	        android:minLines="1"
+	        android:singleLine="true"
+	        android:background="@drawable/background_text_field"
+	        android:paddingLeft="@dimen/login_content_padding_left"
+	        android:ems="50"
+	        android:inputType="phone" 
+	        android:textSize="@dimen/login_field_text"
+	         />
+      
+	    <Button
+	        android:id="@+id/submit_mobile_number_button"
+	        android:layout_width="@dimen/login_button_width"
+	        android:layout_height="@dimen/login_button_height"
+	        android:layout_marginLeft="@dimen/upgrade_mobile_required_margin_sides"
+	        android:layout_marginTop="@dimen/login_content_top_margin"
+	        android:background="@drawable/background_button_blue"
+	        android:text="@string/login_forgot_password_submit"
+	        android:textColor="@color/white"
+	        android:textSize="@dimen/login_button_text_size"
+	        android:textStyle="bold" />
+        
+    </LinearLayout>
+    
+    <View android:layout_width="match_parent"
+        	  android:layout_height="1dp"
+        	  android:layout_centerVertical="true"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="20dp"
+              android:layout_marginBottom="20dp"
+        	  android:background="@color/login_line_separator"/>
+    
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:layout_marginLeft="@dimen/upgrade_mobile_required_margin_sides"
+        android:layout_marginRight="@dimen/upgrade_mobile_required_margin_sides"
+        android:text="@string/upgrade_mobile_required_privacy_title"
+        android:textColor="@color/login_text_color"
+        android:textSize="@dimen/login_title_text_size"
+        android:textStyle="bold" />
+           
+	<TextView
+		 android:id="@+id/login_forgot_password_test_message"
+		 android:layout_width="wrap_content"
+		 android:layout_height="wrap_content"
+		 android:layout_marginTop="12dp"
+		 android:layout_marginLeft="@dimen/upgrade_mobile_required_margin_sides"
+		 android:layout_marginRight="@dimen/upgrade_mobile_required_margin_sides"	   
+		 android:textColor="@color/login_text_color"
+		 android:textSize="@dimen/login_small_text_size"
+		 android:text="@string/upgrade_mobile_required_privacy_text1"
+		 android:drawableLeft="@drawable/icon_green_tick"/>                 
+	    
+	<TextView
+		 android:id="@+id/login_forgot_password_test_message"
+		 android:layout_width="wrap_content"
+		 android:layout_height="wrap_content"
+		 android:layout_marginTop="12dp"
+		 android:layout_marginLeft="@dimen/upgrade_mobile_required_margin_sides"        
+		 android:layout_marginRight="@dimen/upgrade_mobile_required_margin_sides"
+		 android:textColor="@color/login_text_color"
+		 android:textSize="@dimen/login_small_text_size"
+		 android:drawableLeft="@drawable/icon_green_tick"
+	 	 android:text="@string/upgrade_mobile_required_privacy_text2"/>                 
+    
+</LinearLayout>

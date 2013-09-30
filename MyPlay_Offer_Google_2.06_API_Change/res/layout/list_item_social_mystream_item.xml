@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/social_mystream_item_padding"
+    android:paddingLeft="@dimen/social_mystream_item_padding"
+    android:paddingTop="@dimen/social_mystream_item_padding" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/social_mystream_item_friend_thumbnail"
+            android:layout_width="@dimen/social_mystream_item_friend_thumbnail_size"
+            android:layout_height="@dimen/social_mystream_item_friend_thumbnail_size"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" />
+
+        <TextView
+            android:id="@+id/social_mystream_item_title"
+            style="@style/TextSmallMediumMinus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/social_mystream_item_friend_thumbnail"
+            android:layout_marginLeft="@dimen/social_mystream_item_padding"
+            android:layout_marginRight="@dimen/social_mystream_item_padding"
+            android:layout_toLeftOf="@+id/social_mystream_item_date_from_label"
+            android:layout_toRightOf="@+id/social_mystream_item_friend_thumbnail"
+            android:padding="0dp"
+            android:textColor="@color/social_mystream_item_title" />
+
+        <TextView
+            android:id="@+id/social_mystream_item_date_from_label"
+            style="@style/TextSmall"
+            android:layout_width="@dimen/social_mystream_item_date_from_label_width"
+            android:layout_height="@dimen/social_mystream_item_date_from_label_height"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/social_mystream_item_title"
+            android:layout_marginRight="@dimen/social_mystream_item_padding"
+            android:background="@drawable/background_social_mystream_item_date_from_label"
+            android:gravity="center"
+            android:text="a Day"
+            android:textColor="@color/social_mystream_time_from_label_text" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/social_mystream_item_padding"
+        android:orientation="horizontal" >
+
+        <com.hungama.myplay.activity.ui.widgets.StreamMediaItemView
+            android:id="@+id/social_mystream_item_streammediaitem1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/social_mystream_item_padding"
+            android:layout_weight="1"
+            android:visibility="visible" />
+
+        <com.hungama.myplay.activity.ui.widgets.StreamMediaItemView
+            android:id="@+id/social_mystream_item_streammediaitem2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/social_mystream_item_padding"
+            android:layout_weight="1"
+            android:visibility="invisible" />
+
+        <com.hungama.myplay.activity.ui.widgets.StreamMediaItemView
+            android:id="@+id/social_mystream_item_streammediaitem3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/social_mystream_item_padding"
+            android:layout_weight="1"
+            android:visibility="invisible" />
+
+        <com.hungama.myplay.activity.ui.widgets.StreamMediaItemView
+            android:id="@+id/social_mystream_item_streammediaitem4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/social_mystream_item_padding"
+            android:layout_weight="1"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+</LinearLayout>

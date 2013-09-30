@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- General -->
+    
+    <drawable name="translucent_background">#a0000000</drawable>
+    <color name="translucent_white">#C9C9C9</color>
+    
+    <color name="transparent">#00000000</color>
+    <drawable name="transparent_background">#00000000</drawable>
+    
+    <drawable name="white_background">#FFFFFF</drawable>
+    
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="azure">#00BAFF</color>
+    <color name="blue">#011037</color>
+    
+    <color name="hungama_text_blue">#043166</color>
+    <color name="hungama_text_grey">#999999</color>
+    <color name="hungama_text_dark_grey">#666666</color>
+    
+    <color name="application_background_grey">#E6E7E9</color>
+    <color name="application_background_dark_grey">#303333</color>
+    <color name="application_background_blue">#324F85</color>
+    <color name="application_background_menu">#1D1D1D</color>
+    
+    <color name="connection_error_empty_view_title_text_color">#959595</color>
+    
+    <drawable name="main_actionbar_selected_navigation">#000000</drawable>
+    <drawable name="main_actionbar_selected_search">#000000</drawable>
+    <drawable name="main_actionbar_selected_settings">#000000</drawable>
+    
+    <color name="application_options_line_separator">#1E1E1E</color>
+    <drawable name="application_options_line_separator_drawable">#1E1E1E</drawable>
+    
+    <color name="application_line_shadowed_separator_start">#BCBCBC</color>
+    <color name="application_line_shadowed_separator_end">#EBEBEB</color>
+
+    <color name="drop_target_color1">#00000000</color>
+	<color name="drop_target_color2">#00000000</color>
+    <color name="drop_target_enabled">#00000000</color>
+	<color name="drop_target_disabled">#00BAFF</color>
+	
+	<drawable name="field_list_line_separator">#B9B9B9</drawable>
+	<color name="field_list_line_separator">#B9B9B9</color>
+	
+	<drawable name="action_bar_selected_item_background_quick_navigation">#2896D6</drawable>
+	<drawable name="action_bar_selected_item_background_search">#282828</drawable>
+	<drawable name="action_bar_selected_item_background_global_menu">#000000</drawable>
+	
+	<!-- Text Field view -->
+	
+	<!-- Feedback -->
+     
+     <color name="text_field_hint">#B9B9B9</color>
+     <color name="text_field_value">#333333</color>
+    
+    <!-- Login -->
+    
+    <color name="login_background_gradient_start">#BABABA</color>
+    <color name="login_background_gradient_end">#D7D7D7</color>
+    
+    <color name="login_text_color">#727272</color>
+    <color name="login_link_text_color">#0B1830</color>
+    <color name="login_title_text_love_color">#D8867D</color>
+    
+    <color name="login_line_separator">#B9B9B9</color>
+    <color name="login_hint">#B9B9B9</color>
+    
+    <!-- Action Bar: Settings -->
+    
+    <color name="main_actionbar_settings_category_background">#000000</color>
+    <color name="main_actionbar_settings_category_color">#FFFFFF</color>
+    <color name="main_actionbar_settings_menu_item_background_regular">#CDCDCD</color>
+    <color name="main_actionbar_settings_menu_item_background_selected">#B9B9B9</color>
+    <color name="main_actionbar_settings_menu_item_text">#3A3A3A</color>
+    <color name="main_actionbar_settings_menu_item_text_specials">#0099D8</color>
+    <drawable name="main_actionbar_settings_menu_item_separator">#B9B9B9</drawable>
+
+    
+    <!-- Main: Player Bar -->
+    
+    <color name="main_player_bar_progress_bar_progress">#00BAFF</color>
+    <color name="main_player_bar_progress_bar_background">#FFFFFF</color>
+    <color name="main_player_bar_progress_bar_secondary_progress">#787878</color>
+    
+    <color name="main_player_bar_progress_bar_scale_background">#292929</color>
+    <color name="main_player_bar_progress_bar_scale_text_current">#FFFFFF</color>
+    <color name="main_player_bar_progress_bar_scale_text_length">#999999</color>
+    
+    
+    <!-- Main: Player Content -->
+    
+    <color name="main_player_content_line_separator_horizontal">#000000</color>
+    <color name="main_player_content_line_separator_vertical">#343434</color>
+    <color name="main_player_content_buttons_background">#181818</color>
+    <color name="main_player_content_button_text">#686868</color>
+    <color name="main_player_content_button_selected">#3F3E3E</color>
+    <color name="main_player_content_button_even_unselected">#000000</color>
+    <color name="main_player_content_button_odd_unselected_start">#1D1D1D</color>
+    <color name="main_player_content_button_odd_unselected_end">#333333</color>
+    
+    <!-- Queue -->
+     <color name="player_queue_now_playing_background">#AAAAAA</color>
+    
+    <!-- Home Fragment -->
+    
+    <color name="home_tabwidget_tab_label_regular_selected">#FFFFFF</color>
+    <color name="home_tabwidget_tab_label_regular_unselected">#CACACA</color>
+    <color name="home_tabwidget_tab_label_stream_selected">#AFE607</color>
+    <color name="home_tabwidget_tab_label_stream_unselected">#AFE607</color>
+    
+    <color name="home_tabwidget_tab_label_shadow">#000000</color>
+    <color name="home_tabwidget_tab_separator">#525252</color>
+    
+    <color name="home_music_tile_playlist_background_gradient_start">#171717</color>
+    <color name="home_music_tile_playlist_background_gradient_end">#6F6F6F</color>
+    <drawable name="home_music_tile_options_background">#aa171717</drawable>
+    
+    <!-- Home Details -->
+    
+    <!-- Discover - Moods -->
+    
+    <color name="discovery_mood_selected_item_text">#202020</color>
+    
+    <!-- Media Details -->
+    
+    <color name="media_details_list_item_track_background">#3A3A3A</color>
+    <color name="media_details_button_background_grey">#1E1E1E</color>
+    <color name="media_details_button_background_grey_light">#3C3C3C</color>
+    <color name="media_details_left_panel_background">#E6E7E9</color>
+    <color name="media_details_right_panel_background">#3A3A3A</color>
+    <color name="media_details_seperator_background">#C6C6C6</color>
+    <color name="media_details_text_color">#B0B0B0</color>
+    <color name="media_details_text_color_song_details">#CCCCCC</color>
+    <color name="media_details_album_or_playlist_title_background">#292929</color>
+    <color name="media_details_listview_seperator_color">#484748</color>
+    <color name="media_details_action_button_text_color">#969696</color>
+    
+    
+    <!-- Search -->
+    
+    <color name="search_result_line_background">#D9D9D9</color>
+    <color name="search_fragment_background_start">#3A3A3A</color>
+    <color name="search_fragment_background_end">#282828</color>
+    <color name="search_fragment_button_background">#666666</color>
+    <color name="search_fragment_categories_background">#202020</color>
+    <color name="search_fragment_categories_seperator_background">#555555</color>
+    
+    <color name="search_fragment_left_buttons_background_start">#8A8A8A</color>
+    <color name="search_fragment_left_buttons_background_end">#232323</color>
+    <color name="search_fragment_categories_text_color">#CCCCCC</color>
+    
+    <color name="search_fragment_result_layout_top_background_end">#2D2D2D</color>
+    <color name="search_fragment_result_layout_top_text_color_grey">#999999</color>
+    <color name="search_fragment_result_layout_body_background">#DBDBDB</color>
+     <color name="search_fragment_result_list_item_title_text_color">#172A54</color>
+     <color name="search_fragment_result_list_item_bottom_text_color">#656565</color>
+     
+     <!-- VIDEO PLAYER INFO PAGE -->
+     
+     <color name="video_player_info_page_background">#E6E7E8</color>
+     <color name="video_player_info_page_top_row_bottom_text_color">#666666</color>
+     <color name="video_player_info_page_row_text_color">#102E6D</color>
+     <color name="video_upgrade_dialog_title_backgournd_color">#393939</color>
+     
+     <!-- Upgrade -->
+     
+     <color name="upgrade_verification_resend_button_text_color">#051D3F</color>
+     <color name="upgrade_plans_list_item_plan_period_text_color">#333333</color>
+     
+     <!-- Radio -->
+
+     <!-- ForYouActivity -->
+     <color name="activity_foryou_bg">#000000</color>
+     
+     <!-- Player Load Menu -->
+     <color name="fragment_load_menu_bg">#3F3E3E</color>
+     
+     <!-- App hints -->
+     <color name="app_hints_background">#CCFF7F00</color>
+     
+     <!-- App guide -->
+     <color name="overlay">#cc000000</color>
+     
+     <!-- My Stream -->
+     
+     <color name="social_mystream_title_bar_separator_background">#00000000</color>
+     <color name="social_mystream_title_bar_button_background">#221F20</color>
+     <color name="social_mystream_title_bar_button_text_selected">#9ADD03</color>
+     <color name="social_mystream_title_bar_button_text_unselected">#FEFEFE</color>
+     <color name="social_mystream_empty_content_message">#959595</color>
+
+     <color name="social_mystream_item_background_odd">#EFEFEF</color>
+     <color name="social_mystream_item_background_even">#FFFFFF</color>
+     <color name="social_mystream_item_title">#757A7A</color>
+     <color name="social_mystream_time_from_label_background">#ADADAD</color>
+     <color name="social_mystream_time_from_label_text">#FAFAFA</color>
+     
+          <!-- My Preferences -->
+     <color name="background_sub_categories">#6E6E6E</color>     
+     <color name="background_my_preferences_button_selected">#29B8FF</color>
+     <color name="background_my_preferences_button_sub_category_unselected">#272727</color>
+     
+     <!-- Invite Friends -->
+     <color name="invite_friends_title2_text_color">#797979</color>
+     <color name="invite_friends_buttons_text_color">#666666</color>
+     
+     <!-- Redeem/Rewards -->     
+     <!-- <color name="redeem_top_my_coins_background">#00BAFF</color> -->
+     <color name="redeem_top_my_coins_background">#2ABAFF</color>
+     
+     <!-- Social Profile -->
+     
+     <color name="social_profile_text_blue">#2ABAFF</color>
+     <color name="social_profile_text_grey">#999999</color>
+     <color name="social_profile_text_label_grey">#C1CBCF</color>
+     <color name="social_profile_text_label_black">#0C0C0C</color>
+     
+     <color name="social_profile_background">#E6E7E8</color>
+     <color name="social_profile_user_bar_background">#FFFFFF</color>
+     <color name="social_profile_user_bar_level_bar_background_unselected">#383938</color>
+     <color name="social_profile_user_bar_level_bar_background_selected">#2ABAFF</color>
+     <color name="social_profile_user_bar_level_bar_text_unselected">#8E8D8E</color>
+     <color name="social_profile_user_bar_level_bar_text_selected">#8E8D8E</color>
+     
+     <color name="social_profile_section_title_background">#2ABAFF</color>
+     <color name="social_profile_section_title_text_value">#FFFFFF</color>
+     <color name="social_profile_section_content_item_backgorund">#FFFFFF</color>
+     <color name="social_profile_section_more_content_indicator_background">#AEAEAE</color>
+     
+     <color name="social_leaderboard_tab2_period_background">#552b2b2b</color>
+     <color name="social_leaderboard_tab2_period_separator">#333333</color>
+     
+     <color name="social_leaderboard_user_name_text_color">#27afde</color>
+     
+     <color name="leaderboard_user_item_rank">#666666</color>
+     <color name="leaderboard_user_item_name">#999999</color>
+     <color name="leaderboard_user_item_total_score">#999999</color>
+     
+     <color name="badges_current_badge_bar_background">#FFFFFF</color>
+     <color name="badges_current_badge_text_name">#102E6D</color>
+     <color name="badges_gridview_badges">#E6E7E8</color>
+     <color name="badges_list_item_badge_text_name">#333333</color>
+     
+     <color name="badges_dialog_info_title">#3D4643</color>
+     <color name="badges_dialog_info_title_text">#FFFFFF</color>
+     <color name="badges_dialog_info">#E6E7E8</color>
+     <color name="badges_dialog_info_text">#102E6D</color>
+     
+     <!-- Comments -->
+     <color name="social_comments_top_background">#E6E7E8</color>
+     <color name="social_comments_top_text_color">#051D3E</color>
+     
+     <!-- MembershipDetaileFragment -->
+     <color name="membership_detail_text_color">#6E6E6E</color> 
+     <color name="divider_listview_color">#E1E1E1</color>
+     
+     <!-- Help / FAQ -->
+     
+     <color name="help_faq_section_background_selected">#C1C1C1</color>
+     
+	 <!-- Badges / Coins -->
+     <color name="background_badges_coins_top">#FFDD00</color>
+     <color name="background_badges_coins_middle">#8ECA43</color>
+     <color name="background_badges_coins_seperator">#DDEFC7</color>
+     <color name="background_badges_coins_num_of_coins">#102E6E</color>
+     
+     <color name="radio_blue_title_prefix">#27afde</color>
+     
+     <!-- Purchase Fragment (Campaigns) -->
+     <color name="partner_brand_base_color">#85BC42</color>
+     
+</resources>

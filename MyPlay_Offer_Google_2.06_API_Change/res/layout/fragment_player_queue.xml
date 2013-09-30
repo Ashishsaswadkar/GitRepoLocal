@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/application_background_grey" >
+
+    <RelativeLayout
+        android:id="@+id/player_queue_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_title_bar_height"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/background_home_tabwidget_tab_unselected" >
+
+        <TextView
+            android:id="@+id/player_queue_title_bar_text"
+            style="@style/TextMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:text="@string/player_queue_title" />
+
+        <ImageButton
+            android:id="@+id/player_queue_title_bar_button_options"
+            android:layout_width="@dimen/main_title_bar_options_button_width"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:src="@drawable/background_main_title_bar_button_options_selector" />
+        
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/player_queue_gridview"
+        style="@style/MediaTilesGrid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/player_queue_title_bar"
+        android:layout_margin="@dimen/home_tiles_spacing_vertical"
+        android:background="@null"
+        android:gravity="center_horizontal"
+        android:horizontalSpacing="@dimen/home_tiles_spacing_horizontal"
+        android:numColumns="auto_fit"
+        android:overScrollMode="never"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="@dimen/home_tiles_spacing_vertical" />
+
+    <FrameLayout
+        android:id="@+id/player_queue_content_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/player_queue_title_bar" />
+
+</RelativeLayout>

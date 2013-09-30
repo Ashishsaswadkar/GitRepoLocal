@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    			android:layout_width="match_parent"
+    			android:layout_height="match_parent"
+    			android:background="@color/application_background_grey">
+    			
+    <RelativeLayout android:id="@+id/main_title_bar"
+        			android:layout_width="match_parent"
+            		android:layout_height="@dimen/main_title_bar_height" 
+            		android:layout_alignParentTop="true"
+            		android:background="@drawable/background_home_tabwidget_tab_unselected">
+
+        <TextView
+            android:id="@+id/main_title_bar_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            style="@style/TextMedium"/>
+        
+        <ImageButton
+            android:id="@+id/main_title_bar_button_options"
+            android:layout_width="@dimen/main_title_bar_options_button_width"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:src="@drawable/background_main_title_bar_button_options_selector"
+            android:onClick="onOptionsClicked" 
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+    
+    <!-- ################ BEGIN CONTENT ######################### -->
+    
+    <TextView
+            android:id="@+id/my_preferences_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_marginLeft="@dimen/search_content_margin"
+            android:layout_marginRight="@dimen/search_content_margin"
+            android:textSize="@dimen/preferences_top_text_size"
+            android:textColor="@color/search_fragment_button_background"
+            android:text="@string/my_preferences_page_text"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/main_title_bar"/>
+    
+	
+	<ScrollView 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical"
+	    android:layout_below="@+id/my_preferences_text"
+	    android:layout_marginBottom="@dimen/main_player_bar_margin_from_it">
+        
+	    <RelativeLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+    		android:paddingBottom="15dp">
+	
+			<LinearLayout
+				    android:id="@+id/my_preferences_category_keywords"
+				   	android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:orientation="vertical"
+				    android:paddingTop="@dimen/search_popular_keyword_raw_padding"
+				    android:layout_marginRight="@dimen/search_content_margin"
+			        android:layout_marginLeft="@dimen/search_content_margin"
+				    android:layout_below="@+id/my_preferences_text">
+					
+					    
+					<LinearLayout
+					    android:id="@+id/linearlayout_my_preferences"
+					    android:layout_width="match_parent"
+					    android:layout_height="wrap_content"
+					    android:orientation="vertical">
+					    		    
+					</LinearLayout>
+					
+					<ImageView 
+					    android:id="@+id/image_my_preferences_up_arrow"
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:src="@drawable/icon_subcategory_arrow_top"
+					    android:layout_marginTop="@dimen/search_popular_keyword_raw_padding_minus"
+					    android:layout_marginBottom="-1dp"/>
+					
+			</LinearLayout>
+			
+			<LinearLayout
+			    android:id="@+id/linearlayout_my_preferences_bottom"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:background="@color/background_sub_categories"
+			    android:orientation="vertical"
+			    android:paddingTop="@dimen/search_popular_keyword_raw_padding"
+			    android:paddingLeft="@dimen/search_content_margin"
+			    android:paddingRight="@dimen/search_content_margin"
+				android:layout_marginTop="@dimen/search_popular_keyword_raw_padding_minus_sublayout"
+			    android:layout_below="@+id/my_preferences_category_keywords">
+			    		    
+			</LinearLayout>	
+			
+			<Button
+		            android:id="@+id/my_preferences_button_done"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_centerHorizontal="true"
+		            android:background="@drawable/background_button_blue"
+		            android:text="@string/discovery_categories_edit_indication_big"
+		            android:textColor="@color/white"
+		            android:textSize="@dimen/home_tiles_button_remove_text_size"
+		            android:textStyle="bold"
+		            android:layout_marginTop="20dp"
+		            android:paddingLeft="10dp"
+		            android:paddingRight="10dp"
+		            android:layout_marginBottom="10dp"
+		            android:layout_below="@+id/linearlayout_my_preferences_bottom"/>
+		</RelativeLayout>	
+	            
+	</ScrollView>	
+		
+	
+	<!-- ################ END CONTENT ######################### -->
+    
+    <FrameLayout android:id="@+id/main_navigation_fragmant_container"
+        		 android:layout_width="match_parent"
+        		 android:layout_height="match_parent"
+        		 android:layout_marginBottom="@dimen/main_player_bar_margin_from_it"
+        		 android:background="@null"/>
+
+   <fragment android:id="@+id/main_fragmant_player_bar"
+        	  android:name="com.hungama.myplay.activity.ui.fragments.PlayerBarFragment"
+        	  android:layout_width="match_parent"
+		      android:layout_height="match_parent"
+		      android:layout_alignParentBottom="true"/>
+    
+
+</RelativeLayout>

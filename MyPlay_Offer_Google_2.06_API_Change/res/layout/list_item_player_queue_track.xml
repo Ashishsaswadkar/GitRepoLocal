@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:background="@null"
+			    android:visibility="visible" >
+
+    <ImageView
+        android:id="@+id/player_queue_tile_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@null"
+        android:clickable="true"
+        android:focusable="true" />
+    
+    <TextView
+        android:id="@+id/player_queue_tile_now_playing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/player_queue_tile_button_play"
+        android:layout_marginRight="@dimen/home_tiles_button_text_margin_right"
+        android:layout_marginBottom="@dimen/home_tiles_bottom_text_margin_bottom"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/black"
+        android:text="@string/queue_bottom_text_now_playing"
+        style="@style/HomeMediaTileTextSmall"
+        android:visibility="gone"/>
+    
+    <ImageButton
+        android:id="@+id/player_queue_tile_button_play"
+        android:layout_width="@dimen/home_tiles_button_play_size"
+        android:layout_height="@dimen/home_tiles_button_play_size"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/home_tiles_button_play_margin_right"
+        android:layout_marginBottom="@dimen/home_tiles_button_play_margin_bottom"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@drawable/icon_general_play_grey"
+        android:src="@null" />
+    
+    <Button
+        android:id="@+id/player_queue_tile_button_remove"
+        android:layout_width="@dimen/home_tiles_button_remove_size"
+        android:layout_height="@dimen/home_tiles_button_remove_size"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/home_tiles_button_remove_side_margin"
+        android:layout_marginTop="@dimen/home_tiles_button_remove_side_margin"
+        android:background="@drawable/background_home_tile_button_remove"
+        android:src="@null"
+        android:text="@string/application_remove_sign"
+        android:textColor="@color/white"
+        android:textSize="@dimen/home_tiles_button_remove_text_size"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/player_queue_tile_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/player_queue_tile_button_remove"
+        android:layout_marginTop="@dimen/home_tiles_button_title_margin_top"
+        android:layout_marginLeft="@dimen/home_tiles_button_title_margin"
+        android:layout_marginRight="@dimen/home_tiles_button_title_margin"
+        style="@style/HomeMusicTileTextBig"/>
+
+    <TextView
+        android:id="@+id/player_queue_tile_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/player_queue_tile_title"
+        android:layout_marginTop="@dimen/home_tiles_button_title_description_margin_top"
+        android:layout_alignLeft="@+id/player_queue_tile_title"
+        android:layout_alignRight="@+id/player_queue_tile_title"
+        style="@style/HomeMediaTileTextSmall"/>
+
+</RelativeLayout>

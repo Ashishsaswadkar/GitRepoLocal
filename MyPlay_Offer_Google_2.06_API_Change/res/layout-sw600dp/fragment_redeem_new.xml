@@ -1,0 +1,823 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0" >
+
+    <LinearLayout
+        android:id="@+id/left_invite_text_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/redeem_top_my_coins_background"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp" >
+
+        <TextView
+            android:id="@+id/free_song_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:textColor="@color/white"
+            android:textSize="@dimen/redeem_top_text_size" />
+
+        <ImageView
+            android:id="@+id/free_song_text_coins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="5dp"
+            android:src="@drawable/ic_redeem_coins" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/relative_layout_footer"
+        android:layout_below="@+id/left_invite_text_title" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/relative_layout_music"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" >
+
+                <ImageView
+                    android:id="@+id/image_view_music_item_bg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/bg_item_redeem" />
+
+                <ImageView
+                    android:id="@+id/image_view_music"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_redeem_music" />
+
+                <TextView
+                    android:id="@+id/text_view_music_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_toRightOf="@+id/image_view_music"
+                    android:text="@string/redeem_music_tilte"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/redeem_item_title_text_size" />
+
+                <ImageView
+                    android:id="@+id/image_view_points"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/ic_redeem_coins" />
+
+                <ImageView
+                    android:id="@+id/image_view_music_divider"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="190dp"
+                    android:src="@drawable/ic_redeem_divider" />
+
+                <TextView
+                    android:id="@+id/text_view_points"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/image_view_points"
+                    android:text="@string/redeem_points_750"
+                    android:textColor="#00B5FF"
+                    android:textSize="@dimen/redeem_item_title_text_size" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative_layout_video"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relative_layout_music"
+                android:layout_centerHorizontal="true"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" >
+
+                <ImageView
+                    android:id="@+id/image_view_video_item_bg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/bg_item_redeem" />
+
+                <ImageView
+                    android:id="@+id/image_view_video"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_redeem_video" />
+
+                <TextView
+                    android:id="@+id/text_view_video_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_toRightOf="@+id/image_view_video"
+                    android:text="@string/redeem_video_tilte"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/redeem_item_title_text_size" />
+
+                <ImageView
+                    android:id="@+id/image_view_music_points"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/ic_redeem_coins" />
+
+                <ImageView
+                    android:id="@+id/image_view_video_divider"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="190dp"
+                    android:src="@drawable/ic_redeem_divider" />
+
+                <TextView
+                    android:id="@+id/text_view__music_points"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/image_view_music_points"
+                    android:text="@string/redeem_points_2000"
+                    android:textColor="#00B5FF"
+                    android:textSize="@dimen/redeem_item_title_text_size" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative_layout_sd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relative_layout_video"
+                android:layout_centerHorizontal="true"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" >
+
+                <ImageView
+                    android:id="@+id/image_view_sd_item_bg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/bg_item_redeem" />
+
+                <ImageView
+                    android:id="@+id/image_view_sd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_redeem_sd" />
+
+                <TextView
+                    android:id="@+id/text_view_sd_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_toRightOf="@+id/image_view_sd"
+                    android:text="@string/redeem_sd_tilte"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/redeem_item_title_text_size" />
+
+                <ImageView
+                    android:id="@+id/image_view_sd_points"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/ic_redeem_coins" />
+
+                <ImageView
+                    android:id="@+id/image_view_sd_divider"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="190dp"
+                    android:src="@drawable/ic_redeem_divider" />
+
+                <TextView
+                    android:id="@+id/text_view_sd_points"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/image_view_sd_points"
+                    android:text="@string/redeem_points_5000"
+                    android:textColor="#00B5FF"
+                    android:textSize="@dimen/redeem_item_title_text_size" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative_layout_hd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relative_layout_sd"
+                android:layout_centerHorizontal="true"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" >
+
+                <ImageView
+                    android:id="@+id/image_view_hd_item_bg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/bg_item_redeem" />
+
+                <ImageView
+                    android:id="@+id/image_view_hd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_redeem_hd" />
+
+                <TextView
+                    android:id="@+id/text_view_hd_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_toLeftOf="@+id/image_view_hd_divider"
+                    android:layout_toRightOf="@+id/image_view_hd"
+                    android:text="@string/redeem_hd_tilte"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/redeem_item_title_text_size" />
+
+                <ImageView
+                    android:id="@+id/image_view_hd_points"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/ic_redeem_coins" />
+
+                <ImageView
+                    android:id="@+id/image_view_hd_divider"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="190dp"
+                    android:src="@drawable/ic_redeem_divider" />
+
+                <TextView
+                    android:id="@+id/text_view_hd_points"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/image_view_hd_points"
+                    android:text="@string/redeem_points_8000"
+                    android:textColor="#00B5FF"
+                    android:textSize="@dimen/redeem_item_title_text_size" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative_layout_dinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relative_layout_hd"
+                android:layout_centerHorizontal="true"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" >
+
+                <ImageView
+                    android:id="@+id/image_view_dinner_item_bg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/bg_item_redeem" />
+
+                <ImageView
+                    android:id="@+id/image_view_dinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_redeem_dinner" />
+
+                <TextView
+                    android:id="@+id/text_view_dinner_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_toRightOf="@+id/image_view_dinner"
+                    android:text="@string/redeem_dinner_tilte"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/redeem_item_title_text_size" />
+
+                <ImageView
+                    android:id="@+id/image_view_dinner_points"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/ic_redeem_coins" />
+
+                <ImageView
+                    android:id="@+id/image_view_dinner_divider"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="190dp"
+                    android:src="@drawable/ic_redeem_divider" />
+
+                <TextView
+                    android:id="@+id/text_view_dinner_points"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/image_view_dinner_points"
+                    android:text="@string/redeem_points_25000"
+                    android:textColor="#00B5FF"
+                    android:textSize="@dimen/redeem_item_title_text_size" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative_layout_ipad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relative_layout_dinner"
+                android:layout_centerHorizontal="true"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" >
+
+                <ImageView
+                    android:id="@+id/image_view_ipad_item_bg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/bg_item_redeem" />
+
+                <ImageView
+                    android:id="@+id/image_view_ipad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_redeem_ipad" />
+
+                <TextView
+                    android:id="@+id/text_view_ipad_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_toRightOf="@+id/image_view_ipad"
+                    android:text="@string/redeem_ipad_tilte"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/redeem_item_title_text_size" />
+
+                <ImageView
+                    android:id="@+id/image_view_ipad_points"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/ic_redeem_coins" />
+
+                <ImageView
+                    android:id="@+id/image_view_ipad_divider"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="190dp"
+                    android:src="@drawable/ic_redeem_divider" />
+
+                <TextView
+                    android:id="@+id/text_view_ipad_points"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/image_view_ipad_points"
+                    android:text="@string/redeem_points_50000"
+                    android:textColor="#00B5FF"
+                    android:textSize="@dimen/redeem_item_title_text_size" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative_layout_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relative_layout_ipad"
+                android:layout_centerHorizontal="true"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" >
+
+                <ImageView
+                    android:id="@+id/image_view_mobile_item_bg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/bg_item_redeem" />
+
+                <ImageView
+                    android:id="@+id/image_view_mobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_redeem_mobile" />
+
+                <TextView
+                    android:id="@+id/text_view_mobile_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_toRightOf="@+id/image_view_mobile"
+                    android:text="@string/redeem_mobile_tilte"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/redeem_item_title_text_size" />
+
+                <ImageView
+                    android:id="@+id/image_view_mobile_points"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/ic_redeem_coins" />
+
+                <ImageView
+                    android:id="@+id/image_view_mobile_divider"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="190dp"
+                    android:src="@drawable/ic_redeem_divider" />
+
+                <TextView
+                    android:id="@+id/text_view_mobile_points"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/image_view_mobile_points"
+                    android:text="@string/redeem_points_60000"
+                    android:textColor="#00B5FF"
+                    android:textSize="@dimen/redeem_item_title_text_size" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative_layout_goa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relative_layout_mobile"
+                android:layout_centerHorizontal="true"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" >
+
+                <ImageView
+                    android:id="@+id/image_view_goa_item_bg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/bg_item_redeem" />
+
+                <ImageView
+                    android:id="@+id/image_view_goa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_redeem_goa" />
+
+                <TextView
+                    android:id="@+id/text_view_goa_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_toRightOf="@+id/image_view_goa"
+                    android:text="@string/redeem_goa_tilte"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/redeem_item_title_text_size" />
+
+                <ImageView
+                    android:id="@+id/image_view_goa_points"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/ic_redeem_coins" />
+
+                <ImageView
+                    android:id="@+id/image_view_goa_divider"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="190dp"
+                    android:src="@drawable/ic_redeem_divider" />
+
+                <TextView
+                    android:id="@+id/text_view_goa_points"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/image_view_goa_points"
+                    android:text="@string/redeem_points_75000"
+                    android:textColor="#00B5FF"
+                    android:textSize="@dimen/redeem_item_title_text_size" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative_layout_samsungtv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relative_layout_goa"
+                android:layout_centerHorizontal="true"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" >
+
+                <ImageView
+                    android:id="@+id/image_view_samsungtv_item_bg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/bg_item_redeem" />
+
+                <ImageView
+                    android:id="@+id/image_view_samsungtv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_redeem_samsungtv" />
+
+                <TextView
+                    android:id="@+id/text_view_samsungtv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toLeftOf="@+id/image_view_samsungtv_divider"
+                    android:layout_toRightOf="@+id/image_view_samsungtv"
+                    android:text="@string/redeem_samsungtv_tilte"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/redeem_item_title_text_size" />
+
+                <ImageView
+                    android:id="@+id/image_view_samsungtv_points"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/ic_redeem_coins" />
+
+                <ImageView
+                    android:id="@+id/image_view_samsungtv_divider"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="190dp"
+                    android:src="@drawable/ic_redeem_divider" />
+
+                <TextView
+                    android:id="@+id/text_view_samsungtv_points"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/image_view_samsungtv_points"
+                    android:text="@string/redeem_points_80000"
+                    android:textColor="#00B5FF"
+                    android:textSize="@dimen/redeem_item_title_text_size" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative_layout_actor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relative_layout_samsungtv"
+                android:layout_centerHorizontal="true"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" >
+
+                <ImageView
+                    android:id="@+id/image_view_actor_item_bg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/bg_item_redeem" />
+
+                <ImageView
+                    android:id="@+id/image_view_actor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_redeem_actor" />
+
+                <TextView
+                    android:id="@+id/text_view_actor_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_toRightOf="@+id/image_view_actor"
+                    android:text="@string/redeem_actor_tilte"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/redeem_item_title_text_size" />
+
+                <ImageView
+                    android:id="@+id/image_view_actor_points"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/ic_redeem_coins" />
+
+                <ImageView
+                    android:id="@+id/image_view_actor_divider"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="190dp"
+                    android:src="@drawable/ic_redeem_divider" />
+
+                <TextView
+                    android:id="@+id/text_view_actor_points"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/image_view_actor_points"
+                    android:text="@string/redeem_points_100000"
+                    android:textColor="#00B5FF"
+                    android:textSize="@dimen/redeem_item_title_text_size" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/redeem_top_my_coins_background"
+        android:padding="5dp" >
+
+        <RelativeLayout
+            android:id="@+id/relative_layout_hungama_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" >
+
+            <TextView
+                android:id="@+id/text_view_hungama_part_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="5dp"
+                android:text="@string/redeem_hungama_part_1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/redeem_item_title_text_size" />
+
+            <TextView
+                android:id="@+id/text_view_hungama_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/text_view_hungama_part_1"
+                android:gravity="center_horizontal"
+                android:text="@string/redeem_hungama_link"
+                android:textColor="@color/white"
+                android:textColorLink="@color/white"
+                android:textSize="@dimen/redeem_item_title_text_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_view_hungama_part_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/text_view_hungama_title"
+                android:text="@string/redeem_hungama_part_3"
+                android:textColor="@color/white"
+                android:textSize="@dimen/redeem_item_title_text_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_layout_hungama_phone_numbers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relative_layout_hungama_link"
+            android:layout_centerHorizontal="true" >
+
+            <TextView
+                android:id="@+id/text_view_customer_support_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/redeem_customer_support_title"
+                android:textColor="@color/black"
+                android:textSize="@dimen/redeem_item_customer_support_title_text_size" />
+
+            <TextView
+                android:id="@+id/text_view_customer_support_phone_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/text_view_customer_support_title"
+                android:autoLink="phone"
+                android:text="@string/redeem_customer_support_phone_1"
+                android:textColor="@color/black"
+                android:textColorLink="@color/black"
+                android:textSize="@dimen/redeem_item_customer_support_title_text_size" />
+
+            <TextView
+                android:id="@+id/text_view_customer_support_space"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/text_view_customer_support_phone_1"
+                android:text="|"
+                android:textColor="@color/black"
+                android:textSize="@dimen/redeem_item_customer_support_title_text_size" />
+
+            <TextView
+                android:id="@+id/text_view_customer_support_phone_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/text_view_customer_support_space"
+                android:autoLink="phone"
+                android:text="@string/redeem_customer_support_phone_2"
+                android:textColor="@color/black"
+                android:textColorLink="@color/black"
+                android:textSize="@dimen/redeem_item_customer_support_title_text_size" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/text_view_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relative_layout_hungama_phone_numbers"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:text="@string/redeem_email"
+            android:textColor="@color/black"
+            android:textSize="@dimen/redeem_item_customer_support_title_text_size" />
+    </RelativeLayout>
+
+</RelativeLayout>

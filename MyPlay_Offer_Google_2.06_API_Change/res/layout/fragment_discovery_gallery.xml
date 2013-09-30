@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/application_background_grey">
+    
+    <GridView
+        android:id="@+id/discovery_gallery_gridview_tiles"
+        style="@style/MediaTilesGrid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/home_tiles_spacing_vertical"
+        android:horizontalSpacing="@dimen/home_tiles_spacing_horizontal"
+        android:verticalSpacing="@dimen/home_tiles_spacing_vertical"
+        android:numColumns="auto_fit"
+        android:stretchMode="columnWidth"
+        android:gravity="center_horizontal"
+        android:overScrollMode="never"
+        android:background="@null"/>
+
+    <ImageButton
+        android:id="@+id/discovery_gallery_button_moods"
+        android:layout_width="@dimen/curved_button_size"
+        android:layout_height="@dimen/curved_button_size"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/background_button_left_top_curve"
+        android:src="@drawable/icon_moods_white"
+        style="@style/LeftTopCurvedImageButton"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp" />
+
+    <ImageButton
+        android:id="@+id/discovery_gallery_button_categories"
+        android:layout_width="@dimen/curved_button_size"
+        android:layout_height="@dimen/curved_button_size"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/background_button_right_top_curve"
+        android:src="@drawable/icon_prefrences_white"
+        style="@style/RightTopCurvedImageButton" />
+
+    <ImageButton
+        android:id="@+id/discovery_gallery_button_era"
+        android:layout_width="@dimen/curved_button_size"
+        android:layout_height="@dimen/curved_button_size"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/background_button_left_bottom_curve"
+        android:src="@drawable/icon_era_white"
+        style="@style/LeftBottomCurvedImageButton" />
+
+    <ImageButton
+        android:id="@+id/discovery_gallery_button_tempo"
+        android:layout_width="@dimen/curved_button_size"
+        android:layout_height="@dimen/curved_button_size"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/background_button_right_bottom_curve"
+        android:src="@drawable/icon_tempo_white"
+        style="@style/RightBottomCurvedImageButton" />
+
+</RelativeLayout>

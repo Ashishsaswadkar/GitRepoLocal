@@ -1,0 +1,792 @@
+<resources>
+    
+    <!-- General -->
+
+    <string name="application_name">Hungama</string>
+    <string name="activity_label_login">Login or Sign up</string>
+    <string name="application_dialog_loading">Loading...</string>
+    <string name="application_dialog_loading_content">Loading...</string>
+    <string name="application_dialog_adding_to_favorites">Adding to Favorites...</string>
+    <string name="application_dialog_removing_from_favorites">Removing from Favorites...</string>
+    <string name="application_error_no_connectivity">No Internet connection. Please retry.</string>
+    <string name="application_error_server_error">Unable to connect to the server. Please retry.</string>
+    <string name="social_network_facebook">Facebook</string>
+    <string name="social_network_twitter">Twitter</string>
+    <string name="social_network_google">Gmail</string>
+    <string name="social_network_none">None</string>
+    <string name="application_collapse_sign">+</string>
+    <string name="application_fold_sign">-</string>
+    <string name="application_remove_sign">X</string>
+    <string name="application_save">SAVE</string>
+    <string name="general_share">share</string>
+    <string name="general_capital_share">SHARE</string>
+    <string name="general_lyrics">Lyrics</string>
+    <string name="general_trivia">Trivia</string>
+    <string name="empty_campaigns_list">No Promotions available at the moment. Thank you.</string>
+    
+    <string name="connection_error_empty_view_title">No Internet Connection.</string>
+    <string name="connection_error_empty_view_button_retry">Retry</string>
+    
+    <!-- Affiliate Id inserted By Hungama -->
+    <string name="affiliate_id">891</string>
+    <string name="oem_package_name">com.hungama.myplay.activity</string>
+    
+    <!-- Login Activity -->
+
+    <string name="login_header_title_line_one">Login &amp; Discover Music</string>
+    <string name="login_header_title_line_two">you will</string>
+    <string name="login_header_title_line_love">love</string>
+    <string name="login_hungama_login">Hungama Login</string>
+    <string name="login_hungama_sign_up">Hungama Sign Up</string>
+    <string name="login_hungama_username_hint">Email id</string>
+    <string name="login_hungama_password_hint">Password</string>
+    <string name="login_hungama_login_login">LOGIN</string>
+    <string name="login_hungama_login_forgot_your_password">Forgot password?</string>
+    <string name="login_if_not_a_member_yet">Not a member?,</string>
+    <string name="login_sign_up"> Sign Up</string>
+    <string name="login_skip_for_now">Skip for now</string>
+    <string name="login_forgot_password_text">"Enter the e-mail address associated with your account"</string>
+    <string name="login_hint">Email id</string>
+    <string name="login_forgot_password_submit">SUBMIT</string>
+    <string name="login_signup_button_signup">SIGN UP</string>
+    <string name="login_signup_already_a_member">If you are already a member, </string>
+    <string name="login_signup_login">Login</string>
+    <string name="login_signup_field_first_name">First Name*</string>
+    <string name="login_signup_field_last_name">Last Name*</string>
+    <string name="login_signup_field_email_address">Email Id*</string>
+    <string name="login_signup_field_password">Password*</string>
+    <string name="login_signup_field_mobile_number">Mobile No. (optional)</string>
+    <string name="login_signup_field_coupon_number">Coupon No. (optional)</string>
+    <string name="login_social_network_login_title_prefix">Login with </string>
+    <string name="login_social_network_login_hint_email_id">Email id</string>
+    <string name="login_social_network_login_hint_password">Password (optional)</string>
+    <string name="login_social_network_login_reminder">If you already have a Hungama account, please enter password to sync your accounts.</string>
+    <string name="login_social_network_login_button_continue">CONTINUE</string>
+    <string name="login_signup_error_mandatory">is Mandatory Field</string>
+    <string name="login_signup_error_email">Incorrect email format</string>
+    <string name="login_signup_error_name">Name requires minimum 2 characters.</string>
+    
+    <string name="login_facebook_title">&lt;b>Connect&lt;/b> with &lt;b>Facebook&lt;/b></string>
+    <string name="login_twitter_title">Connect with Twitter</string>
+    <string name="login_google_title">Connect with Google</string>
+
+    <!-- Action Bar -->
+
+    <string name="main_actionbar_navigation">Quick Links</string>
+    <string name="main_actionbar_search">Search</string>
+    <string name="main_actionbar_settings">Options</string>
+    <string name="main_actionbar_title_music">Music</string>
+    <string name="main_actionbar_title_videos">Videos</string>
+    <string name="main_actionbar_title_discover">Discover</string>
+    <string name="main_actionbar_title_radio">Radio</string>
+    <string name="main_actionbar_title_specials">Specials</string>
+
+    <!-- Action Bar Quick Navigations -->
+
+    <string name="main_actionbar_navigation_music">MUSIC</string>
+    <string name="main_actionbar_navigation_discover">DISCOVER</string>
+    <string name="main_actionbar_navigation_radio">RADIO</string>
+    <string name="main_actionbar_navigation_specials">SPECIALS</string>
+    <string name="main_actionbar_navigation_profile">PROFILE</string>
+    <string name="main_actionbar_navigation_videos">VIDEOS</string>
+
+    <!-- Action Bar Settings -->
+
+    <string name="main_actionbar_settings_category_quick_links">QUICK LINKS</string>
+    <string name="main_actionbar_settings_category_my_play">MY PLAY</string>
+    <string name="main_actionbar_settings_category_more">MORE</string>
+    <string name="main_actionbar_settings_category_collapsed">+</string>
+    <string name="main_actionbar_settings_category_expanded">-</string>
+
+    <!-- Action Bar Settings: Quick Links -->
+
+    <string name="main_actionbar_settings_menu_item_specials">Specials</string>
+    <string name="main_actionbar_settings_menu_item_app_tour">App Tour</string>
+    <string name="main_actionbar_settings_menu_item_music">Music</string>
+    <string name="main_actionbar_settings_menu_item_videos">Videos</string>
+    <string name="main_actionbar_settings_menu_item_live_radio">Live Radio</string>
+    <string name="main_actionbar_settings_menu_item_discover">Discover</string>
+    <string name="main_actionbar_settings_menu_item_my_stream">My Stream</string>
+
+    <!-- Action Bar Settings: My Play -->
+
+    <string name="main_actionbar_settings_menu_item_my_profile">My Profile</string>
+    <string name="main_actionbar_settings_menu_item_my_collections">My Collection</string>
+    <string name="main_actionbar_settings_menu_item_my_favorites">My Favorites</string>
+    <string name="main_actionbar_settings_menu_item_my_playlists">My Playlists</string>
+    <string name="main_actionbar_settings_menu_item_my_discoveries">My Discoveries</string>
+    <string name="main_actionbar_settings_menu_item_my_preferences">My Preferences</string>
+    <string name="main_actionbar_settings_menu_item_settings_and_accounts">Settings</string>
+
+    <!-- Action Bar Settings: More -->
+
+    <string name="main_actionbar_settings_menu_item_rewards">Rewards</string>
+    <string name="main_actionbar_settings_menu_item_invite_friends">Invite Friends</string>
+    <string name="main_actionbar_settings_menu_item_rate_this_app">Rate our app</string>
+    <string name="main_actionbar_settings_menu_item_give_feedback">Your Feedback</string>
+    <string name="main_actionbar_settings_menu_item_help_faq">Help/ FAQ</string>
+    <string name="main_actionbar_settings_menu_item_about">About</string>
+
+    <!-- Player Bar -->
+    
+    <string name="player_error_no_connectivity">No Internet connection. Please retry.</string>
+    <string name="player_error_server_issue">Problem with our Server. Please retry.</string> 
+
+    <string name="player_loop_mode_on">Loop mode is ON</string>
+    <string name="player_loop_mode_off">Loop mode is OFF</string>
+    <string name="player_shuffle_mode_on">Shuffle mode is ON</string>
+    <string name="player_shuffle_mode_off">Shuffle mode is OFF</string>
+    <string name="player_loop_mode_replay_song">Loop mode is REPLAY SONG</string>
+    <string name="main_player_bar_progress_bar_scale_text_current">00:00 / </string>
+    <string name="main_player_bar_progress_bar_scale_text_length">00:00</string>
+    <string name="main_player_bar_message_song_added_to_queue">Song added to queue</string>
+    <string name="main_player_bar_message_songs_added_to_queue">Song(s) added to queue</string>
+    <string name="main_player_bar_message_song_already_in_queue">Song already in queue</string>
+    <string name="main_player_bar_text_not_playing">No Current Songs</string>
+    <string name="main_player_bar_button_load">LOAD</string>
+
+    <!-- Player Content -->
+
+    <string name="main_player_content_action_button_download">DOWNLOAD</string>
+    <string name="main_player_content_action_button_share">SHARE</string>
+    <string name="main_player_content_action_button_playlist">+ PLAYLIST</string>
+    <string name="main_player_content_action_button_info">INFO</string>
+    <string name="main_player_content_action_button_trivia">TRIVIA</string>
+    <string name="main_player_content_action_button_similar">SIMILAR</string>
+    <string name="main_player_content_action_button_video">VIDEO</string>
+    <string name="main_player_content_action_button_lyrics">LYRICS</string>
+    <string name="main_player_content_action_button_info_video">INFO</string>
+    <string name="main_player_content_action_button_related">RELATED</string>
+    
+    
+    <!-- Player Queue Viewer -->
+    
+    <string name="player_queue_title">Player Queue (%1$s)</string>
+    <string name="player_queue_options_save_as_playlist">SAVE AS PLAYLIST</string>
+    <string name="player_queue_options_clear_queue">CLEAR QUEUE</string>
+    <string name="player_queue_options_load_playlist">LOAD PLAYLIST</string>
+    <string name="player_queue_options_load_favorites">LOAD FAVORITES</string>
+    <string name="player_queue_options_exit_queue">EXIT QUEUE</string>
+    <string name="player_queue_message_confirm_clear_all">Are you sure you want to reset the Songs Queue?</string>
+    <string name="player_queue_message_confirm_clear_all_ok">Clear all</string>
+    <string name="player_queue_message_confirm_clear_all_cancel">Cancel</string>
+    
+    <string name="player_queue_options_button_play_all">PLAY ALL</string>
+    
+    
+    <!-- Player - Load Menu -->
+
+    <string name="player_load_menu_top_ten">TOP 10</string>
+    <string name="player_load_menu_radio">RADIO</string>
+    <string name="player_load_menu_my_playlist">MY PLAYLIST</string>
+    <string name="player_load_menu_my_favorites">MY FAVORITES</string>
+    <string name="player_load_menu_my_playlist_dialog_title_load">LOAD PLAYLIST</string>
+    <string name="player_load_menu_my_playlist_dialog_title_add">ADD TO PLAYLIST</string>
+    
+    <!-- Player - Settings -->
+    
+    <string name="player_settings_sleep_mode">Sleep Mode</string>
+    <string name="player_settings_gym_mode">Gym Mode</string>
+    
+    <!-- Player - Gym Mode -->
+    
+    <string name="player_gym_mode_exit_button">Exit gym mode</string>
+    <string name="player_gym_mode_swipe">SWIPE</string>
+
+    <!-- Home Fragment -->
+
+    <string name="home_tab_label_latest">NEW</string>
+    <string name="home_tab_label_featured">POPULAR</string>
+    <string name="home_tab_label_recommended">RECOMMENDED</string>
+    <string name="home_tab_label_my_stream">MY STREAM</string>
+    <string name="home_music_tile_playlist_decription_title">Playlist</string>
+    <string name="home_music_tile_album_decription_title">Album</string>
+    <string name="home_music_tile_playlist_decription_songs_amount">%d songs</string>
+    <string name="home_music_top_upper_right_button_text">ALL</string>
+    
+    <!-- Video Categories -->
+
+	<string name="video_categories_select_category_dialog">Categories</string>
+    <string name="video_categories_select_category_type_categry_latest">LATEST</string>
+    <string name="video_categories_select_category_type_categry_featured">TOP</string>
+
+    <!-- Discovery -->
+
+    <string name="discovery_title">Discover</string>
+    <string name="discovery_options_play_all_next">PLAY ALL NEXT</string>
+    <string name="discovery_options_add_all_to_queue">PLAY ALL</string>
+    <string name="discovery_options_load_my_discoveries">LOAD MY DISCOVERIES</string>
+    <string name="discovery_options_save_discovery">SAVE DISCOVERY</string>
+    <string name="discovery_options_start_new_discovery">START NEW DISCOVERY</string>
+    <string name="discovery_message_discover_saved">Your Discovery has been saved.</string>
+    
+    <string name="discovery_message_error_no_category_or_mood">You must select a category in order to discover music.</string>
+    <string name="discovery_message_error_no_category_or_mood_confirm">OK</string>
+    <string name="discovery_message_save_discover_title">Save Discovery</string>
+    <string name="discovery_message_save_discover_message">Would you like to save your Discovery?</string>
+    <string name="discovery_message_save_discover_confirm">Save</string>
+    <string name="discovery_message_save_discover_cancel">No thanks!</string>
+    <string name="discovery_message_save_discover_message_error_empty_name">Please name your discovery.</string>
+    <string name="discovery_message_save_discover_message_error_invalid_name">Please name your discovery using minimum 2 characters.</string>
+    <string name="discovery_message_start_new_discover_message">Would you like to save your discovery?</string>
+    <string name="discovery_message_start_new_discover_confirm">Save</string>
+    <string name="discovery_message_start_new_discover_cancel">No thanks!</string>
+
+    <!-- Discovery - Moods -->
+
+    <string name="discovery_mood_title">Choose your mood</string>
+    <string name="discovery_mood_title_loading_moods">Loading moods, please wait...</string>
+    <string name="discovery_mood_selected_item_default_text">Drag your mood here</string>
+    <string name="discovery_mood_no_moods">Could not get moods due to network problem</string>
+
+    <!-- Discovery - Categories -->
+
+    <string name="discovery_categories_title">Select Preferences</string>
+    <string name="discovery_categories_edit_indication_big">I\'M DONE</string>
+    <string name="discovery_categories_edit_indication_small">SHOW ME\nMY MUSIC</string>
+    
+    <!-- Discover - Results -->
+    
+    <string name="discovery_results_error_message_no_results">No results found. Please try another mood or category preference.</string>
+
+    <!-- Discovery - Tempo -->
+
+    <string name="discovery_tempo">TEMPO</string>
+    <string name="discovery_tempo_auto">AUTO</string>
+    <string name="discovery_tempo_low">LOW</string>
+    <string name="discovery_tempo_medium">MEDIUM</string>
+    <string name="discovery_tempo_high">HIGH</string>
+
+    <!-- Discovery - Era -->
+
+    <string name="discovery_era">ERA</string>
+    <string name="discovery_era_from">FROM</string>
+    <string name="discovery_era_to">TO</string>
+    <string name="discovery_era_fifties">50s</string>
+    <string name="discovery_era_two_thousands">2000</string>
+    <string name="discovery_era_slider_ruler_text_time_minumum_year">50s</string>
+    <string name="discovery_era_slider_ruler_text_time_middle_year">2000</string>
+    <string name="discovery_era_slider_ruler_text_time_current_year">2013</string>
+    
+    <!-- Media Details -->
+
+    <string name="media_details_play_all">PLAY ALL</string>
+    <string name="media_details_play">PLAY</string>
+    <string name="media_details_share">SHARE</string>
+    <string name="media_details_video">VIDEOS</string>
+    <string name="media_details_add_to_playlist">+ PLAYLIST</string>
+    <string name="media_details_similar">SIMILAR</string>
+    <string name="media_details_song_details_music">Music</string>
+    <string name="media_details_song_details_singer">Singer</string>
+    <string name="media_details_song_details_lyricist">Lyricist</string>
+    <string name="media_details_title_bar_album">Album Name</string>
+    <string name="media_details_title_bar_playlist">Playlist Name</string>
+    <string name="media_details_title_bar_track">Track Name</string>
+    <string name="media_details_list_title_album">ALBUM SONGS (%1$s)</string>
+    <string name="media_details_list_title_playlist">PLAYLIST SONGS (%1$s)</string>
+    <string name="media_details_custom_dialog_long_click_play_now">Play Now</string>
+    <string name="media_details_custom_dialog_long_click_add_to_queue">Add to queue</string>
+    <string name="media_details_custom_dialog_long_click_details">Details</string>
+
+    <!-- Search -->
+
+    <string name="search_result_line_type_and_name_artist">Celeb Radio</string>
+    <string name="search_popular_searches_title">Popular searches</string>
+    <string name="search_popular_searches_search_category_all">All: </string>
+    <string name="search_popular_searches_search_category_songs">Songs: </string>
+    <string name="search_popular_searches_search_category_album">Albums: </string>
+    <string name="search_popular_searches_search_category_playlist">Playlists: </string>
+    <string name="search_popular_searches_search_category_video">Videos: </string>
+    <string name="search_popular_searches_search_category_all_line">All</string>
+    <string name="search_popular_searches_search_category_songs_line">Songs</string>
+    <string name="search_popular_searches_search_category_album_line">Albums</string>
+    <string name="search_popular_searches_search_category_playlist_line">Playlists</string>
+    <string name="search_popular_searches_search_category_video_line">Videos</string>
+    <string name="search_results_layout_top_text_results_for">results found for</string>
+    <string name="search_results_layout_top_text_results_for_single">result found for</string>
+    <string name="search_results_layout_bottom_text_album_playlist"> songs</string>
+    <string name="search_results_layout_bottom_text_for_track">Song</string>
+    <string name="search_results_layout_bottom_text_for_album">Album</string>
+    <string name="search_results_layout_bottom_text_for_playlist">Playlist</string>
+    <string name="search_results_layout_bottom_text_for_video">Video</string>
+    <string name="search_results_loading_indicator_loading">Loading results...</string>
+    <string name="search_results_loading_indicator_loading_more">Loading more results...</string>
+
+    <!-- Video -->
+
+    <string name="video_player_info_page_top_row_upper_text">Info</string>
+    <string name="video_player_info_page_top_row_bottom_text">Tap on a name/category/mood to search</string>
+    <string name="video_player_info_page_album_year">Album (Year)</string>
+    <string name="video_player_info_page_language_category">Language/ Category</string>
+    <string name="video_player_info_page_mood">Mood</string>
+    <string name="video_player_info_page_genre_sub_genre">Genre</string>
+    <string name="video_player_info_page_music">Music</string>
+    <string name="video_player_info_page_singers">Singers</string>
+    <string name="video_player_info_page_cast">Cast</string>
+    <string name="video_player_info_page_lyrics">Lyrics</string>
+    <string name="video_player_upgrade_text">Upgrade now to see unlimited, full-length videos!</string>
+    <string name="video_player_upgrade_button_text">Upgrade</string>
+
+    <!-- Upgrade -->
+
+	<string name="upgrade_need_to_login">Please login first in order to upgrade.</string>
+    <string name="upgrade_mobile_number_required_music">Your mobile no. is required for downloading music or upgrading to a premium account.</string>
+    <string name="upgrade_mobile_number_required_videos">Your mobile no. is required for downloading any video(s).</string>
+    <string name="upgrade_verification_sms">A verification SMS will be sent to this number.</string>
+    <string name="upgrade_mobile_hint">Mobile No.</string>
+    <string name="upgrade_country_code">+91</string>
+    <string name="upgrade_mobile_required_privacy_title">We respect your privacy</string>
+    <string name="upgrade_mobile_required_privacy_text1">Your number  would be private &amp; would not be spammed with messages.</string>
+    <string name="upgrade_mobile_required_privacy_text2">You would not receive unsolicited calls from anyone.</string>
+    <string name="upgrade_mobile_verification_sms_text1">Verification SMS is sent to your mobile number.</string>
+    <string name="upgrade_mobile_verification_sms_text2">If you are in DND, please SMS HPIN to 54646 to receive SMS.</string>
+    <string name="upgrade_mobile_verification_sms_resend_sms">RESEND SMS</string>
+    <string name="upgrade_mobile_verification_sms_enter_password_text">Enter password here to verify mobile number:</string>
+    <string name="upgrade_plans_title">Select a Premium Plan</string>
+    <string name="upgrade_plans_sub_title">Unlimited Full-length, Ad-free Streaming of Any Song/ Video you like!</string>
+    <string name="upgrade_plans_unsubscribe">To unsubscribe go to Settings</string>
+    <string name="upgrade_subscribtion_successful_title">UPGRADE SUCCESSFUL!</string>
+    <string name="upgrade_subscribtion_successful_text">"You can now enjoy unlimited, ad-free music &amp; Videos! Time for some Hungama!\n\nSubscription ends: %1$s"</string>
+    <string name="upgrade_subscribtion_successful_text2">Earned 50</string>
+    <string name="upgrade_subscribtion_unsuccessful_title">Unable to Upgrade</string>
+    <string name="upgrade_subscribtion_unsuccessful_text">Sorry, you don\'t have sufficient balance. Please recharge your account and retry.</string>
+    <string name="upgrade_plan_daily">Daily</string>
+    <string name="upgrade_plan_weekly">Weekly</string>
+    <string name="upgrade_plan_monthly">Monthly</string>
+    <string name="upgrade_plan_button_subscribe">BUY</string>
+    <string name="upgrade_plan_price_only">only</string>
+    <string name="upgrade_mobile_number_verification_failed">.</string>
+    <string name="upgrade_mobile_number_verification_success1">Password verified successfully</string>
+    <string name="upgrade_mobile_number_verification_success2">Mobile number verified successfully</string>
+    <string name="upgrade_mobile_number_verification_success">.</string>
+    <string name="general_download">Download</string>
+    <string name="download_same_song_dialog_body_text">You have already downloaded this song.</string>
+    <string name="download_same_song_dialog_body_text_video">You have already downloaded this video.</string>
+    <string name="download_same_song_dialog_button_text">Go to My Collection</string>
+    <string name="download_same_song_dialog_button_text_download_again">Download again</string>
+    <string name="download_plans_pick_plan">Pick a Plan</string>
+    <string name="download_plans_pick_plan_bottom_earn">Earn 50 </string>
+    <string name="download_plans_pick_plan_bottom_for_every"> for every download</string>
+    <string name="download_plans_pick_plan_bottom_download">Download Legally. Stop Piracy.</string>
+    <string name="download_country_check_not_india">Download is currently not available for your country/ service provider. Please visit Hungama.com to download.</string>
+    <string name="download_no_sim">Valid SIM required for download. Or visit Hungama.com to download.</string>
+    <string name="download_mobile_number_wrong_length">Please provide a valid 10 digit Mobile number.</string>
+    
+    <string name="download_plans_redeem_coins">Redeem Coins</string>
+    <string name="download_plans_google_wallet">Google Wallet</string>
+    <string name="download_plans_google_wallet_subscription">(Subscription)</string>
+    <string name="download_plans_mobile">Mobile Operator Billing</string>
+    <string name="download_plans_redeem_coins_buy">GET FREE</string>
+    
+    <string name="download_unsuccessful_title">Unable to Download</string>
+
+    <!-- Radio -->
+
+    <string name="radio_live_radio">Live Radio</string>
+    <string name="radio_top_artist_radio">Top Celeb Radio</string>
+    <string name="radio_radio_pefix">Radio:</string>
+    <string name="radio_tuned_in">Tuned in </string>
+    <string name="radio_confirm_dialog_title">You have songs in your queue. Wish to save it as playlist?</string>
+    <string name="radio_confirm_dialog_play_channel">Don\'t save, just Play Radio</string>
+    <string name="radio_confirm_dialog_save_them">Save &amp; Play Radio</string>
+    <string name="radio_details_coming_up_label">COMING UP NEXT</string>
+    <string name="radio_details_coming_up_song">Song - </string>
+
+    <!-- For You -->
+
+    <string name="for_you_title">Specials</string>
+
+    <!-- Playlists -->
+
+    <string name="add_to_playlist_dialog_title">ADD TO PLAYLIST</string>
+    <string name="playlist_dialog_hint">New Playlist name</string>
+    <string name="save">SAVE</string>
+    <string name="playlist_row_item_name">Playlist Name</string>
+    <string name="processing">Processing...</string>
+    <string name="adding_to_playlist">Adding to Playlist...</string>
+    <string name="new_playist_error_alert">Please name your playlist.</string>
+    <string name="new_playist_error_alert_not_alphnumeric">Please enter only letters and/or numbers for your playlist.</string>
+    <string name="loading_playlist">Loading Playlist...</string>
+    
+    <string name="playlists_title">My Playlists (%1$s)</string>
+    <string name="playlists_message_delete">Are you sure you want to delete the playlist?</string>
+    <string name="playlists_message_delete_ok">Delete playlist</string>
+
+    <!-- Rate App - Appirater -->
+
+
+    <!-- This is the message your users will see once they've passed the day+launches threshold. -->
+    <string name="APPIRATER_MESSAGE">If you enjoy using %s, please take a moment and rate our app? Thank you!</string>
+    <!-- This is the title of the message alert that users will see. -->
+    <string name="APPIRATER_MESSAGE_TITLE">Rate %s</string>
+    <!-- The text of the button that rejects reviewing the app. -->
+    <string name="APPIRATER_CANCEL_BUTTON">No, Thanks!</string>
+    <!-- Text of button that will send user to app review page. -->
+    <string name="APPIRATER_RATE_BUTTON">Rate %s</string>
+    <!-- Text for button to remind the user to review later. -->
+    <string name="APPIRATER_RATE_LATER">Remind me later</string>
+
+    <!-- Queue -->
+
+    <string name="queue_bottom_text_now_playing">NOW PLAYING</string>
+
+    <!-- Download -->
+
+	<string name="download_need_to_login">Please login in order to proceed with the Download.</string>
+    <string name="download_plan_single">Single - one Song for</string>
+    <string name="download_plan_value">Value Pack - 4 songs for</string>
+    <string name="download_plan_button_buy">BUY</string>
+    <string name="download_media_success_title">Payment Successful!</string>
+    <string name="download_media_success_title_thank_you">DOWNLOAD SUCCESSFUL!</string>
+    <string name="download_media_success_body">Thank You for downloading. Your download will start automatically.</string>
+    <string name="download_media_succeded_toast">Download Completed successfully! We have stored it under "%1$s" Folder </string>
+    <string name="download_media_unsucceded_toast">Problem with download!</string>
+    <string name="download_media_unsucceded_toast_text">Please download again</string>
+    <string name="download_media_folder">Hungama Media</string>
+
+    <!-- App Tour -->
+
+    <string name="app_tour_text_title_0">MUSIC &amp; VIDEOS</string>
+    <string name="app_tour_text_title_1">MUSIC DISCOVERY</string>
+    <string name="app_tour_text_title_2">MY PLAY</string>
+    <string name="app_tour_text_title_3">LIVE RADIO</string>
+    <string name="app_tour_text_title_4">AND MORE</string>
+    <string name="app_tour_text_body_0">From Bollywood to Bhojpuri, get the hippest, hottest and latest music and videos on your phone.</string>
+    <string name="app_tour_text_body_1">Discover Music as never before. Set your mood, Choose your style, Travel back in times, Tweak the tempo</string>
+    <string name="app_tour_text_body_2">Get your friends in the loop, Earn Coins and Badges, Become a maestro. Redeem coins for free downloads &amp; more.</string>
+    <string name="app_tour_text_body_3">Welcome to THE Definitive Radio Experience with LIVE stations and Celeb Radio channels.</string>
+    <string name="app_tour_text_body_4">Favorite music you like, Share with friends, Watch videos, Manage playlists, Download music</string>
+
+    <!-- App Hints -->
+    <string name="app_hints_filter">Filter</string>
+    <string name="app_hints_player_queue">"Player\nQueue"</string>
+    <string name="app_hints_home_tile">"Long press on tile to get more options"</string>
+
+    <!-- My Stream -->
+
+    <string name="mystream_title_button_close">-</string>
+    <string name="mystream_title_button_open">+</string>
+    <string name="social_mystream_title_bar_button_everyone">Everyone</string>
+    <string name="social_mystream_title_bar_button_friends">Friends</string>
+    <string name="social_mystream_title_bar_button_me">Me</string>
+    <string name="social_mystream_title_bar_button_invite">Invite</string>
+    <string name="social_mystream_empty_content_message">Get your friends on-board, follow their music discoveries &amp; share your own. Earn coins.</string>
+    <string name="social_mystream_empty_content_button_invite">INVITE FRIENDS</string>
+    <string name="invite_friends_title">Invite Friends</string>
+    <string name="invite_social_network_frien">Invite</string>
+    <string name="select_all_social_friends">Select All</string>
+    <string name="cancel_all_social_friends">Cancel All</string>
+    <string name="twitter_body_text">Get the Hungama App I found, its awesome. Watch Music videos, play all songs, its Free! www.hungama.com/apps</string>
+    <string name="invite_friend_mail_subject">Try out Hungama.com\'s new Music Discovery app</string>
+    <string name="invite_friend_mail_text">Hey!&lt;br>Check out this Music app I found - Hungama.com, the ultimate app for free &amp; legal music &amp; videos...&lt;br>&lt;br>&lt;b>Hungama.com, The Ultimate Music App.&lt;/b>&lt;br>Download now: &lt;a href=http://www.hungama.com/apps>Visit Hungama.com&lt;/a>&lt;br>&lt;br>Features:&lt;br>o Free Music &amp; Videos Streaming&lt;br>o Legal Downloads&lt;br>o Millions of songs &amp; videos from Bollywood to International as well as Regional &amp; Devotional Music.&lt;br>o Live Radio channels&lt;br>o Discover songs based on your mood.&lt;br>o Get recommendations on the songs you like.&lt;br>o Favorite &amp; share what you like with friends and save them to your playlist.&lt;br>&lt;br>Let the magic begin...&lt;br>&lt;br>Cheers,&lt;br>%1$s %2$s&lt;br>&lt;br>&lt;a href=http://www.hungama.com/apps>Visit Hungama.com&lt;/a> | iOS: &lt;a href=https://itunes.apple.com/us/app/hungama-music-videos-radio/id414009038?mt=8>iTUNES STORE&lt;/a> | Android: &lt;a href=https://play.google.com/store/apps/details?id=com.hungama.myplay.activity>GOOGLE PLAY&lt;/a>&lt;br>-----------------------------&lt;br>Hungama.com, the ultimate music app!</string>
+    <string name="invite_facebook_friends">Invite Facebook Friends</string>
+    <string name="invite_twitter_friends">Invite Twitter Friends</string>
+    <string name="invite_google_plus_friends">Invite Gmail Friends</string>
+    <string name="invite_email_friends">Email</string>
+
+    <!-- My Preferences -->
+    <string name="my_preferences_page_text_title">My Preferences</string>
+    <string name="my_preferences_page_text">Set your Music Preferences</string>
+    <string name="my_preferences_error_no_categories">Please select categories</string>
+    <string name="my_preferences_saved_categories">Your Preferences have been saved</string>
+    <string name="social_mystream_date_label_hours">Hours</string>
+    <string name="social_mystream_date_label_days">Days</string>
+    <string name="social_mystream_date_label_week">Week</string>
+    <string name="social_mystream_date_label_now">Now</string>
+    <string name="social_mystream_date_label_a_day">A Day</string>
+
+    <!-- Favorite -->
+    <string name="favorite_error_saving">error adding %1$s to favorites.</string>
+    <string name="favorite_saved">%1$s added to your Favorites.</string>
+    <string name="favorite_error_removing">error removing %1$s from favorites.</string>
+    <string name="favorite_removed">%1$s removed from your Favorites.</string>
+    <string name="favorite_dialog_title">My Favorites</string>
+    <string name="favorite_dialog_songs">My Fav Songs</string>
+    <string name="favorite_dialog_albums">My Fav Albums</string>
+    <string name="favorite_dialog_playlists">My Fav Playlists</string>
+    <string name="favorite_dialog_videos">My Fav Videos</string>
+    <string name="favorite_fragment_title_songs">My Fav Songs (%1$s)</string>
+    <string name="favorite_fragment_title_albums">My Fav Albums (%1$s)</string>
+    <string name="favorite_fragment_title_playlists">My Fav Playlists (%1$s)</string>
+    <string name="favorite_fragment_title_videos">My Fav Videos (%1$s)</string>
+    <string name="favorite_fragment_title_songs_other">Fav Songs (%1$s)</string>
+    <string name="favorite_fragment_title_albums_other">Fav Albums (%1$s)</string>
+    <string name="favorite_fragment_title_playlists_other">Fav Playlists (%1$s)</string>
+    <string name="favorite_fragment_title_videos_other">Fav Videos (%1$s)</string>
+
+    <!-- google cloud messaging -->
+    <!-- <string name="gcm_project_id">632603807834</string> -->
+    <string name="gcm_project_id">556683560964</string>
+    <string name="gcm_service_class">com.hungama.myplay.activity.gcm.GCMIntentService</string>
+    <string name="share_dialog_title">SHARE</string>
+    <string name="post_button_text">POST</string>
+    <string name="share_dialog_edit_text_hint">Enter caption (optional)</string>
+    <string name="share_dialog_no_sms_capabilities">This device doesn\'t support SMS</string>
+
+	<!-- Redeem -->
+	
+	<string name="redeem_title">Rewards</string>
+	<string name="redeem_my_coins">MY COINS: %1$S </string>
+	<string name="redeem_go_to">Go to Hungama to claim your rewards now</string>
+	<string name="redeem_free_song">Free Song</string>
+	<string name="redeem_free_song_sub">Download any song for free</string>
+	<string name="redeem_free_video">Free Video</string>
+	<string name="redeem_free_video_sub">Download any video for free</string>
+	<string name="redeem_free_song_num_of_coins">750</string>
+	<string name="redeem_free_video_num_of_coins">2000</string>
+	
+	<!-- Redeem new -->
+	
+	<string name="redeem_music_tilte">Download a song</string>
+	<string name="redeem_video_tilte">Download a Music Video</string>
+	<string name="redeem_sd_tilte">1 Online Movie Coupon</string>
+	<string name="redeem_hd_tilte">1 Online HD Movie Coupon</string>
+	<string name="redeem_dinner_tilte">Dinner at a 5 Star</string>
+	<string name="redeem_ipad_tilte">iPad Mini</string>
+	<string name="redeem_mobile_tilte">HTC ONE X+</string>
+	<string name="redeem_goa_tilte">Goa Holiday (2N/3D)</string>
+	<string name="redeem_samsungtv_tilte">Samsung LED Smart Tv (32"''")</string>
+	<string name="redeem_actor_tilte">Meet a Bollywood Star</string>
+	<string name="redeem_points_750">750</string>
+	<string name="redeem_points_2000">2000</string>
+	<string name="redeem_points_5000">5000</string>
+	<string name="redeem_points_8000">8000</string>
+	<string name="redeem_points_25000">25,000</string>
+	<string name="redeem_points_50000">50,000</string>
+	<string name="redeem_points_60000">60,000</string>
+	<string name="redeem_points_75000">75,000</string>
+	<string name="redeem_points_80000">80,000</string>
+	<string name="redeem_points_100000">100,000</string>
+	<string name="redeem_hungama_part_1">Visit</string>
+	<string name="redeem_hungama_link"><a href="http://www.hungama.com/">Hungama</a></string>
+	<!-- <string name="redeem_hungama_part_2">Hunagam</string> -->
+	<string name="redeem_hungama_part_3">to claim your rewards now!</string>
+	<string name="redeem_customer_support_title">Customer support:</string>
+	<string name="redeem_customer_support_phone_1">+91 22 6666 4646</string>
+	<string name="redeem_customer_support_phone_2">+91 9223 404 646</string>
+	<string name="redeem_email">Email: support@hungama.com</string>
+	<string name="redeem_email_to">support@hungama.com</string>
+	<string name="redeem_email_subject">Redeem coins</string>
+	
+   	<!-- Social Profile -->
+   	
+   	<string name="social_profile_title_bar_text_my_plofile">My Profile</string>
+   	<string name="social_profile_title_bar_text_user_plofile">%1$s Profile</string>
+   	<string name="social_profile_user_bar_current_level">You are currently at level %1$d</string>
+   	<string name="social_profile_info_section_badges">BADGES\n</string>
+   	<string name="social_profile_info_section_leaderboard">LEADER\nBOARD</string>
+   	<string name="social_profile_info_section_my_playlists">MY\nPLAYLISTS</string>
+   	<string name="social_profile_info_section_fav_albums">FAV\nALBUM</string>
+   	<string name="social_profile_info_section_fav_songs">FAV\nSONGS</string>
+   	<string name="social_profile_info_section_fav_playlists">FAV\nPLAYLISTS</string>
+   	<string name="social_profile_info_section_fav_videos">FAV\nVIDEOS</string>
+   	<string name="social_profile_info_section_discovery">Discovery\n</string>
+   	<string name="profile_user_bar_level_bar_first">0</string>
+   	
+   	<string name="social_profile_info_section_my_playlists_content_empty">Earn 50 coins for each Playlist created with at least 5 songs</string>
+   	
+   	
+   	<!-- Social Leaderboard -->
+   	
+   	<string name="social_leaderboard_title">Leaderboard</string>
+   	<string name="social_leaderboard_top">TOP</string>
+   	<string name="social_leaderboard_friends">FRIENDS</string>
+   	<string name="social_leaderboard_last_seven_days">LAST 7 DAYS</string>
+    <string name="social_leaderboard_all_time">ALL TIME</string>
+   	<string name="social_leaderboard_last_seven_days_top">TOP - LAST 7 DAYS</string>
+   	<string name="social_leaderboard_all_time_top">TOP - ALL TIME</string>
+   	
+   	<string name="social_leaderboard_error_message_no_friends">No Friends.</string>
+   	<string name="social_leaderboard_error_message_no_last_seven_days_users">No Users in the last 7 Days</string>
+   	<string name="social_leaderboard_error_message_no_all_time_users">No Users in All time list</string>
+   	
+   	<!-- My Collection -->
+   	
+   	<string name="my_collection_title">My Collection (%1$s)</string>
+   	
+   	<!-- Badges -->
+   	
+   	<string name="badges_title">My Badges</string>
+   	
+
+   	<!-- Comments -->
+   	<string name="comments_downpopup_login">Download Music and Videos for Free</string>
+   	<string name="comments_need_to_login">To post your comment, </string>
+   	<string name="comments_edit_text_hint">Post your comment</string>
+   	<string name="comments_title">Comments</string>
+   	<string name="comments_login_dialog_title">LOGIN WITH</string>
+   	<string name="comments_post_confirmation">Thanks! Your comment has been posted. You have just earned %1$s coins.</string>
+   	<string name="comments_post_error">Error posting comment. Please retry.</string>
+   	<string name="comments_post_select_provider">Tap on the desired social account icon to continue.</string>
+   	
+   	<string name="please_select_social_network">Please select social account</string>
+    <string name="settings_title">Settings</string>
+    <string name="share_subject">Check out this %1$s, %2$s, on Hungama</string>
+    <string name="share_sms_text">Check out this %1$s, %2$s: %3$s on Hungama.com, the ultimate music app. Get the app from www.hungama.com</string>
+    <string name="share_email_body">
+        Hey!&lt;br>Check out this %1$s, &lt;a href=%2$s>%3$s&lt;/a>, on Hungama&lt;br> %4$s %5$s &lt;br>&lt;br>
+		&lt;br> %6$s &lt;br>
+		&lt;br>Get the Hungama.com Mobile App today!&lt;br> &lt;a href="http://www.hungama.com/apps/">Visit Hungama.com &lt;/a> | iOS &lt;a href="https://itunes.apple.com/us/app/hungama-music-videos-radio/id414009038?mt=8">iTUNES STORE&lt;/a> | Android &lt;a href="https://play.google.com/store/apps/details?id=com.hungama.myplay.activity">GOOGLE PLAY&lt;/a>&lt;br>
+		-----------------------------&lt;/br>
+		Hungama.com, the ultimate music app!&lt;/br>&lt;/br>&lt;/br>&lt;/br>&lt;/br>&lt;/br>&lt;/br>&lt;/br>
+		</string>
+   	
+   	<string name="prenium_membership_fragment_title">Premium Membership</string>
+   	<string name="premium_membership">Premium Membership</string>
+   	<string name="free_upgrade_to_remove_ads">Free User - Upgrade now!</string>
+   	<string name="membership_detailed_text">Upgrade now to view unlimited, full-length videos you like!</string>
+   	<string name="membership_detailed_text_new">Ads free app with unlimited, full length video streaming.</string>   	
+   	<string name="membership_date">Start Date: %1$s %2$s</string>
+   	<string name="auto_renew">(auto-renew)</string>
+   	<string name="membership_unsubscribe_text">To unsubscribe go to Hungama.com</string>
+   	<string name="membership_unsubscribe_button">Unsubscribe</string>
+   	<string name="membership_subscribe_button">SUBSCRIBE</string>
+   	<string name="profile">Profile</string>
+   	<string name="sharing_settings">Sharing Settings:</string>
+   	<string name="facebook_message_text">Listen to free music with lyrics &amp; videos. Sit back &amp; enjoy Live Radio or Discover music as per your mood. There\'s soo much to do…!</string>
+   	<string name="facebook_twitter_body_text">Check out this Music app I found - Hungama.com, for free &amp; legal music.</string>
+   	<string name="songs_i_listen_to">Songs I listen to</string>
+   	<string name="my_favorite">My Favorites</string>
+   	<string name="songs_i_downloaded">My Collection</string>
+   	<string name="my_comments">My Comments</string>
+   	<string name="my_badges">My Badges</string>
+   	<string name="videos_watched">Videos watched</string>
+   	<string name="videos_downloaded">Videos downloaded</string>
+   	<string name="my_stream_settings">My Stream Settings</string>
+   	<string name="mystream_settings_music_listened_to">Music listened to</string>
+   	<string name="mystream_settings_likes">Likes</string>
+   	<string name="mystream_settings_downlods">Downloads</string>
+   	<string name="mystream_settings_comments">Comments</string>
+   	<string name="mystream_settings_videos_watched">Videos Watched</string>
+   	<string name="mystream_settings_shares">Shares</string>
+   	<string name="mystream_settings_badges_earned">Badges earned</string>
+   	<string name="show_feeds_of_">Show feeds of:</string>
+   	
+   	
+   	<!-- FeedBack Page -->
+   	
+   	<string name="feedback_error_message_empty_field">Please fill required fields</string>
+   	<string name="feedback_error_message_email_format">Incorrect email format</string>
+   	<string name="feedback_error_message_mobile_format">10 digit number only, please retry.</string>
+   	<string name="feedback_error_message_confirm">OK</string>
+   	
+   	<string name="feedback_title">Give Feedback</string>
+   	<string name="feedback_field_hint_first_name">First Name</string>
+   	<string name="feedback_field_hint_last_name">Last Name</string>
+   	<string name="feedback_field_hint_email">Email id</string>
+   	<string name="feedback_field_hint_mobile">Mobile No.</string>
+   	<string name="feedback_field_hint_free_text">How can we help you?</string>
+   	<string name="feedback_label_rate_experiance">How was your App experience?</string>
+   	<string name="feedback_button_submit">SUBMIT</string>
+
+   	<!-- Help / FAQ Page -->
+   		
+   	<string name="help_faq_title">Help/FAQ</string>
+   	<string name="help_faq_sections_title">Need assistance? Try one of the below!</string>
+   	<string name="help_faq_section_app_crashes">App crashing or being wonky?</string>
+   	<string name="help_faq_section_app_crashes_content">It could be a memory issue. Double click the home button to see a dock of all apps that are running in the background. If there are a lot running, you may want to close some apps completely (click and hold the icon in the dock till the red minus sign appears, tap to close it) since some programs drain phone memory. Then restart the Hungama App. If you are still facing issues, do report the problem and we\'ll help you out.</string>
+   	<string name="help_faq_section_read_faqs">Read FAQs online</string>
+   	<string name="help_faq_section_report_problem">Report a Problem</string>
+   	
+   	<!-- About Page -->
+   	
+   	<string name="about_title">About Hungama</string>
+   	<string name="about_title_version">Hungama App version %1$s</string>
+   	<string name="about_section_play">Hungama.com App is the one-stop destination to stream &amp; download all Music &amp; Music Videos!</string>
+   	<string name="about_section_favorite">A WOW experience with the largest collection of Indian music albums, videos, live curated radio &amp; more…</string>
+   	<string name="about_section_discover">Unique Music Discovery tool across genres to match the mood and era you want to belong to...</string>
+   	<string name="about_section_gamification">Earn coins and jump the leaderboard as you use the app. Redeem coins for free downloads!</string>
+   	<string name="about_follow_us">Follow us</string>
+   	<string name="about_terms_of_use">Terms of use</string>
+   	<string name="about_privacy_policy">Privacy Policy</string>
+   	
+   	<!-- Badges / Coins -->
+   	<string name="badges_coins_notification_middle_left_text">You have just earned</string>
+   	<string name="badges_dialog_notification_text_congratulations">Congratulations!</string>
+   	<string name="badges_dialog_notification_text_you_have_just">You have just unlocked</string>
+   	<string name="logging_out">Logging out...</string>
+   	<string name="sleep_mode_dialog_title">SLEEP MODE</string>
+   	<string name="sleep_mode_15_mins">15 mins</string>
+   	<string name="sleep_mode_30_mins">30 mins</string>
+   	<string name="sleep_mode_45_mins">45 mins</string>
+   	<string name="sleep_mode_60_mins">60 mins</string>
+   	<string name="start_timer_button_text">Start</string>
+   	<string name="mins_to_sleep">%1$s</string>
+   	<string name="reset_timer_button_text">Reset</string>
+   	<string name="hungama_account_message_upper">Twitter login successful. Please provide your email address to complete your registration.</string>
+   	<string name="hungama_account_message">If you already have a Hungama account, please enter your Password above to sync that account.</string>
+   	<string name="eran_50">Earn 50</string>
+   	<string name="for_each_account_added">for each account added.</string>
+   	<string name="your_invintation_has_been_sent">Your invitation has been sent</string>
+   	<string name="you_do_not_have_any_playlist_saved">You do not have any playlist saved</string>   	
+   	
+   	<!-- Logout Menu -->
+   	<string name="logout_dialog_title">Logout</string>
+   	<string name="logout_dialog_text">Logging out? Please confirm.</string>
+   	
+   	<!-- Exit Menu -->
+   	<string name="exit_dialog_title">Exit Hungama</string>
+   	<string name="exit_dialog_text">Are you sure you want to exit the Hungama app?</string>
+   	<string name="radio_specials_static_string">SPECIALS</string>
+   	<string name="itemable_text_title">My Playlists %1$s</string>
+   	<string name="flurry_app_key">RZ5Q7M5NQMF34WBPW2T3</string>
+   	<string name="add_to_playlist_triggered">Add to playlist - triggered</string>
+   	<string name="full_player_similar">Full player - Similar</string>
+   	<string name="full_player_info">Full player - Info</string>
+   	<string name="full_player_video">Full player - Video</string>
+   	<string name="full_player_lyrics">Full player - Lyrics</string>
+   	<string name="full_player_trivia">Full player - Trivia</string>
+   	<string name="full_player_download">Full player - Download</string>
+   	<string name="full_player_share">Full player - Share</string>
+   	<string name="exit_dialog_text_yes">Yes</string>
+   	<string name="exit_dialog_text_no">No</string>
+   	<string name="new_version_title">Hungama.com App Update!</string>
+   	<string name="new_version_message">Hungama.com App Update! We have released a small App update for you. Kindly upgrade &amp; enjoy a better experience.</string>
+   	<string name="upgrade_now_button">Upgrade Now</string>
+   	<string name="google_play_url">https://play.google.com/store/apps/details?id=com.hungama.myplay.activity</string>
+   	<string name="remind_me_later_button">Remind me later</string>
+   	<string name="celeb_radio_blue_title">Celeb Radio:</string>
+   	<string name="live_radio_blue_title">Live Radio</string>
+   	<string name="redeem_text">Redeem</string>
+   	<string name="discover_splash_text">DISCOVER</string>
+   	<string name="music_splash_text">MUSIC</string>
+   	<string name="videos_splash_text">VIDEOS</string>
+   	<string name="live_radio_splash_text">LIVE RADIO</string>
+   	<string name="friends_splash_text">FRIENDS</string>
+   	<string name="no_friends_in_your_account">No friends found</string>
+   	<string name="song_already_exists_in_playlist">Song already exists in playlist</string>
+   	<string name="song_s_added_to_your_playlist">"Song added to playlist"</string>
+   	
+   	<!-- Settings. -->
+   	
+   	<string name="settings_audio_quality_auto">Auto (recommended)</string>
+   	<string name="settings_audio_quality_low">Low</string>
+   	<string name="settings_audio_quality_medium">Medium</string>
+   	<string name="settings_audio_quality_high">High</string>
+   	
+   	<!-- Invite FB friends Under Construction -->
+   	
+   	<string name="invite_fb_friends_under_construction_title">Coming soon</string>
+   	<string name="invite_fb_friends_under_construction_text">We\'re working on upgrading this feature as per Facebook\'s new guidelines. We\'ll have this soon in the next App Upgrade.</string>
+   	<string name="exit_dialog_text_ok">OK</string>
+   	
+   	<!-- Tool Tip Texts -->
+   	<string name="upgrade_google_tool_tip">Pay using your Play Store account.\nUpgrade Now to view full length music videos for one month.\nGet Ad-free experience for all songs and videos too.\nThis is a monthly subscription, auto-renewal at the end of one month.\nTo unsubscribe, visit your Play Store Account Settings.</string>
+   	<string name="upgrade_mobile_tool_tip">Pay via your Mobile Operator.\nUpgrade Now to view full length music videos for one month.\nGet Ad-free experience for all songs and videos too.\nThis is a one-time, monthly subscription fee.</string>   	           
+   	<string name="download_google_tool_tip_india">Pay using your Play Store account.\nDownload any 10 songs/ videos</string>
+   	<string name="download_google_tool_tip_non_india">Pay using your Play Store account.\nValue Pack: Download any 10 songs/ videos\nA-la-Carte: Download any one song/ video.</string>
+   	<string name="download_mobile_tool_tip_india">Pay via your Mobile number.\nValue Pack: Download any 4 songs/ videos\nA-la-carte - Download any one song/ video.                                           </string>
+   	<string name="download_redeem_tool_tip">Download song/ videos against coins earned.</string>
+   	
+   	<string name="invite_facebook_message">Check out this Music app I found - Hungama, for free &amp; legal music.</string>
+   	<string name="invite_facebook_title">Hungama, the ultimate music app</string>
+   	<string name="facebook_invetation_pick_a_friend">Pick a friend</string>
+   	<string name="facebook_inventation_limit_msg">Please select no more than 10 friends at a time.</string>
+   	<string name="subscription_error">Subscription Error</string>
+   	<string name="there_is_no_google_account_on_this_device">There is no Google account on this device</string>
+   	<string name="google_wallet">Google Wallet</string>
+   	<string name="for_using_google_wallet_please_accept_terms_in_google_play">For using Google Wallet please accept terms in Google Play</string>
+   	<string name="download_error">Download Error</string>
+   	<string name="error_while_downloading_the_content_please_try_again">Error while downloading the content. Please try again</string>
+   	
+</resources>

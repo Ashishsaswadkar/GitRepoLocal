@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:id="@+id/login_forgot_password_test_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/upgrade_mobile_required_margin_sides"
+        android:layout_marginRight="@dimen/upgrade_mobile_required_margin_sides"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/upgrade_verification_resend_button_text_color"
+        android:textSize="@dimen/upgrade_medium_plus_text_size"
+        android:text="@string/upgrade_plans_title"
+        android:textStyle="bold"/>
+    
+    <TextView
+        android:id="@+id/login_forgot_password_test_message1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/upgrade_mobile_required_margin_sides"
+        android:layout_marginRight="@dimen/upgrade_mobile_required_margin_sides"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/login_text_color"
+        android:textSize="@dimen/upgrade_medium_text_size"
+        android:text="@string/upgrade_plans_sub_title"
+        android:layout_below="@+id/login_forgot_password_test_message"
+        android:textStyle="bold"/>
+    
+    <ListView 
+        android:id="@+id/listview_upgrade_plans"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_forgot_password_test_message1"
+        android:divider="@null"></ListView>  
+    
+    <View 	android:id="@+id/view"
+        	android:layout_width="match_parent"
+        	  android:layout_height="1dp"
+        	  android:layout_centerVertical="true"
+              android:layout_centerHorizontal="true"
+              android:layout_below="@+id/listview_upgrade_plans"
+        	  android:background="@color/login_line_separator"/>
+    
+
+    <TextView
+        android:id="@+id/login_forgot_password_test_message2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:layout_marginLeft="@dimen/upgrade_mobile_required_margin_sides"
+        android:layout_marginRight="@dimen/upgrade_mobile_required_margin_sides"
+        android:textColor="@color/login_text_color"
+        android:textSize="@dimen/login_small_text_size"
+        android:text="@string/upgrade_plans_unsubscribe"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_below="@+id/view"/>  
+        
+    <WebView 
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="fill"
+        android:visibility="gone"/>
+    
+</RelativeLayout>

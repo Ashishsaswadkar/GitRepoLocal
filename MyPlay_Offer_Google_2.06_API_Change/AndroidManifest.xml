@@ -1,0 +1,345 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hungama.myplay.activity"
+    android:versionCode="21"
+    android:versionName="2.06" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+	<uses-permission android:name="android.permission.USE_CREDENTIALS" />
+
+    <!-- Declare and use a custom permission so only this application can receive GCM messages: -->
+    <permission
+        android:name="com.hungama.myplay.activity.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.hungama.myplay.activity.permission.C2D_MESSAGE" />
+    <!-- App receives GCM messages. -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <!-- GCM requires a Google account. -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <application
+        android:name="com.hungama.myplay.activity.ui.HungamaApplication"
+        android:debuggable="false"
+        android:icon="@drawable/icon_launcher"
+        android:label="@string/application_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.hungama.myplay.activity.ui.OnApplicationStartsActivity"
+            android:label="@string/application_name"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Splash Screen. -->
+
+        <activity
+            android:name="com.hungama.myplay.activity.ui.SplashScreenActivity"
+            android:label="@string/activity_label_login"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- Login. -->
+
+        <activity
+            android:name="com.hungama.myplay.activity.ui.LoginActivity"
+            android:label="@string/activity_label_login"
+            android:screenOrientation="sensorPortrait" />
+
+        <!-- Upgrade -->
+
+        <activity
+            android:name="com.hungama.myplay.activity.ui.UpgradeActivity"
+            android:label="@string/application_name"
+            android:screenOrientation="sensorPortrait" 
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- Download Connecting. -->
+
+        <activity
+            android:name="com.hungama.myplay.activity.ui.DownloadConnectingActivity"
+            android:label="@string/application_name"
+            android:screenOrientation="sensorPortrait" />
+
+        <!-- Download -->
+
+        <activity
+            android:name="com.hungama.myplay.activity.ui.DownloadActivity"
+            android:label="@string/application_name"
+            android:screenOrientation="sensorPortrait" />
+
+        <!-- My Preferences -->
+
+        <activity
+            android:name="com.hungama.myplay.activity.ui.MyPreferencesActivity"
+            android:label="@string/application_name"
+            android:screenOrientation="sensorPortrait" />
+
+        <!-- Redeem / Rewards -->
+
+        <activity
+            android:name="com.hungama.myplay.activity.ui.RedeemActivity"
+            android:label="@string/application_name"
+            android:screenOrientation="sensorPortrait" />
+
+        <!-- Home -->
+
+        <activity
+            android:name="com.hungama.myplay.activity.ui.HomeActivity"
+            android:label="@string/main_actionbar_title_music"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!-- Discovery -->
+
+        <activity
+            android:name="com.hungama.myplay.activity.ui.DiscoveryActivity"
+            android:label="@string/main_actionbar_title_discover"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!-- Music Activities. -->
+
+        <activity
+            android:name="com.hungama.myplay.activity.ui.MediaDetailsActivity"
+            android:label="@string/main_actionbar_title_music"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!-- Video activities -->
+
+        <activity
+            android:name="com.hungama.myplay.activity.ui.VideoCategoriesActivity"
+            android:label="@string/main_actionbar_title_videos"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.hungama.myplay.activity.ui.VideoActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/main_actionbar_title_videos" />
+
+        <!-- Tutorial activities -->
+
+        <activity
+            android:name="com.hungama.myplay.activity.ui.AppTourActivity"
+            android:label="@string/application_name"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.hungama.myplay.activity.ui.AppGuideActivity"
+            android:label="@string/application_name"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppTheme.Translucent" />
+
+        <!-- Badges and Coins -->
+
+        <activity
+            android:name="com.hungama.myplay.activity.ui.BadgesAndCoinsActivity"
+            android:label="@string/application_name"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppTheme.Translucent" />
+
+        <!-- Push Notification -->
+
+        <activity
+            android:name="com.hungama.myplay.activity.ui.PushNotificationActivity"
+            android:label="@string/application_name"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/Theme.Translucent.NoActionBar" />
+
+        <!-- My Favorites -->
+
+        <activity
+            android:name="com.hungama.myplay.activity.ui.FavoritesActivity"
+            android:label="@string/application_name"
+            android:screenOrientation="sensorPortrait" />
+
+        <!-- Comments -->
+
+        <activity
+            android:name="com.hungama.myplay.activity.ui.CommentsActivity"
+            android:label="@string/application_name"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- My Collection -->
+        <activity
+            android:name="com.hungama.myplay.activity.ui.MyCollectionActivity"
+            android:label="@string/application_name"
+            android:screenOrientation="portrait" />
+
+        <!-- Radio Activity. -->
+
+        <activity
+            android:name="com.hungama.myplay.activity.ui.RadioActivity"
+            android:label="@string/main_actionbar_title_radio"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!-- Campaigns -->
+
+        <activity
+            android:name="com.hungama.myplay.activity.campaigns.ForYouActivity"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name="com.hungama.myplay.activity.campaigns.VideoViewActivity"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.hungama.myplay.activity.campaigns.ImageDetailActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- Profile -->
+
+        <activity
+            android:name="com.hungama.myplay.activity.ui.ProfileActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/Theme.Sherlock"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!-- Playlists Activity -->
+
+        <activity
+            android:name="com.hungama.myplay.activity.ui.PlaylistsActivity"
+            android:screenOrientation="sensorPortrait" />
+
+        <!-- Feedback Activity -->
+
+        <activity
+            android:name="com.hungama.myplay.activity.ui.FeedbackActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppTheme.Field.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!-- Help and FAQ Activity -->
+
+        <activity
+            android:name="com.hungama.myplay.activity.ui.HelpAndFAQActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppTheme.Field.NoActionBar" />
+
+        <!-- About Activity -->
+
+        <activity
+            android:name="com.hungama.myplay.activity.ui.AboutActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppTheme.Field.NoActionBar" />
+
+        <!-- InviteFriendsActivity -->
+
+        <activity
+            android:name="com.hungama.myplay.activity.gigya.InviteFriendsActivity"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name="com.hungama.myplay.activity.gigya.TwitterLoginActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppTheme.Field.NoActionBar" />
+        <activity
+            android:name="com.hungama.myplay.activity.ui.SettingsActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.hungama.myplay.activity.ui.PlacementSplashActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- Gigya dependencies -->
+        <activity
+            android:name="com.gigya.socialize.android.GSWebViewActivity"
+            android:screenOrientation="sensorPortrait" />
+
+        <!-- Services -->
+
+        <service
+            android:name="com.hungama.myplay.activity.services.GCMRegistrationService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.hungama.myplay.activity.services.SubscriptionService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <!-- Discovery moods Prefetcher. -->
+        <service
+            android:name="com.hungama.myplay.activity.services.MoodPrefetchingService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <!-- Campaigns Prefetcher. -->
+        <service
+            android:name="com.hungama.myplay.activity.services.CampaignsPreferchingService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.hungama.myplay.activity.player.PlayerService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.hungama.myplay.activity.services.DownloadFileService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <!-- Inventory Light -->
+        <service
+            android:name="com.hungama.myplay.activity.services.InventoryLightService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.hungama.myplay.activity.services.ServerCommandsService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <!-- This broadcast receiver is responsible for handling the 2 intents that can be sent by GCM -->
+        <!-- android:name="com.google.android.gcm.GCMBroadcastReceiver" -->
+        <receiver
+            android:name="com.hungama.myplay.activity.gcm.GCMReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.hungama.myplay.activity" />
+            </intent-filter>
+        </receiver>
+
+        <!-- This intent service will be called by the GCMBroadcastReceiver -->
+        <service android:name="com.hungama.myplay.activity.gcm.GCMIntentService" />
+
+        <!-- AdX Library -->
+        <receiver
+            android:name="com.AdX.tag.AdXAppTracker"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="APP_NAME"
+            android:value="@string/adx_app_name" />
+        <meta-data
+            android:name="ADX_CLIENT_ID"
+            android:value="@string/adx_client_id" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/gigya_facebook_application_id" />
+    </application>
+
+</manifest>

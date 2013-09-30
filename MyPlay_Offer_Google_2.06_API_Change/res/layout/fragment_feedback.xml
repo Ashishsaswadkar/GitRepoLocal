@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/application_background_grey" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/feedback_content_padding"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/feedback_field_first_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/background_text_field"
+                android:hint="@string/feedback_field_hint_first_name"
+                android:paddingLeft="@dimen/feedback_field_padding"
+                android:paddingRight="@dimen/feedback_field_padding"
+                android:layout_marginRight="@dimen/feedback_content_padding"
+                android:textCursorDrawable="@null"
+                android:singleLine="true"
+                android:textColor="@color/text_field_value"
+                android:textColorHint="@color/text_field_hint" >
+
+                <requestFocus />
+                
+            </EditText>
+
+            <EditText
+                android:id="@+id/feedback_field_last_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/background_text_field"
+                android:hint="@string/feedback_field_hint_last_name"
+                android:paddingLeft="@dimen/feedback_field_padding"
+                android:paddingRight="@dimen/feedback_field_padding"
+                android:textCursorDrawable="@null"
+                android:singleLine="true"
+                android:textColor="@color/text_field_value"
+                android:textColorHint="@color/text_field_hint" />
+            
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/feedback_field_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/feedback_content_padding"
+            android:background="@drawable/background_text_field"
+            android:hint="@string/feedback_field_hint_email"
+            android:paddingLeft="@dimen/feedback_field_padding"
+            android:paddingRight="@dimen/feedback_field_padding"
+            android:textCursorDrawable="@null"
+            android:singleLine="true"
+            android:textColor="@color/text_field_value"
+            android:textColorHint="@color/text_field_hint" />
+
+        <Spinner
+            android:id="@+id/feedback_field_spinner_subjects"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/feedback_content_padding"
+            style="@style/App.Style.Field.Spinner"
+            android:spinnerMode="dropdown"
+            android:popupBackground="@drawable/white_background"
+            android:dropDownSelector="@drawable/white_background"
+            android:background="@drawable/background_field_spinner"/>
+
+        <EditText
+            android:id="@+id/feedback_field_mobile_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/feedback_content_padding"
+            android:background="@drawable/background_text_field"
+            android:hint="@string/feedback_field_hint_mobile"
+            android:inputType="phone"
+            android:paddingLeft="@dimen/feedback_field_padding"
+            android:paddingRight="@dimen/feedback_field_padding"
+            android:textCursorDrawable="@null"
+            android:singleLine="true"
+            android:textColor="@color/text_field_value"
+            android:textColorHint="@color/text_field_hint" />
+
+        <EditText
+            android:id="@+id/feedback_field_free_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/feedback_content_padding"
+            android:background="@drawable/background_text_field"
+            android:hint="@string/feedback_field_hint_free_text"
+            android:padding="@dimen/feedback_field_padding"
+            android:textCursorDrawable="@null"
+            android:textColor="@color/text_field_value"
+            android:textColorHint="@color/text_field_hint"
+            android:minLines="5"
+            android:gravity="left|top" />
+
+        <TextView
+            android:id="@+id/feedback_label_app_experiance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/feedback_content_padding"
+            style="@style/TextSmallMedium"
+            android:text="@string/feedback_label_rate_experiance"
+            android:textColor="@color/text_field_value" />
+
+        <RatingBar
+            android:id="@+id/feedback_field_rating_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/feedback_content_padding"
+            style="@style/FeedbackRatingBar" />
+
+        <Button
+            android:id="@+id/feedback_button_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/feedback_content_padding"
+            android:background="@drawable/background_button_blue"
+            android:text="@string/feedback_button_submit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/login_button_text_size"
+            android:textStyle="bold" />
+        
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/badges_dialog_info" >
+
+    <RelativeLayout
+        android:id="@+id/badges_info_dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/media_details_long_click_custom_dialog_row_height"
+        android:gravity="center_vertical"
+        android:padding="@dimen/badges_dialog_info_title_padding"
+        android:background="@color/badges_dialog_info_title" >
+
+        <TextView
+            android:id="@+id/badges_info_dialog_title_text"
+            android:layout_width="@dimen/media_details_long_click_custom_dialog_text_view_title_row_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_alignParentLeft="true"
+            android:text="@string/main_actionbar_settings_menu_item_my_favorites"
+            android:textColor="@color/white" />
+
+        <ImageButton
+            android:id="@+id/badges_info_dialog_title_close_button"
+            android:layout_width="@dimen/media_details_long_click_custom_dialog_close_button_size"
+            android:layout_height="@dimen/media_details_long_click_custom_dialog_close_button_size"
+            android:layout_alignParentRight="true"
+            android:background="@color/transparent"
+            android:src="@drawable/icon_close_white" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/badges_dialog_info_content_padding"
+        android:gravity="center_horizontal" >
+
+        <ImageView
+            android:id="@+id/badges_info_dialog_badge_icon"
+            android:layout_width="@dimen/badges_dialog_info_badge_icon_size"
+            android:layout_height="@dimen/badges_dialog_info_badge_icon_size"
+            android:layout_marginBottom="@dimen/badges_dialog_info_content_padding"
+             />
+
+        <TextView
+            android:id="@+id/badges_info_dialog_badge_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextSmallMedium"
+            android:textColor="@color/badges_dialog_info_text" />
+        
+    </LinearLayout>
+
+</LinearLayout>

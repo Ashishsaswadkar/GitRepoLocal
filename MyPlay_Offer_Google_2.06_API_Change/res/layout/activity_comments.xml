@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/application_background_grey"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/comments_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_title_bar_height"
+        android:background="@drawable/background_home_tabwidget_tab_unselected" >
+
+        <TextView
+            android:id="@+id/comments_title_bar_text"
+            style="@style/TextMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:text="@string/comments_title" />
+        
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/comments_fragmant_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/comments_title_bar"
+        android:background="@null" />
+
+    <FrameLayout
+        android:id="@+id/main_navigation_fragmant_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@null" />
+
+</RelativeLayout>

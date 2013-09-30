@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/badges_current_badge_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/badges_current_badge_bar_background"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/badges_current_badge_bar_side_padding"
+        android:paddingRight="@dimen/badges_current_badge_bar_side_padding"
+        android:paddingTop="@dimen/badges_current_badge_bar_edges_padding"
+        android:paddingBottom="@dimen/badges_current_badge_bar_edges_padding">
+
+        <ImageView
+            android:id="@+id/badges_current_badge_icon"
+            android:layout_width="@dimen/badges_current_badge_bar_badge_icon_size"
+            android:layout_height="@dimen/badges_current_badge_bar_badge_icon_size" />
+
+        <TextView
+            android:id="@+id/badges_current_badge_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/badges_current_badge_text_name_margin_left"
+            style="@style/TextLarge"
+            android:textColor="@color/badges_current_badge_text_name"/>
+
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/badges_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="auto_fit"
+        android:background="@color/badges_gridview_badges"
+        android:stretchMode="columnWidth"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:verticalSpacing="20dp"
+        android:horizontalSpacing="3dp"
+        android:columnWidth="80dp">
+    </GridView>
+</LinearLayout>

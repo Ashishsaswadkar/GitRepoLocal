@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.hungama.myplay.activity"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+
+    		   <!-- Gym mode exit -->
+		   
+  <LinearLayout
+      android:id="@+id/player_gym_mode_exit_container"
+      android:layout_width="@dimen/player_gym_mode_exit_container_width"
+      android:layout_height="@dimen/player_gym_mode_exit_container_height"
+      android:layout_alignParentTop="true"
+      android:layout_alignParentRight="true"
+      android:background="@color/black"
+      android:gravity="center"
+      android:padding="5dp"
+      android:visibility="visible" >
+
+      <Button
+          android:id="@+id/player_gym_mode_exit_button"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:background="@drawable/background_main_player_button_selector"
+          android:text="@string/player_gym_mode_exit_button"
+          android:textColor="@color/white"
+          android:textSize="@dimen/main_player_content_info_bar_score_text_size" />
+      
+  </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/player_gym_mode_container_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/player_gym_mode_container_bottom"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/transparent_background"
+        android:gravity="center" >
+
+        <com.hungama.myplay.activity.ui.widgets.ActiveButton
+            android:id="@+id/player_gym_mode_controll_button_play"
+            android:layout_width="@dimen/player_gym_mode_controll_button_size"
+            android:layout_height="@dimen/player_gym_mode_controll_button_size"
+            android:background="@drawable/background_main_player_button_selector"
+            android:padding="@dimen/main_player_bar_button_padding"
+            custom:activeSrc="@drawable/icon_main_player_play_white"
+            custom:inactiveSrc="@drawable/icon_main_player_play_grey" />
+        
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/player_gym_mode_container_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/player_gym_mode_container_bottom_top_padding" >
+
+            <LinearLayout
+                android:id="@+id/player_gym_mode_controll_button_previous_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/player_gym_mode_controll_button_side_margin"
+                android:layout_marginTop="@dimen/player_gym_mode_container_bottom_top_padding"
+                android:orientation="vertical" >
+
+                <com.hungama.myplay.activity.ui.widgets.ActiveButton
+                    android:id="@+id/player_gym_mode_controll_button_previous"
+                    android:layout_width="@dimen/player_gym_mode_controll_button_size"
+                    android:layout_height="@dimen/player_gym_mode_controll_button_size"
+                    android:background="@drawable/background_main_player_button_selector"
+                    android:padding="@dimen/main_player_bar_button_padding"
+                    custom:activeSrc="@drawable/icon_main_player_previous_white"
+                    custom:inactiveSrc="@drawable/icon_main_player_previous_grey" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/player_gym_mode_swipe_indicator_top_margin"
+                    android:drawableLeft="@drawable/icon_swipe_left"
+                    android:gravity="center_vertical|right"
+                    android:padding="@dimen/player_gym_mode_swipe_indicator_padding"
+                    android:text="@string/player_gym_mode_swipe"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/player_gym_mode_swipe_indicator_text_size" />
+                
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/player_gym_mode_controll_button_next_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/player_gym_mode_controll_button_side_margin"
+                android:layout_marginTop="@dimen/player_gym_mode_container_bottom_top_padding"
+                android:orientation="vertical" >
+
+                <com.hungama.myplay.activity.ui.widgets.ActiveButton
+                    android:id="@+id/player_gym_mode_controll_button_next"
+                    android:layout_width="@dimen/player_gym_mode_controll_button_size"
+                    android:layout_height="@dimen/player_gym_mode_controll_button_size"
+                    android:background="@drawable/background_main_player_button_selector"
+                    android:padding="@dimen/main_player_bar_button_padding"
+                    custom:activeSrc="@drawable/icon_main_player_next_white"
+                    custom:inactiveSrc="@drawable/icon_main_player_next_grey" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/player_gym_mode_swipe_indicator_top_margin"
+                    android:drawableRight="@drawable/icon_swipe_right"
+                    android:gravity="center_vertical|left"
+                    android:padding="@dimen/player_gym_mode_swipe_indicator_padding"
+                    android:text="@string/player_gym_mode_swipe"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/player_gym_mode_swipe_indicator_text_size" />
+                
+            </LinearLayout>
+            
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/player_gym_mode_progress_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/main_player_bar_progress_bar_height"
+            android:layout_marginBottom="@dimen/player_gym_mode_progress_bar_margin"
+            android:layout_marginTop="@dimen/player_gym_mode_progress_bar_margin" >
+
+            <SeekBar
+                android:id="@+id/player_gym_mode_progress_bar_seek_bar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/player_gym_mode_progress_bar_scale_bar"
+                android:indeterminateOnly="false"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:progress="0"
+                android:progressDrawable="@drawable/background_main_player_bar_progress"
+                android:secondaryProgress="0"
+                android:thumb="@null"
+                android:thumbOffset="0dip" />
+
+            <LinearLayout
+                android:id="@+id/player_gym_mode_progress_bar_scale_bar"
+                android:layout_width="@dimen/main_player_bar_progress_bar_scale_width"
+                android:layout_height="@dimen/main_player_bar_progress_bar_height"
+                android:layout_alignParentRight="true"
+                android:background="@color/main_player_bar_progress_bar_scale_background"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/player_gym_mode_progress_bar_scale_bar_side_padding"
+                android:paddingRight="@dimen/player_gym_mode_progress_bar_scale_bar_side_padding" >
+
+                <TextView
+                    android:id="@+id/player_gym_mode_progress_bar_scale_text_current"
+                    android:layout_width="@dimen/main_player_bar_progress_bar_scale_text_current_width"
+                    android:layout_height="@dimen/main_player_bar_progress_bar_scale_text_height"
+                    android:text="@string/main_player_bar_progress_bar_scale_text_current"
+                    android:textColor="@color/main_player_bar_progress_bar_scale_text_current"
+                    android:textSize="@dimen/player_gym_mode_progress_bar_scale_text_size" />
+
+                <TextView
+                    android:id="@+id/player_gym_mode_progress_bar_scale_text_length"
+                    android:layout_width="@dimen/main_player_bar_progress_bar_scale_text_length_width"
+                    android:layout_height="@dimen/main_player_bar_progress_bar_scale_text_height"
+                    android:text="@string/main_player_bar_progress_bar_scale_text_length"
+                    android:textColor="@color/main_player_bar_progress_bar_scale_text_length"
+                    android:textSize="@dimen/player_gym_mode_progress_bar_scale_text_size" />
+                
+            </LinearLayout>
+            
+        </RelativeLayout>
+        
+    </LinearLayout>
+
+</RelativeLayout>

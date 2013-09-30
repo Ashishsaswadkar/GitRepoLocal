@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dialog_width"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:id="@+id/list_dialog_title_bar" 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/media_details_long_click_custom_dialog_row_height"
+        android:gravity="center_vertical"
+        android:background="@color/application_background_dark_grey">
+        
+        <TextView
+            android:id="@+id/list_dialog_title_text"
+            style="@style/TextSmallMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/list_dialog_title_button_close"
+            android:layout_marginLeft="@dimen/dialog_content_margin"
+            android:layout_marginRight="@dimen/dialog_content_margin"
+            android:textStyle="bold"
+            android:text="title" />
+        
+        <ImageButton
+	        android:id="@+id/list_dialog_title_button_close"
+	        android:layout_width="@dimen/dialog_title_bar_button_close_size"
+	        android:layout_height="@dimen/dialog_title_bar_button_close_size"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="@dimen/dialog_content_margin"
+	        android:background="@color/transparent"
+	        android:src="@drawable/icon_close_white"/>
+        
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/list_dialog_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/application_options_line_separator_drawable" 
+        android:dividerHeight="1px">
+    </ListView>
+
+</LinearLayout>

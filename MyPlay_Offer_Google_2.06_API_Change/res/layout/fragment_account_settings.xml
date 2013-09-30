@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/main_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_title_bar_height"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/background_home_tabwidget_tab_unselected"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/main_title_bar_text"
+            style="@style/TextMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/profile" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/acccount_details_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_title_bar"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/background_text_field" >
+
+        <ImageView
+            android:id="@+id/thumbnail_imageview"
+            android:layout_width="@dimen/search_result_line_image_size"
+            android:layout_height="@dimen/search_result_line_image_size"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp" />
+
+        <TextView
+            android:id="@+id/name_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/thumbnail_imageview"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/email_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/name_textview"
+            android:layout_alignRight="@id/name_textview"
+            android:layout_below="@id/name_textview"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="5dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/secondary_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/acccount_details_layout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/background_text_field"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/logout_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:text="Log Out"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/sharing_settings_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/acccount_details_layout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/background_text_field"
+        android:visibility="gone" >
+
+ 		<ListView 
+ 		    android:id="@+id/settings_listview"
+ 		    android:layout_width="match_parent"
+ 		    android:layout_height="match_parent"
+ 		    android:layout_centerInParent="true"
+ 		    android:dividerHeight="1dp"
+ 		    android:divider="@color/divider_listview_color"
+ 		    android:cacheColorHint="@color/transparent"
+ 		    android:layout_marginBottom="5dp"
+ 		    >
+ 		    
+ 		</ListView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

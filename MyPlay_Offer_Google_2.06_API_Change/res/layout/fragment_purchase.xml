@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/campaigns_for_you_perview_album_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <ImageView
+            android:id="@+id/campaigns_for_you_perview_album_albumart"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"/>
+
+        <TextView
+            android:id="@+id/campaigns_for_you_perview_album_album_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/campaigns_for_you_perview_album_albumart"
+            android:text="Album Name"
+            android:textAppearance="?android:attr/textAppearanceMedium" 
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/campaigns_for_you_perview_album_artist_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/campaigns_for_you_perview_album_album_name"
+            android:layout_below="@+id/campaigns_for_you_perview_album_album_name"
+            android:text="Artist Name"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/partner_brand_base_color"
+            android:textStyle="bold"
+            android:visibility="invisible"/>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/campaigns_for_you_perview_album_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/campaigns_for_you_perview_album_header"
+        android:layout_marginBottom="5dp" 
+        android:layout_marginTop="5dp"/>
+
+</RelativeLayout>

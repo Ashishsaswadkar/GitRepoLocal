@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <style name="AppTheme" parent="@style/Theme.Sherlock" />
+    
+    <style name="AppTheme.NoActionBar" parent="@style/Theme.Sherlock.NoActionBar" />
+    
+    <style name="AppTheme.Translucent" parent="@android:style/Theme.Translucent.NoTitleBar" />
+    
+    
+    <style name="AppTheme.Field" parent="@style/Theme.Sherlock">
+         <item name="android:dropDownListViewStyle">@style/App.Style.Field.Spinner</item>
+    </style>
+    
+    <style name="AppTheme.Field.NoActionBar" parent="@style/Theme.Sherlock.NoActionBar">
+         <item name="android:dropDownListViewStyle">@style/App.Style.Field.Spinner</item>
+         <item name="windowActionBar">false</item>
+         <item name="windowNoTitle">true</item>
+    </style>
+    
+</resources>

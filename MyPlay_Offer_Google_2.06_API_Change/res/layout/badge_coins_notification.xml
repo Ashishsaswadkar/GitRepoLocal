@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/coins_notification"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:orientation="vertical"
+    android:layout_gravity="bottom">
+   
+
+    <TextView
+        android:id="@+id/coins_notification_text_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:text="Your playlist has been saved"
+        android:textColor="@color/black"
+        android:textSize="14dp" 
+        android:gravity="center_horizontal"
+        android:background="@drawable/background_coins_notification"
+        android:layout_above="@+id/coins_notification_middle" />
+    
+    <LinearLayout 
+	    android:id="@+id/coins_notification_middle"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@color/background_badges_coins_middle"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:gravity="center_horizontal"
+        android:weightSum="1"
+        android:layout_above="@+id/coins_notification_bottom">
+
+        <TextView
+            android:id="@+id/coins_text_middle_left"
+            android:layout_width="86dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="@string/badges_coins_notification_middle_left_text"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+        
+	    <TextView
+	        android:id="@+id/coins_image"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="left|center_vertical"
+	        android:layout_marginLeft="15dp"
+	        android:drawablePadding="3dp"
+	        android:drawableRight="@drawable/icon_coins"
+	        android:gravity="left|center_vertical"
+	        android:text="30"
+	        android:textColor="@color/background_badges_coins_num_of_coins"
+	        android:textSize="30dp" />
+	    	    	                  	     	       
+    </LinearLayout>
+    
+    <LinearLayout 
+	    android:id="@+id/coins_notification_bottom"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"	                 
+	    android:orientation="vertical"
+	    android:layout_alignParentBottom="true">
+    
+        <View android:layout_width="match_parent"
+            android:layout_height="@dimen/social_leaderboard_tab2_period_separator_height"
+            android:background="@color/background_badges_coins_seperator"/>
+	    
+		 <TextView
+	        android:id="@+id/coins_notification_bottom_text"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:paddingRight="15dp"
+	        android:paddingLeft="15dp"
+	        android:paddingTop="5dp"
+        	android:paddingBottom="5dp" 
+	    	android:background="@color/background_badges_coins_middle"
+	        android:layout_gravity="center_horizontal"	 
+	        android:gravity="center_horizontal"       
+	        android:textColor="@color/black"
+	        android:textSize="12dp"
+	        android:text="Get a Shuffle Guru - 2 badge by creating 2 more playlist with at least 5 songs"/>
+	                  	     	       
+    </LinearLayout>   
+         
+</LinearLayout>

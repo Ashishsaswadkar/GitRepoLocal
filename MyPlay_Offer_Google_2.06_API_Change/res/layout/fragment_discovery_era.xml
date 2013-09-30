@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+
+    <RelativeLayout
+        android:id="@+id/discovery_era_container"
+        android:layout_width="@dimen/discovery_tempo_size"
+        android:layout_height="@dimen/discovery_tempo_size"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/background_discovery_era" >
+
+        <TextView
+            android:id="@+id/discovery_era_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/discovery_era_title_margin_left"
+            android:layout_marginTop="@dimen/discovery_era_title_margin_top"
+            android:textSize="@dimen/discovery_tempo_title_size"
+            android:textColor="@color/white"
+            android:text="@string/discovery_era"/>
+
+        <LinearLayout
+            android:id="@+id/discovery_era_container_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/discovery_era_title"
+            android:layout_below="@+id/discovery_era_title"
+            android:background="@drawable/background_round_rectangle_black" >
+
+            <TextView
+                android:id="@+id/discovery_era_time_from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/discovery_era_text_padding"
+                style="@style/TextSmallMediumMinus"
+                android:textColor="@color/azure"
+                android:textStyle="bold"
+                android:text="70s" />
+
+            <TextView
+                android:id="@+id/discovery_era_time_separator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextSmallMediumMinus"
+                android:textColor="@color/azure"
+                android:textStyle="bold"
+                android:text="@string/application_fold_sign" />
+
+            <TextView
+                android:id="@+id/discovery_era_time_to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/discovery_era_text_padding"
+                style="@style/TextSmallMediumMinus"
+                android:textColor="@color/azure"
+                android:textStyle="bold"
+                android:text="2012" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/discovery_era_slider"
+            android:layout_width="@dimen/discovery_era_slider_width"
+            android:layout_height="@dimen/discovery_era_slider_height"
+            android:layout_alignLeft="@+id/discovery_era_container_time"
+            android:layout_below="@+id/discovery_era_container_time"
+            android:layout_marginTop="@dimen/discovery_era_slider_top_margin" >
+            
+            <LinearLayout 
+                android:id="@+id/discovery_era_slider_ruler"
+            	android:layout_width="match_parent"
+        		android:layout_height="@dimen/discovery_era_slider_ruler_height"
+        		android:orientation="horizontal"
+        		android:layout_centerVertical="true">
+
+                <ImageView
+                    android:id="@+id/discovery_era_slider_ruler_side_left"
+                    android:layout_width="@dimen/discovery_era_slider_ruler_side"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/background_discovery_era_slider_fade_left"/>
+
+                <ImageView
+                    android:id="@+id/discovery_era_slider_ruler_side_center"
+                    android:layout_width="@dimen/discovery_era_slider_ruler_width"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"/>
+
+                <ImageView
+                    android:id="@+id/discovery_era_slider_ruler_side_right"
+                    android:layout_width="@dimen/discovery_era_slider_ruler_side"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/background_discovery_era_slider_fade_right" />
+                
+            </LinearLayout>
+                
+            <TextView
+                android:id="@+id/discovery_era_slider_ruler_text_time_minumum_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/discovery_era_slider_ruler"
+                android:layout_marginLeft="@dimen/discovery_era_slider_ruler_side"
+                android:layout_marginTop="@dimen/discovery_era_slider_ruler_text_time_margin_top"
+                style="@style/HomeMediaTileTextSmall"
+                android:text="@string/discovery_era_slider_ruler_text_time_minumum_year" />
+
+            <TextView
+                android:id="@+id/discovery_era_slider_ruler_text_time_middle_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/discovery_era_slider_ruler_text_time_minumum_year"
+                android:layout_alignBottom="@+id/discovery_era_slider_ruler_text_time_minumum_year"
+                android:layout_centerHorizontal="true"
+                style="@style/HomeMediaTileTextSmall"
+                android:text="@string/discovery_era_slider_ruler_text_time_middle_year" />
+
+            <TextView
+                android:id="@+id/discovery_era_slider_ruler_text_time_current_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/discovery_era_slider_ruler_text_time_minumum_year"
+                android:layout_alignBottom="@+id/discovery_era_slider_ruler_text_time_minumum_year"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/discovery_era_slider_ruler_side"
+                style="@style/HomeMediaTileTextSmall"
+                android:text="@string/discovery_era_slider_ruler_text_time_current_year" />
+
+            <Button
+                android:id="@+id/discovery_era_slider_marker_from"
+                android:layout_width="@dimen/discovery_era_slider_marker_width"
+                android:layout_height="@dimen/discovery_era_slider_marker_height"
+                android:layout_above="@+id/discovery_era_slider_ruler"
+                android:background="@drawable/background_discovery_era_slider_from"
+                android:paddingBottom="@dimen/discovery_era_slider_marker_label_padding_bottom"
+                style="@style/HomeMediaTileTextSmall"
+                android:text="@string/discovery_era_from"
+                android:textSize="9dp"
+                android:clickable="false"/>
+
+            <Button
+                android:id="@+id/discovery_era_slider_marker_to"
+                android:layout_width="@dimen/discovery_era_slider_marker_width"
+                android:layout_height="@dimen/discovery_era_slider_marker_height"
+                android:layout_below="@+id/discovery_era_slider_ruler"
+                android:background="@drawable/background_discovery_era_slider_to"
+                android:paddingTop="@dimen/discovery_era_slider_marker_label_padding_top"
+                style="@style/HomeMediaTileTextSmall"
+                android:text="@string/discovery_era_to"
+                android:textSize="9dp"
+                android:clickable="false" />
+            
+        </RelativeLayout>
+        
+    </RelativeLayout>
+
+</RelativeLayout>

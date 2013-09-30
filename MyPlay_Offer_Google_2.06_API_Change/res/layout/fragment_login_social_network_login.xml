@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/main_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_title_bar_height"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/background_home_tabwidget_tab_unselected" >
+
+        <TextView
+            android:id="@+id/main_title_bar_text"
+            style="@style/TextMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/login_content_side_margin"
+                android:layout_marginRight="@dimen/login_content_side_margin"
+                android:layout_marginTop="10dp"
+                android:text="@string/hungama_account_message_upper"
+                android:textColor="@color/membership_detail_text_color" />
+
+            <EditText
+                android:id="@+id/login_social_network_login_text_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/login_content_side_margin"
+                android:layout_marginRight="@dimen/login_content_side_margin"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/background_text_field"
+                android:ems="50"
+                android:hint="@string/login_social_network_login_hint_email_id"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:minLines="1"
+                android:paddingBottom="@dimen/text_field_vertical_padding"
+                android:paddingLeft="@dimen/text_field_horizontal_padding"
+                android:paddingRight="@dimen/text_field_horizontal_padding"
+                android:paddingTop="@dimen/text_field_vertical_padding"
+                android:textColor="@color/text_field_value"
+                android:textColorHint="@color/text_field_hint"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/text_field_text_size" />
+
+            <EditText
+                android:id="@+id/login_social_network_login_text_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/login_content_side_margin"
+                android:layout_marginRight="@dimen/login_content_side_margin"
+                android:layout_marginTop="@dimen/login_content_top_margin"
+                android:background="@drawable/background_text_field"
+                android:ems="50"
+                android:hint="@string/login_social_network_login_hint_password"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:minLines="1"
+                android:paddingBottom="@dimen/text_field_vertical_padding"
+                android:paddingLeft="@dimen/text_field_horizontal_padding"
+                android:paddingRight="@dimen/text_field_horizontal_padding"
+                android:paddingTop="@dimen/text_field_vertical_padding"
+                android:textColor="@color/text_field_value"
+                android:textColorHint="@color/text_field_hint"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/text_field_text_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="@dimen/login_content_side_margin"
+                android:layout_marginRight="@dimen/login_content_side_margin"
+                android:layout_marginTop="10dp"
+                android:text="@string/hungama_account_message"
+                android:textColor="@color/membership_detail_text_color" />
+
+            <Button
+                android:id="@+id/login_social_network_login_button_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/login_button_height"
+                android:layout_marginLeft="@dimen/login_content_side_margin"
+                android:layout_marginTop="@dimen/login_content_top_margin"
+                android:background="@drawable/background_button_blue"
+                android:text="@string/login_social_network_login_button_continue"
+                android:textColor="@color/white"
+                android:textSize="@dimen/login_button_text_size"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/login_content_side_margin"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:drawableRight="@drawable/icon_coins"
+                    android:gravity="center_vertical"
+                    android:text="@string/eran_50"
+                    android:textColor="@color/membership_detail_text_color" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/for_each_account_added"
+                    android:textColor="@color/membership_detail_text_color" />
+                
+            </LinearLayout>
+            
+        </LinearLayout>
+        
+    </ScrollView>
+
+</LinearLayout>

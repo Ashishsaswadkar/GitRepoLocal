@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    			android:layout_width="match_parent"
+    			android:layout_height="match_parent" >
+    			
+    <ImageView
+        android:id="@+id/home_videos_tile_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@null"/>
+    
+    <ImageView
+        android:id="@+id/home_videos_tile_button_play"
+        android:layout_width="@dimen/home_tiles_button_play_size"
+        android:layout_height="@dimen/home_tiles_button_play_size"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@drawable/icon_home_music_tile_play"
+        android:src="@null" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/home_video_tile_details_height"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" 
+        android:background="@drawable/translucent_background">
+        
+        <TextView
+            android:id="@+id/home_videos_tile_track_text_big"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:minLines="1"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textAppearance="@style/HomeMediaTileTextMedium" 
+            android:textSize="@dimen/home_video_tile_details_title_text_size"/>
+
+        <TextView
+            android:id="@+id/home_videos_tile_track_text_small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:minLines="1"
+            android:singleLine="true"
+            android:textAppearance="@style/HomeMediaTileTextSmall" />
+        
+    </LinearLayout>
+    
+     <Button
+        android:id="@+id/home_videos_tile_button_remove"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/background_home_tile_button_remove"
+        android:src="@null"
+        android:text="X"
+        android:textColor="@color/white"
+        android:textSize="@dimen/home_tiles_button_remove_text_size"
+        android:visibility="gone" />
+
+</RelativeLayout>
